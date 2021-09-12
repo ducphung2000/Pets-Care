@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
-    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
+    <?php include(head.html); ?>
+
+    <!-- <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
     <link rel="stylesheet" href="./accsets/css/base.css">
     <link rel="stylesheet" href="./accsets/css/main.css">
     <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <div class="app">
@@ -87,9 +89,9 @@
                             </a>
                             
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
-                        <li class="header__navbar-item header__navbar-user">
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-user">
                             <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
                         
@@ -107,14 +109,14 @@
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <a href="#" class="header__logo-link">
+                        <a href="trangchu.php" class="header__logo-link">
                             <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
                     </div>
@@ -368,6 +370,28 @@
                         </div>                        
                         
                     </div>
+                </div>
+
+                 <!-- Header Menu -->
+                 <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="trangchu.php" class="header__menu-item-title">Trang chủ</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-title">Giới Thiệu</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="index.html" class="header__menu-item-title">Sản Phẩm</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-title">Tư vấn</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-title">liên hệ</a>
+                        </li>
+                        
+                    </ul>
                 </div>
             </div>
         </header>
