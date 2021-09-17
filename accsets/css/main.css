@@ -2,7 +2,7 @@
     height: var(--header-height);
     background-image: linear-gradient(0,#ac5a8a,#c2147f);
     border-bottom: 2px solid #a609ce;
-    
+    position: relative;
 }
 
 .header__navbar {
@@ -179,6 +179,7 @@
 
 /* Header Menu */
 .header__menu {
+    
 }
 
 .header__menu-list {
@@ -189,6 +190,7 @@
     padding-left: 0;
     margin: 0;
     padding: 12px;
+    
 }
 
 .header__menu-item {

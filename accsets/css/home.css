@@ -1,43 +1,191 @@
-.app__main {
+.app__container {
+
+}
+.container-top {
    width: 100%;
-   height: 800px;
-   background-image: url(https://petviet.vn/wp-content/uploads/2018/03/2607_6TMVc.jpg);
+   height: auto;
+   /* background-image: url(https://asset.chopet.vn/temps/23-03-2021/05ed96b9c124aeec386dae6bc5ad9b92db84632f.jpg); */
+   background-size: 100%;
    background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   background-color: #d86bb7 ;
-   
 }
 
-.app__main-content {
-
+.container-top__banner {
+    width: 100%;
+    max-height: 792px;
 }
 
-.intro__list {
+.banner-img {
+    width: 100%;
+}
+
+.container-main {
     display: flex;
-    justify-content: space-around;
-}
-
-.intro__item {
-    display: block;
-    float: left;
-    position: relative;
-    
-}
-
-.intro__heading2 {
-    margin-top: 0;
-    padding-top: 12px;
-}
-
-.intro__heading3 {
+    align-items: center;
+    width: 100%;
+    height: 302px;
 
 }
 
-.intro__text {
+.main__content {
+    width: 100%;
+    height: 240px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
 
 }
 
-.intro__btn {
+.main__content-item {
+    display: flex;
+    width: 350px;
+    padding: 0 15px 0 20px;
+}
 
+.main__content-item-img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.content-img {
+    width: 133px;
+    height: 157px;
+}
+.main__content-item--bg1,
+.main__content-item--bg2,
+.main__content-item--bg3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__content-item--bg1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAayvfy6l0D8lHw4e0MC4NBVHaQJhyUcy5wQ&usqp=CAU) ;
+
+}
+
+.main__content-item--bg2 {
+    background-image: url(https://cdn.tgdd.vn//GameApp/-1//Powerpoint-9-800x450.jpg) ;
+
+}
+
+.main__content-item--bg2 img {
+    width: 208px;
+}
+
+.main__content-item--bg3 {
+    background-image: url(https://i.pinimg.com/736x/bc/89/d5/bc89d5005c71fec19900b26687304867--desktop-wallpapers-definitions.jpg) ;
+
+}
+
+.main__content-item--bg3 img {
+    width: 180px;
+}
+
+
+
+.main__content-item-title {
+    padding-left: 24px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+
+}
+
+.main__content-item-title p {
+    font-size: 2.2rem;
+    font-weight: 450;
+    margin-bottom: 20px;
+}
+
+.main__content-item-title h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding: 4px;
+    margin: 22px 0 ;
+}
+
+.main__content-item-title h3 {
+    font-size: 2.4rem;
+    font-weight: 0;
+    line-height: 1.2;
+}
+
+.main__content-item--bg2 h2 {
+    font-size: 3.4rem !important;  
+}
+
+.main__content-btn {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.main__content-btn:hover {
+    color: var(--primary-color);
+}
+
+/* bot */
+
+.container-bot {
+    height: 722px;
+    background-color: #fff;
+}
+
+.bot__content {
+
+}
+
+.bot__content-heading{
+     font-size: 3rem;
+     font-weight: 450;
+     color: var(--text-color);
+     text-align: center;
+     margin: 0;
+}
+
+.bot__content-heading h2 {
+    margin: 0;
+}
+
+.bot__content-product{
+     
+}
+
+.content-product__list {
+     display: flex;
+     list-style: none;
+}
+
+.content-product__item {
+     
+     
+}
+
+.content-product__img {
+     
+     
+}
+
+.product__img {
+     width: 90%;
+     
+}
+
+.content-product__purchase {
+     
+     
+}
+
+.content-product__purchase-text {
+     
+     
+}
+
+.content-product__purchase-price {
+     
+     
+}
+
+.content-product__purchase-btn {
+     
+     
 }
