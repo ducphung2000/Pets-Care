@@ -117,6 +117,7 @@
     font-size: 2.4rem;
     font-weight: 500;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .main__content-btn:hover {
@@ -126,7 +127,7 @@
 /* bot */
 
 .container-bot {
-    height: 722px;
+    height: 566px;
     background-color: #fff;
 }
 
@@ -144,6 +145,8 @@
 
 .bot__content-heading h2 {
     margin: 0;
+    line-height: 5rem;
+    padding: 32px 0;
 }
 
 .bot__content-product{
@@ -151,13 +154,14 @@
 }
 
 .content-product__list {
-     display: flex;
-     list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .content-product__item {
-     
-     
+    border: 1px solid rgb(238, 236, 236);
+    box-shadow: 0 1px 2px #e0e0e0;
+    text-align: center;
 }
 
 .content-product__img {
@@ -166,7 +170,7 @@
 }
 
 .product__img {
-     width: 90%;
+    width: 90%;
      
 }
 
@@ -176,16 +180,120 @@
 }
 
 .content-product__purchase-text {
-     
-     
+    font-size: 1.6rem;
+    font-weight: 420;
+    color: var(--text-color);
+    margin-top: 0;
 }
 
 .content-product__purchase-price {
-     
-     
+    color: var(--primary-color);
+    font-size: 2rem;
 }
 
 .content-product__purchase-btn {
-     
+     margin-bottom: 20px;
      
 }
+
+.content-product__purchase-btn:hover {
+    background-color: var(--background-color-btn);
+}
+
+/* container introduct */
+.container-intro {
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+}
+.container-box {
+    width: 100%;
+    height: 133px;
+    
+}
+
+.container-box__img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 2px #e0e0e0;
+    border: 1px solid #ccc;
+    margin-left: 19px;
+}
+
+/* container news */
+.container-news {
+    background-color: #fff;
+}
+
+.news-content {
+
+}
+
+.news-content__list {
+    margin: 0;
+    padding-top: 144px ;
+    padding-bottom: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-content__item {
+    width: 236px;
+    height: 280px;
+    background-image: url(https://www.petcity.vn/media/lib/bg-parchment.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 8px;
+}
+
+.news-content__item-icon {
+    position: relative;
+    top: -30%;
+}
+
+.news-content__item-icon-img {
+    width: 162px;
+    height: 1;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    transition: top 0.5s ease-out ;
+    top: 0;
+}
+
+.news-content__item-icon-img:hover {
+    position: relative;
+    top: -8px;
+}
+
+.news-content__item-box {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+.news-content__item-heading {
+    margin: 0;
+    color: #25221f;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase ;
+}
+
+.news-content__text {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    line-height: 18px;
+    margin: 14px 4px;
+}
+
+.news-content__item-btn:hover {
+    background-color: var(--background-color-btn);
+}
+
+
+
+

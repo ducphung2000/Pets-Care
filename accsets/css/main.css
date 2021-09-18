@@ -211,7 +211,7 @@
 .header__menu-item-title--active,
 .header__menu-item-title:hover {
     color: var(--text-color);
-    background-color: #eb84c0;
+    background-color: var(--background-color-btn);
     cursor: pointer;
 }
 
@@ -649,7 +649,7 @@
 }
 
 .header__cart-view-cart:hover {
-    background-color: #eb84c0;
+    background-color: var(--background-color-btn);
 }
 
 
@@ -730,7 +730,7 @@
 }
 
 .header__search-btn:hover {
-    background-color:#eb84c0;
+    background-color:var(--background-color-btn);
     cursor: pointer;
 }
 

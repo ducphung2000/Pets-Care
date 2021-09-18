@@ -1,0 +1,124 @@
+.container-buy__product {
+    display: flex;
+    padding: 40px 0 15px 0;
+
+}
+
+
+/* description */
+.buy__product-description {
+    width: 480px;
+    height: 658px;
+    background-color: var(--white-color);
+}
+
+.product-description__intro {
+    padding: 15px;
+}
+
+.product-description__intro-image {
+
+}
+
+.intro-image__img {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+
+}
+
+.product-description__intro-list-img {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-items__img {
+
+}
+
+.intro-item__img {
+    width: 82px;
+    height: 82px;
+    margin: 5px;
+    border: 1px solid rgb(243, 239, 239);
+
+}
+
+
+
+
+.product-description__more {
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__more-share {
+    padding: 0 30px;
+}
+
+.more-share_text {
+    position: relative;
+    top: -2px;
+    font-size: 1.8rem;
+
+}
+
+.more-share_icon {
+    font-size: 25px;
+}
+
+.more-share_icon--mess {
+    color: rgb(92, 161, 240);
+}
+
+.more-share_icon--fb {
+    color: rgb(14, 71, 136);
+    
+}
+
+.more-share_icon--pinter {
+    color: rgb(230, 21, 6);
+    
+}
+
+.more-share_icon--twitter {
+    color: rgb(92, 161, 240);
+    
+}
+
+.description__more-liked {
+    padding: 0 30px;
+    border-left: 1px solid #ccc;
+}
+
+.more-liked__icon {
+    font-size: 25px;
+    color: rgb(235, 11, 11);
+
+    
+}
+
+.more-liked__text {
+    position: relative;
+    top: -5px;
+    font-size: 1.8rem;
+    padding-left: 4px;
+}
+
+/* Bying */
+.buy__product-bying {
+    width: calc(1200px - 480px);
+    height: auto ;
+    border-left: 1px solid #ccc;
+    background-color: var(--white-color);
+
+}
