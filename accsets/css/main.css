@@ -789,6 +789,7 @@
 
 /* App container */
 .app__container {
+    position: relative;
     background-color: #f5f5f5;
 }
 
