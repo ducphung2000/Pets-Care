@@ -512,6 +512,16 @@
     cursor: pointer;
 }
 
+.header__cart-wrap a {
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
 .header__cart-wrap:hover .header__cart-list {
     display: block;
 }
