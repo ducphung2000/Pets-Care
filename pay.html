@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="./accsets/css/home.css">
         <link rel="stylesheet" href="./accsets/css/sanpham.css">
         <link rel="stylesheet" href="./accsets/css/cart.css">
+        <link rel="stylesheet" href="./accsets/css/pay.css">
         <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,46 +123,11 @@
                             <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
 
-                        <div class="logo_text">Giỏ Hàng</div>
+                        <div class="logo_text">Thanh Toán</div>
+                        
                     </div>
         
-                    <div class="header__search">
-                        <div class="header__search-input-wrap">
-                            <input type="search" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm...">
-                            
-                            <!-- search hístory -->
-                            <div class="header__search-history">
-                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="">Balo chó mèo</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="">Xúc xích cho chó con</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="header__search-select">
-                            <span class="header__search-select-lable">Trong shop</span>
-                            <i class="header__search-select-icon fas fa-chevron-down"></i>
-                            
-                            <ul class="header__search-option">
-                                <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-        
-                                <li class="header__search-option-item ">
-                                    <span>Ngoài shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <button class="header__search-btn">
-                        <i class="header__search-btn-icon fas fa-search"></i>
-                        </button>
-                    </div>
+                    
                 </div>
             </div>
         </header>
@@ -170,199 +136,154 @@
             <div class="grid">
                 <div class="container-content">
                     <div class="container-content__top">
-                        <label for="" class="content__input">
-                            <input type="checkbox" class="input__check" >
-                        </label>
-                        <div class="text__left">Sản Phẩm</div>
-                        <div class="text-right__item">Đơn Giá</div>
-                        <div class="text-right__item">Số Lượng</div>
-                        <div class="text-right__item">Số tiền</div>
-                        <div class="text-right__item">Thao Tác</div>
+                        <div class="content__top-boder">
+
+                        </div>
+
+                        <div class="content__top-main">
+                            <div class="top-main__address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Địa Chỉ Nhận Hàng
+                            </div>
+                            <div class="top-main__address-text">
+                                <div class="address-text__info">
+                                    <div class="address-text__info-individual"> Nguyễn Đức Phụng (+84) 919873827</div>
+                                    <div class="address-text__info-address">18 Phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</div>
+                                </div>
+                                <div class="address-text__change">Thay đổi</div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="container-content__main">
+                        <div class="container-content__main-top">
+                            <div class="main-top__left">Sản Phẩm</div>
+                            <div class="main-top__right">
+                                <div class="main-top__right-unit-price">Đơn Giá</div>
+                                <div class="main-top__right-quantity">Số Lượng</div>
+                                <div class="main-top__right-into-money">Thành Tiền</div>
+                            </div>
+                        </div>
                         
-                        <ul class="main-product__list">
-                            <li class="main-product__item">
-                                <label for="" class="content__input">
-                                    <input type="checkbox" class="input__check" >
-                                </label>
-
-                                <div class="main-product__item-product">
-                                    <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
-                                    
-                                        <div class="item-product__text">xúc xích ở đây ngon lắm  ^^</div>
-                                    </a>
-                                </div>
-
-                                <div class="item-product__sectors">
-                                    <div class="item-product__sectors-text">
-                                        <span>Phân loại hàng:</span> 
-                                        <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                        <div class="container-content__main-info">
+                            <ul class="main-product__list">
+                                <li class="main-product__item">
+                                    <div class="main-product__item-product">
+                                        <a href="#" class="item-product__link">
+                                            <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
+                                        
+                                            <div class="item-product__text">xúc xích ở đây ngon lắm  ^^</div>
+                                        </a>
                                     </div>
-                                    <div class="item-product__sectors-about">Vị Bò</div>
-                                </div>
-
-                                <div class="item-product__price">
-                                    <div class="item-product__price-old">150.000đ</div> 
-                                    <div class="item-product__price-sale">120.000đ</div> 
-                                </div>
-
-                                <div class="choose-main__quantity-number">
-                                    <button class="quantity-number__icon-minus">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <div class="quantity-number__num">1</div>
-                                    <button class="quantity-number__icon-plus">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-
-                                <div class="item-product__money">120.000đ</div>
-
-                                <div class="item-product__delete">Xoá</div>
-                            </li>
-                            <li class="main-product__item">
-                                <label for="" class="content__input">
-                                    <input type="checkbox" class="input__check" >
-                                </label>
-
-                                <div class="main-product__item-product">
-                                    <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
-                                    
-                                        <div class="item-product__text">xúc xích ở đây ngon lắm ^^</div>
-                                    </a>
-                                </div>
-
-                                <div class="item-product__sectors">
-                                    <div class="item-product__sectors-text">
-                                        <span>Phân loại hàng:</span> 
-                                        <i class="fas fa-sort-down item-product__sectors-icon"></i>
+    
+                                    <div class="item-product__sectors">
+                                        <div class="item-product__sectors-text">
+                                            <span>Phân loại hàng:</span> 
+                                            <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                                        </div>
+                                        <div class="item-product__sectors-about">Vị Bò</div>
                                     </div>
-                                    <div class="item-product__sectors-about">Vị Bò</div>
-                                </div>
-
-                                <div class="item-product__price">
-                                    <div class="item-product__price-old">150.000đ</div> 
-                                    <div class="item-product__price-sale">120.000đ</div> 
-                                </div>
-
-                                <div class="choose-main__quantity-number">
-                                    <button class="quantity-number__icon-minus">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <div class="quantity-number__num">1</div>
-                                    <button class="quantity-number__icon-plus">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-
-                                <div class="item-product__money">120.000đ</div>
-
-                                <div class="item-product__delete">Xoá</div>
-                            </li>
-                            <li class="main-product__item">
-                                <label for="" class="content__input">
-                                    <input type="checkbox" class="input__check" >
-                                </label>
-
-                                <div class="main-product__item-product">
-                                    <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
-                                    
-                                        <div class="item-product__text">xúc xích ở đây ngon lắm  ^^</div>
-                                    </a>
-                                </div>
-
-                                <div class="item-product__sectors">
-                                    <div class="item-product__sectors-text">
-                                        <span>Phân loại hàng:</span> 
-                                        <i class="fas fa-sort-down item-product__sectors-icon"></i>
+    
+                                    <div class="item-product__price">
+                                        <div class="item-product__price-sale">120.000đ</div> 
                                     </div>
-                                    <div class="item-product__sectors-about">Vị Bò</div>
-                                </div>
-
-                                <div class="item-product__price">
-                                    <div class="item-product__price-old">150.000đ</div> 
-                                    <div class="item-product__price-sale">120.000đ</div> 
-                                </div>
-
-                                <div class="choose-main__quantity-number">
-                                    <button class="quantity-number__icon-minus">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
+    
                                     <div class="quantity-number__num">1</div>
-                                    <button class="quantity-number__icon-plus">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
+    
+                                    <div class="item-product__money">120.000đ</div>
+    
+                                </li>
+                                
+                            </ul>
+                        </div>
 
-                                <div class="item-product__money">120.000đ</div>
-
-                                <div class="item-product__delete">Xoá</div>
-                            </li>
-                            <li class="main-product__item">
-                                <label for="" class="content__input">
-                                    <input type="checkbox" class="input__check" >
-                                </label>
-
-                                <div class="main-product__item-product">
-                                    <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
-                                    
-                                        <div class="item-product__text">xúc xích ở đây ngon lắm ^^</div>
-                                    </a>
-                                </div>
-
-                                <div class="item-product__sectors">
-                                    <div class="item-product__sectors-text">
-                                        <span>Phân loại hàng:</span> 
-                                        <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                        <div class="container-content__main-about">
+                            <div class="main-about__mess">
+                                <div class="main-about__mess-content">
+                                    <span>Lời nhắn:</span>
+                                    <div class="main-about__input-mess">
+                                        <input class="mess-input" type="text" placeholder="Lưu ý cho Người bán..." value="">
                                     </div>
-                                    <div class="item-product__sectors-about">Vị Bò</div>
                                 </div>
-
-                                <div class="item-product__price">
-                                    <div class="item-product__price-old">150.000đ</div> 
-                                    <div class="item-product__price-sale">120.000đ</div> 
+                            </div>
+                            <div class="main-about__trans">
+                                <div class="main-about__trans-top">
+                                    <div class="trans-top__label">Đơn vị vận chuyển:</div>
+                                    <div class="trans-top__unit">
+                                        <div>Nhanh</div>
+                                        <div class="trans-top__unit-appoint">Nhận hàng vào 25 Th10 - 3 Th11</div>
+                                    </div>
+                                    <div class="trans-top__change">Thay đổi</div>
+                                    <div class="trans-top__price-ship">₫20.100</div>
                                 </div>
+                                <div class="main-about__trans-bot">(Do ảnh hưởng của Covid-19,thời gian giao hàng có thể dài hơn dự kiến từ 1-5 ngày)</div>
+                            </div>
+                        </div>
 
-                                <div class="choose-main__quantity-number">
-                                    <button class="quantity-number__icon-minus">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <div class="quantity-number__num">1</div>
-                                    <button class="quantity-number__icon-plus">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
-                                </div>
-
-                                <div class="item-product__money">120.000đ</div>
-
-                                <div class="item-product__delete">Xoá</div>
-                            </li>
-                            
-                        </ul>
-
+                        <div class="container-content__main-statistical">
+                            <div class="main-statistical__text">Tổng số tiền (2 sản phẩm):</div>
+                            <div class="main-statistical__number">140.100đ</div>
+                        </div>
                     </div>
 
-                    <div class="container-content__bot">
-                        <div class="container-content__bot-left">
-                            <label for="" class="content__input">
-                                <input type="checkbox" class="input__check" >
-                            </label>
-                            <button class="content__bot-select-all">Chọn Tất Cả</button>
-                            <div class="content__bot-delete">Xoá</div>
-                        </div>
-                        
-                        <div class="container-content__bot-right">
-                            <div class="content__bot-text">Tổng Thanh Toán:</div>
-                            <div class="content__bot-total">0đ</div>
-                            <a href="pay.html" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
+                    <div class="container-content__bottom ">
+                        <div class="container-content__bot-payment grid__full-width">
+                            <div class="bot-payment__text">Phương thức thanh toán</div>
+    
+                            <div class="bot-payment__method">
+                                <div class="bot-payment__method-onl">
+                                    <div class="method__btn method__btn-onl--active btn">Thanh toán trực tuyến</div>
+                                </div>
+                                
+                                <div class="bot-payment__method-live">
+                                    <div class="method__btn btn">Thanh toán khi nhận hàng</div>
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="payment-onl__card ">
+                            <div class="payment-onl__card-text">Chọn thẻ</div>
+                            <div class="payment-onl__card-btn">
+                                <ul class="payment-onl__card-list">
+                                    <li class="payment-onl__card-item">
+                                        <img src="./accsets/img/bidv.jpg" alt="" class="payment-onl__card-item__img payment-onl__card-item__img--active ">
+                                        
+                                        <img src="./accsets/img/agribank.jpg" alt="" class="payment-onl__card-item__img">
+                                    </li>
+                                    <li class="payment-onl__card-item">
+                                        <img src="./accsets/img/vpbannk.jfif" alt="" class="payment-onl__card-item__img">
+                                        
+                                        <img src="./accsets/img/viettinbank.png" alt="" class="payment-onl__card-item__img">
+                                    </li>
+                                    <li class="payment-onl__card-item">
+                                        <img src="./accsets/img/samcombank.jpg" alt="" class="payment-onl__card-item__img">
+                                        
+                                        <img src="./accsets/img/Techcombank.png" alt="" class="payment-onl__card-item__img">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container-content__bot-pay">
+                            <div class="container-content__bot-pay-top">
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__text">Tổng tiền hàng</div>
+                                    <div class="bot-pay-top__number">120.000đ</div>
+                                </div>
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__text">Phí vận chuyển</div>
+                                    <div class="bot-pay-top__number">20.100đ</div>
+                                </div>
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__all-pay-text">Tổng thanh toán:</div>
+                                    <div class="bot-pay-top__all-pay-number">140.100đ</div>
+                                </div>
+                            </div>
+                            <div class="container-content__bot-pay-bot">
+                                <div class="bot-pay-bot__text">Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="https://shopee.vn/legaldoc/policies/" target="_blank" rel="noopener noreferrer">Điều khoản của shop</a></div>
+                                <button class="bot-pay-bot__btn btn btn--primary">Đặt hàng</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
