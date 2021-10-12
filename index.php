@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
     <link rel="stylesheet" href="./accsets/css/home.css">
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
-        <?php include("layout/header.html"); ?>
+        <?php include("./accsets/layout/header.html"); ?>
 
         <div class="app__container">
             <div class="grid__full-width container-top">
@@ -176,7 +176,7 @@
 
         </div>
 
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
     </div>
 </body>
 </html>
