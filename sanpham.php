@@ -8,11 +8,11 @@
     <title>Pets Care</title>
     <link rel="stylesheet" href="./accsets/css/home.css">
     <link rel="stylesheet" href="./accsets/css/sanpham.css">
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
-        <?php include("layout/header.html"); ?>
+        <?php include("./accsets/layout/header.html"); ?>
 
         <div class="app__container">
             <div class="grid ">
@@ -225,7 +225,7 @@
             </div>
         </div>
 
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
     </div>
 </body>
 </html>
