@@ -514,8 +514,8 @@
 
 .header__cart-wrap a {
     position: relative;
+    line-height: 34px;
     display: inline-block;
-    padding: 0 8px;
     cursor: pointer;
     z-index: 2;
 }
@@ -654,6 +654,7 @@
 }
 
 .header__cart-view-cart {
+    
     float: right;
     margin: 0 12px 12px 0;
 }
