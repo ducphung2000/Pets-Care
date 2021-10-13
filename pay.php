@@ -224,7 +224,7 @@
     
                             <div class="bot-payment__method">
                                 <div class="bot-payment__method-onl">
-                                    <div class="method__btn method__btn-onl--active btn">Thanh toán trực tuyến</div>
+                                    <div class="btn method__btn method__btn-onl--active ">Thanh toán trực tuyến</div>
                                 </div>
                                 
                                 <div class="bot-payment__method-live">
