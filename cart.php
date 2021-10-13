@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
+    <?php include("./accsets/layout/head.html"); ?> 
     <link rel="stylesheet" href="./accsets/css/home.css">
     <link rel="stylesheet" href="./accsets/css/sanpham.css">
     <link rel="stylesheet" href="./accsets/css/cart.css">
-    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
