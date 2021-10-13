@@ -110,7 +110,7 @@
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <a href="index.html" class="header__logo-link">
+                        <a href="index.php" class="header__logo-link">
                             <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
 

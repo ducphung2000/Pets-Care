@@ -283,7 +283,7 @@
 }
 
 .method__btn {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);  
     min-width: 200px;
     height: 40px;
     
