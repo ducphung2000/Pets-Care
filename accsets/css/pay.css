@@ -286,6 +286,7 @@
     border: 1px solid var(--border-color);
     min-width: 200px;
     height: 40px;
+    
 }
 
 .method__btn:hover {
