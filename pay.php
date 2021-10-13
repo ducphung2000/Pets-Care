@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./accsets/css/sanpham.css">
     <link rel="stylesheet" href="./accsets/css/cart.css">
     <link rel="stylesheet" href="./accsets/css/pay.css">
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
@@ -281,7 +281,7 @@
             </div>
         </div>
 
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
 
     </div>
 </body>

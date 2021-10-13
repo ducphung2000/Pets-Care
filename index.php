@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
     <link rel="stylesheet" href="./accsets/css/home.css">
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
-        <?php include("layout/header.html"); ?>
+        <?php include("./accsets/layout/header.html"); ?>
 
         <div class="app__container">
             <div class="grid__full-width container-top">
@@ -78,7 +78,7 @@
                                     <div class="content-product__purchase">
                                         <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
                                         <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.html" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                     </div>
                                 </li>
                                 <li class="grid__column-2-5 content-product__item">
@@ -88,7 +88,7 @@
                                     <div class="content-product__purchase">
                                         <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
                                         <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.html" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                     </div>
                                 </li>
                                 <li class="grid__column-2-5 content-product__item">
@@ -98,7 +98,7 @@
                                     <div class="content-product__purchase">
                                         <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
                                         <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.html" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                     </div>
                                 </li>
                                 <li class="grid__column-2-5 content-product__item">
@@ -108,7 +108,7 @@
                                     <div class="content-product__purchase">
                                         <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
                                         <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.html" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                     </div>
                                 </li>
                             </ul>
@@ -176,7 +176,7 @@
 
         </div>
 
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
     </div>
 </body>
 </html>

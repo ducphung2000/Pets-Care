@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
-        <?php include("layout/header.html"); ?>
+        <?php include("./accsets/layout/header.html"); ?>
 
         <div class="app__container">
             <div class="grid">
@@ -89,7 +89,7 @@
                             <div class="grid__row">
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -132,7 +132,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -218,7 +218,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -261,7 +261,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -304,7 +304,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -347,7 +347,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -390,7 +390,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -433,7 +433,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -476,7 +476,7 @@
                                 </div>
                                 <div class="grid__column-2-4">
                                     <!-- product item -->
-                                    <a href="sanpham.html" class="home-product-item">
+                                    <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1ab1ac70d1a06eae4d4ab807945d7071) ;"></div>
                                     
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -573,7 +573,7 @@
         </div>
 
         
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
 
     </div>
     <!--Modal layout -->

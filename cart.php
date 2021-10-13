@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./accsets/css/home.css">
     <link rel="stylesheet" href="./accsets/css/sanpham.css">
     <link rel="stylesheet" href="./accsets/css/cart.css">
-    <?php include("layout/head.html"); ?> 
+    <?php include("./accsets/layout/head.html"); ?> 
 </head>
 <body>
     <div class="app">
@@ -352,7 +352,7 @@
                         <div class="container-content__bot-right">
                             <div class="content__bot-text">Tổng Thanh Toán:</div>
                             <div class="content__bot-total">0đ</div>
-                            <a href="pay.html" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
+                            <a href="pay.php" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
                         </div>
 
                     </div>
@@ -360,7 +360,7 @@
             </div>
         </div>
 
-        <?php include("layout/footer.html"); ?>
+        <?php include("./accsets/layout/footer.html"); ?>
 
     </div>
 </body>
