@@ -70,7 +70,7 @@
 
                             <div class="home-filter__page">
                                 <span class="home-filter__page-num">
-                                    <span class="home-filter__page-curren">1</span>/14
+                                    <span class="home-filter__page-curren">1</span>
                                 </span>
 
                                 <div class="home-filter__page-control">
@@ -531,7 +531,7 @@
                                     <i class="pagination-item__icon">1</i>
                                 </a>
                             </li>
-                            <li class="pagination-item">
+                            <!-- <li class="pagination-item">
                                 <a href="" class="pagination-item__link">
                                     <i class="pagination-item__icon">2</i>
                                 </a>
@@ -560,7 +560,7 @@
                                 <a href="" class="pagination-item__link">
                                     <i class="pagination-item__icon">14</i>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="pagination-item">
                                 <a href="" class="pagination-item__link">
                                     <i class="pagination-item__icon fas fa-chevron-right"></i>
@@ -576,105 +576,6 @@
         <?php include("./accsets/layout/footer.html"); ?>
 
     </div>
-    <!--Modal layout -->
-     <!-- <div class="modal">
-        <div class="modal__overlay">
-        </div>
-        <div class="modal__body"> -->
-            <!-- Register Form -->
-            <!-- <div class="auth-form">
-                <div class="auth-form__container">
-
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
-                    </div>
-
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
-                        </div>
-                    </div>
-
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">
-                            Bằng việc đăng ký, bạn đã đồng ý với Shopee Mini về
-                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__text-link">Chính sách bảo mật.</a>
-                        </p>
-                    </div>
-
-                    <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
-
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">Kết nối với Google</span>
-
-                    </a>
-                </div>
-            </div> -->
-
-            <!-- login Form -->
-             <!-- <div class="auth-form">
-                <div class="auth-form__container">
-
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
-                    </div>
-
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
-                        </div>
-                        
-                    </div>
-
-                    <div class="auth-form__aside">
-                        <div class="auth-form__help">
-                            <a href="" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
-                            <span class="auth-form__help-separate"></span>
-                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
-                        </div>
-                    </div>
-
-                    <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
-
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">Kết nối với Google</span>
-
-                    </a>
-                </div>
-            </div>  -->
-         </div>
-     </div> 
+    
 </body>
 </html>
