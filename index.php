@@ -183,7 +183,7 @@
     <div class="modal">
         <div class="modal__overlay">
         </div>
-        <div class="modal__body"> -->
+        <div class="modal__body"> 
             <!-- Register Form -->
             <div class="auth-form">
                 <div class="auth-form__container">

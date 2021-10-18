@@ -296,8 +296,10 @@
 }
 
 /* Authen modal */
-.auth-form {
+.modal {
     display: none;
+}
+.auth-form {
     width: 500px;
     border-radius: 5px;
     overflow: hidden;
