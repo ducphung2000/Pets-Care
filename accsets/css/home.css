@@ -296,6 +296,9 @@
 }
 
 /* Authen modal */
+.modal {
+    display: none;
+}
 
 .auth-form {
     width: 500px;
