@@ -121,6 +121,7 @@
 }
 
 .header__navbar-item,
+.header__navbar-item button,
 .header__navbar-item-link {
     display: inline-block ;
     font-size: 1.3rem;
@@ -130,6 +131,7 @@
 }
 
 .header__navbar-item,
+.header__navbar-item button,
 .header__navbar-item-link,
 .header__navbar-icon-link {
     display: flex;
@@ -137,6 +139,7 @@
 }
 
 .header__navbar-item:hover,
+.header__navbar-item:hover button,
 .header__navbar-item-link:hover,
 .header__navbar-icon-link:hover {
     color: rgba(255, 255, 255, 0.7);
@@ -145,6 +148,12 @@
 
 .header__navbar-item--strong {
     font-weight: 450;
+}
+
+.register-btn,
+.login-btn {
+    border: none;
+    background: none;
 }
 
 .header__navbar-item--separate::after {

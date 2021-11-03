@@ -297,7 +297,16 @@
 
 /* Authen modal */
 .modal {
+    
     display: none;
+}
+
+.modal.modal-register.open {
+    display: flex;
+}
+
+.modal.modal-login.open {
+    display: flex;
 }
 
 .auth-form {

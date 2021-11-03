@@ -9,6 +9,7 @@
     <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
     <link rel="stylesheet" href="./accsets/css/base.css">
     <link rel="stylesheet" href="./accsets/css/main.css">
+    <link rel="stylesheet" href="./accsets/js/main.js">
     <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,8 +89,12 @@
                             </a>
                             
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            <button class="register-btn js-register-btn">Đăng ký</button>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <button class="login-btn js-login-btn">Đăng nhập</button>
+                        </li>
                         <!-- <li class="header__navbar-item header__navbar-user">
                             <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
@@ -667,8 +672,8 @@
     </div>
 
     <!--Modal layout -->
-    <div class="modal">
-        <div class="modal__overlay">
+    <div class="modal modal-register js-modal-register">
+        <div class="modal__overlay js-modal-close">
         </div>
         <div class="modal__body"> 
             <!-- Register Form -->
@@ -677,7 +682,7 @@
 
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                        <span class="auth-form__switch-btn js-login-btn">Đăng nhập</span>
                     </div>
 
                     <div class="auth-form__form">
@@ -701,7 +706,7 @@
                     </div>
 
                     <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
                         <button class="btn btn--primary">ĐĂNG KÝ</button>
 
                     </div>
@@ -718,16 +723,22 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div> 
 
+    <div class="modal modal-login js-modal-login">
+        <div class="modal__overlay js-modal-close">
+        </div>
+        <div class="modal__body"> 
             <!-- login Form -->
             <div class="auth-form">
                 <div class="auth-form__container">
-
+        
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
+                        <span class="auth-form__switch-btn js-register-btn">Đăng ký</span>
                     </div>
-
+        
                     <div class="auth-form__form">
                         <div class="auth-form__group">
                             <input type="text" class="auth-form__input" placeholder="Email của bạn">
@@ -737,7 +748,7 @@
                         </div>
                         
                     </div>
-
+        
                     <div class="auth-form__aside">
                         <div class="auth-form__help">
                             <a href="" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
@@ -745,11 +756,11 @@
                             <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
                         </div>
                     </div>
-
+        
                     <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
                         <button class="btn btn--primary">ĐĂNG NHẬP</button>
-
+        
                     </div>
                 </div>
                 <div class="auth-form__socials">
@@ -760,11 +771,59 @@
                     <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
                         <i class="auth-form__social-icon fab fa-google"></i>
                         <span class="auth-form__socials-title">Kết nối với Google</span>
-
+        
                     </a>
                 </div>
             </div> 
-            </div>
-     </div> 
+        </div>
+    </div> 
+
+    <script>
+        // Form register
+        const registerBtns = document.querySelectorAll('.js-register-btn')
+        const modalRegister = document.querySelector('.js-modal-register')
+        const modalCloses = document.querySelectorAll('.js-modal-close')
+
+        function showRegister() {
+            modalRegister.classList.add('open')
+
+        }
+
+        function hideRegister() {
+            modalRegister.classList.remove('open')
+        }
+
+        for (const registerBtn of registerBtns) {
+            registerBtn.addEventListener('click',showRegister)
+        }
+
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click',hideRegister)
+        }
+
+        //Form Login
+        const loginBtns = document.querySelectorAll('.js-login-btn')
+        const modalLogin = document.querySelector('.js-modal-login')
+        const modalClose = document.querySelectorAll('.js-modal-close')
+
+        function showLogin() {
+            modalLogin.classList.add('open')
+        }
+
+        function hideLogin() {
+            modalLogin.classList.remove('open')
+        }
+
+        for (const loginBtn of loginBtns) {
+            loginBtn.addEventListener('click',showLogin)
+        }
+
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click',hideLogin)
+        }
+
+    </script>
+
+    
 </body>
 </html>
