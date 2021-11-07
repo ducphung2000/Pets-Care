@@ -788,7 +788,7 @@
 
         function showRegister() {
             modalRegister.classList.add('open')
-
+            modalLogin.classList.remove('open')
         }
 
         function hideRegister() {
@@ -810,6 +810,7 @@
 
         function showLogin() {
             modalLogin.classList.add('open')
+            modalRegister.classList.remove('open')
         }
 
         function hideLogin() {
@@ -826,8 +827,22 @@
 
     </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
-<script src="./accsets/js/main.js"></script>
     
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script src="./accsets/js/logineye.js"></script>
+
+    <script> 
+        var activeBtns = document.querySelectorAll('.header__menu-item-title');
+        for (let i=0; i<activeBtns.length; i++){
+            activeBtns[i].onclick = function() {
+                var c = 0;
+                while(c < activeBtns.length) {
+                    activeBtns[c++].className = 'header__menu-item-title';
+                }
+                activeBtns[i].className = 'header__menu-item-title header__menu-item-title--active';
+            };
+        }
+    </script>
 </body>
 </html>

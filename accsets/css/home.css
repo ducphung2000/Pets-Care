@@ -1,3 +1,7 @@
+.header {
+    
+}
+
 .app__container {
 
 }
@@ -297,10 +301,6 @@
 
 /* Authen modal */
 .modal {
-    display: flex;
-}
-
-.modal-register {
     display: none;
 }
 
@@ -362,6 +362,7 @@
 #eye i{
     position: relative;
     float: right;
+    color: #878787;
     width: 17.5px;
     top: -40px;
     padding: 0;

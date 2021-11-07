@@ -204,7 +204,7 @@
 
 .header__menu-item {
     
-    margin: 0 20px;
+    
 }
 
 .header__menu-item-title {
@@ -215,6 +215,7 @@
     text-decoration: none;
     font-weight: 450;
     padding: 12px;
+    margin: 0 20px;
     border-radius: 2px;
 }
 .header__menu-item-title--active,
