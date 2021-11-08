@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../accsets/css/home.css">
 </head>
 <body>
     <div class="app">
@@ -87,8 +88,8 @@
                             </a>
                             
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register-btn">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong js-login-btn">Đăng nhập</li>
                         <!-- <li class="header__navbar-item header__navbar-user">
                             <img src="../accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
@@ -376,13 +377,13 @@
                 <div class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="index.html" class="header__menu-item-title header__menu-item-title--active">Trang chủ</a>
+                            <a href="index.html" class="header__menu-item-title">Trang chủ</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Giới Thiệu</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="product.html" class="header__menu-item-title">Sản Phẩm</a>
+                            <a href="product.html" class="header__menu-item-title header__menu-item-title--active">Sản Phẩm</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Tin tức</a>
@@ -1063,21 +1064,164 @@
         </footer>
 
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
-    <script src=".../accsets/js/logineye.js"></script>
+     <!--Modal layout -->
+     <div class="modal modal-register js-modal-register">
+        <div class="modal__overlay js-modal-close">
+        </div>
+        <div class="modal__body"> 
+            <!-- Register Form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
 
-    <script> 
-        var activeBtns = document.querySelectorAll('.header__menu-item-title');
-        for (let i=0; i<activeBtns.length; i++){
-            activeBtns[i].onclick = function() {
-                var c = 0;
-                while(c < activeBtns.length) {
-                    activeBtns[c++].className = 'header__menu-item-title';
-                }
-                activeBtns[i].className = 'header__menu-item-title header__menu-item-title--active';
-            };
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading js">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-login-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với Pets Care về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật.</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__contrls">
+                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="modal modal-login js-modal-login">
+        <div class="modal__overlay js-modal-close">
+        </div>
+        <div class="modal__body"> 
+            <!-- login Form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+        
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn js-register-btn">Đăng ký</span>
+                    </div>
+        
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                            <div id="eye">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__contrls">
+                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+        
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__social-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+        
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div> 
+
+    <script>
+        // Form register
+        const registerBtns = document.querySelectorAll('.js-register-btn')
+        const modalRegister = document.querySelector('.js-modal-register')
+        const modalCloses = document.querySelectorAll('.js-modal-close')
+
+        function showRegister() {
+            modalRegister.classList.add('open')
+            modalLogin.classList.remove('open')
         }
+
+        function hideRegister() {
+            modalRegister.classList.remove('open')
+        }
+
+        for (const registerBtn of registerBtns) {
+            registerBtn.addEventListener('click',showRegister)
+        }
+
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click',hideRegister)
+        }
+
+        //Form Login
+        const loginBtns = document.querySelectorAll('.js-login-btn')
+        const modalLogin = document.querySelector('.js-modal-login')
+        const modalClose = document.querySelectorAll('.js-modal-close')
+
+        function showLogin() {
+            modalLogin.classList.add('open')
+            modalRegister.classList.remove('open')
+        }
+
+        function hideLogin() {
+            modalLogin.classList.remove('open')
+        }
+
+        for (const loginBtn of loginBtns) {
+            loginBtn.addEventListener('click',showLogin)
+        }
+
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click',hideLogin)
+        }
+
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script src="../accsets/js/logineye.js"></script>
+
+   
 </body>
 </html>

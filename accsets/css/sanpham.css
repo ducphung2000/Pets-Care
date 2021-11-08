@@ -346,9 +346,6 @@
     
 }
 
-.choose-main__type-product { 
-}
-
 .product__variation { 
     font-size: 1.4rem;
     color: var(--text-color);
@@ -369,7 +366,6 @@
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
-
 
 
 
@@ -422,9 +418,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    text-align: center;
     border-left: 1px solid var(--border-color) ;
     border-right: 1px solid var(--border-color) ;
+}
 
+.quantity-number__num:focus {
+    outline: none;
 }
 
 .choose-main__quantity-text { 

@@ -378,13 +378,13 @@
                 <div class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="index.html" class="header__menu-item-title header__menu-item-title--active">Trang chủ</a>
+                            <a href="index.html" class="header__menu-item-title">Trang chủ</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Giới Thiệu</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="product.html" class="header__menu-item-title">Sản Phẩm</a>
+                            <a href="product.html" class="header__menu-item-title header__menu-item-title--active">Sản Phẩm</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Tin tức</a>
@@ -509,7 +509,7 @@
                                             <div class="choose-main__type">
                                                 <div class="choose-main__type-label">Vị</div>
                                                 <div class="choose-main__type-product">
-                                                    <button class="product__variation product__variation--active">Bò (Rêu)</button>
+                                                    <button class="product__variation">Bò (Rêu)</button>
                                                     <button class="product__variation">Gà (Vàng)</button>
                                                     <button class="product__variation">Vịt (Đỏ)</button>
                                                 </div>
@@ -517,10 +517,10 @@
                                             <div class="choose-main__quantity">
                                                 <div class="choose-main__quantity-label">Số Lượng</div>
                                                 <div class="choose-main__quantity-number">
-                                                    <button class="quantity-number__icon-minus">
+                                                    <button class="quantity-number__icon-minus disabled">
                                                         <i class="fas fa-minus"></i>
                                                     </button>
-                                                    <div class="quantity-number__num">1</div>
+                                                    <input type="text" class="quantity-number__num" value="1">
                                                     <button class="quantity-number__icon-plus">
                                                         <i class="fas fa-plus"></i>
                                                     </button>
@@ -714,5 +714,32 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script type="text/javascript">
+        $(document).on('click','.product__variation', function(){
+            $(this).addClass('product__variation--active').siblings().removeClass('product__variation--active')
+        })
+    </script>
+
+    <!-- increment & decrement counter on button click -->
+
+    <script type="text/javascript">
+        let plusBtn = document.querySelector('.quantity-number__icon-plus');
+        let minusBtn = document.querySelector('.quantity-number__icon-minus');
+        let qty = document.querySelector('.quantity-number__num');
+
+        plusBtn.addEventListener('click', function(){
+            qty.value = parseInt(qty.value) + 1;
+        });
+
+        minusBtn.addEventListener('click', function(){
+            if (qty.value <=0){
+                qty.value = 0;
+            }else {
+            qty.value = parseInt(qty.value) - 1;
+            }
+        });
+    </script>
 </body>
 </html>
