@@ -231,3 +231,6 @@
     height: 40px;
 }
 
+.quantity-number__num:focus {
+    outline: none;
+}

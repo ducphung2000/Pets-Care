@@ -211,7 +211,7 @@
                                     <button class="quantity-number__icon-minus">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <div class="quantity-number__num">1</div>
+                                    <input type="text" class="quantity-number__num" value="1">
                                     <button class="quantity-number__icon-plus">
                                         <i class="fas fa-plus"></i>
                                     </button>
@@ -251,7 +251,7 @@
                                     <button class="quantity-number__icon-minus">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <div class="quantity-number__num">1</div>
+                                    <input type="text" class="quantity-number__num" value="1">
                                     <button class="quantity-number__icon-plus">
                                         <i class="fas fa-plus"></i>
                                     </button>
@@ -291,7 +291,7 @@
                                     <button class="quantity-number__icon-minus">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <div class="quantity-number__num">1</div>
+                                    <input type="text" class="quantity-number__num" value="1">
                                     <button class="quantity-number__icon-plus">
                                         <i class="fas fa-plus"></i>
                                     </button>
@@ -331,7 +331,7 @@
                                     <button class="quantity-number__icon-minus">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <div class="quantity-number__num">1</div>
+                                    <input type="text" class="quantity-number__num" value="1">
                                     <button class="quantity-number__icon-plus">
                                         <i class="fas fa-plus"></i>
                                     </button>
@@ -472,5 +472,26 @@
         </footer>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+
+
+    <script type="text/javascript">
+        let plusBtn = document.querySelector('.quantity-number__icon-plus');
+        let minusBtn = document.querySelector('.quantity-number__icon-minus');
+        let qty = document.querySelector('.quantity-number__num');
+
+        plusBtn.addEventListener('click', function(){
+            qty.value = parseInt(qty.value) + 1;
+        });
+
+        minusBtn.addEventListener('click', function(){
+            if (qty.value <=0){
+                qty.value = 0;
+            }else {
+            qty.value = parseInt(qty.value) - 1;
+            }
+        });
+    </script>
 </body>
 </html>
