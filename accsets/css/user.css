@@ -1,0 +1,289 @@
+.container {
+    display: flex;
+    padding: 30px 0;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    width: 180px;
+    max-width: 180px;
+    padding: 15px 0;
+    border-bottom: 1px solid #efefef;
+}
+
+.profile__avt {
+    
+}
+
+.profile__avt-img {
+    width: 50px;
+    height: 50px;
+}
+
+.avt-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile__user {
+    max-width: 118px;
+    flex: 1;
+    margin-left: 12px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    justify-content: center;
+}
+
+.user__name {
+    max-width: 118px;
+    overflow: hidden;
+}
+
+.user__edit {
+    display: block;
+    margin-left: -28px;
+    margin-top: 6px;
+}
+
+.user__edit-btn {
+    text-decoration: none;
+    color: #888;
+    font-weight: 400;
+}
+
+.user__edit-btn i {
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.category__header {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.category__header i {
+    color: rgb(36, 114, 218);
+}
+
+.category__item {
+    display: flex;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    margin-left: 2px;
+}
+
+.category__icon {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    color: rgb(91, 93, 95);
+    
+}
+
+.category__item-btn {
+    text-decoration: none;
+}
+
+.category__text {
+    color: var(--text-color);
+    
+}
+
+.category__item .category__text.active,
+.category__item .category__text:hover {
+    color: var(--primary-color);
+}
+
+/* INFO CSS */
+
+.infor {
+    flex: 1;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+.info__content {
+    padding: 0 30px 50px;
+}
+
+.info__content-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.myfile__header {
+    border-bottom: 1px solid var(--border-color);
+    padding-top: 8px;
+}
+
+.myfile__header h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.myfile__header p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: 4px;
+}
+
+.myfile__body {
+    padding-top: 30px;
+    display: flex;
+}
+
+.myfile__body-info {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.body-info__list {
+
+}
+
+.body-info__item {
+    display: flex;
+    height: 40px;
+    max-height: 40px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.body-info__item label {
+    width: 122px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.body-info__item div {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.item__input span {
+    margin-right: 12px;
+}
+
+.input__text {
+    height: 40px;
+    margin-right: 6px;
+    padding-left: 12px;
+    max-width: 150px;
+}
+
+.input__text:focus {
+    outline: none;
+}
+
+.input__sex {
+    cursor: pointer;
+    width: 16px;
+}
+
+.input__birth {
+    max-width: 120px;
+    margin-right: 20px;
+}
+
+.item__btn {
+    color: rgb(82, 79, 243);
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.save__btn {
+    position: relative;
+    left: 230px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.save__btn:hover {
+    background-color: var(--background-color-btn);
+}
+
+.myfile__body-avatar {
+    width: 282px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-left: 1px solid var(--border-color);
+}
+
+.avatar__content {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar__image {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.input__elect {
+    display: none;
+}
+
+.avatar__btn {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px rgb(206, 205, 205);
+}
+
+.avatar__btn:hover {
+    background-color: var(--background-color-btn);
+}
+
+.avatar__info {
+    width: 100%;
+    font-size: 1.4rem;
+    color: #888;
+    margin-left: 70px;
+}
+
+.avatar__text {
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+

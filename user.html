@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./accsets/css/home.css">
     <link rel="stylesheet" href="./accsets/css/sanpham.css">
     <link rel="stylesheet" href="./accsets/css/cart.css">
-    <link rel="stylesheet" href="./accsets/css/donmua.css">
+    <link rel="stylesheet" href="./accsets/css/user.css">
 </head>
 <body>
     <div class="app">
@@ -93,7 +93,7 @@
                         </li>
                         
                          <li class="header__navbar-item header__navbar-user">
-                            <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
+                            <img src="./accsets/img/avt.jpg" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
                         
                             <ul class="header__navbar-user-menu">
@@ -121,7 +121,7 @@
                             <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
 
-                        <div class="logo_text">Giỏ Hàng</div>
+                        <div class="logo_text">Tài Khoản</div>
                     </div>
         
                     <div class="header__search">
@@ -168,7 +168,131 @@
         <div class="app__container">
             <div class="grid__full-width">
                 <div class="container grid">
-                    
+                    <div class="account">
+                        <div class="profile">
+                            <a href="#" class="profile__avt">
+                                <div class="profile__avt-img">
+                                    <img src="./accsets/img/avt.jpg" alt="avatar" class="avt-img">
+                                </div>
+                            </a>
+
+                            <div class="profile__user">
+                                <div class="user__name">nguyenducphung2000</div>
+                                <div class="user__edit">
+                                    <a href="#" class="user__edit-btn">
+                                        <i class="fas fa-pen"></i>
+                                        <span>Sửa Hồ Sơ</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="category__header">
+                                <i class="category__icon far fa-user"></i>
+                                <span class="category__text">Tài khoản của tôi</span>
+                            </div>
+                            <div class="category__body">
+                                <div class="category__item">
+                                    <a href="" class="category__item-btn">
+                                        <i class="category__icon fas fa-file-alt"></i>
+                                        <span class="category__text active">Hồ sơ</span>
+                                    </a>    
+                                </div>
+                                <div class="category__item">
+                                    <a href="" class="category__item-btn">
+                                        <i class="category__icon fas fa-map-marker-alt"></i>
+                                        <span class="category__text">Địa chỉ</span>
+                                    </a>    
+                                </div>
+                                <div class="category__item">
+                                    <a href="" class="category__item-btn">
+                                        <i class="category__icon fas fa-key"></i>
+                                        <span class="category__text">Đổi mật khẩu</span>
+                                    </a>    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="infor">
+                        <div class="info__content">
+                            <div class="info__content-body">
+                                <div class="myfile__header">
+                                    <h1>Hồ Sơ Của Tôi</h1>
+                                    <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                                </div>
+                                <div class="myfile__body">
+                                    <div class="myfile__body-info">
+                                        <div class="body-info__list">
+                                            <div class="body-info__item">
+                                                <label>Tên Đăng Nhập</label>
+                                                <div>nguyenducphung2000</div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <label>Tên</label>
+                                                <div class="item__input">
+                                                    <input class="input__text" type="text" placeholder="" maxlength="255" value="Nguyen Duc Phung">
+                                                </div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <label>Email</label>
+                                                <div class="item__email">
+                                                    <span>ducphung2k@gmail.com</span>
+                                                    <button class="item__btn">Thay Đổi</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <label>Số điện thoại</label>
+                                                <div class="item__email">
+                                                    <span>0866****00</span>
+                                                    <button class="item__btn">Thay Đổi</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <label>Giới Tính</label>
+                                                <div class="item__input">
+                                                    <input class="input__text input__sex" name="gender" type="radio" placeholder="" value="Nam" checked> <span>Nam</span>
+                                                    <input class="input__text input__sex" name="gender" type="radio" placeholder="" value="Nữ"> <span>Nữ</span>
+                                                    <input class="input__text input__sex" name="gender" type="radio" placeholder="" value="Khác"> <span>Khác</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <label>Ngày Sinh</label>
+                                                <div class="item__input">
+                                                    <input class="input__text input__birth" type="text" placeholder="" maxlength="255" value="Ngày 15">
+                                                    <input class="input__text input__birth" type="text" placeholder="" maxlength="255" value="Tháng 12">
+                                                    <input class="input__text input__birth" type="text" placeholder="" maxlength="255" value="Năm 2000">
+                                                </div>
+                                            </div>
+
+                                            <div class="body-info__item">
+                                                <button class="save__btn btn btn--primary">Lưu</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="myfile__body-avatar">
+                                        <div class="avatar__content">
+                                            <div class="avatar__image">
+                                                <img class="avatar__img" src="./accsets/img/avt.jpg" alt="Avatar">
+                                            </div>
+                                            <input class="input__elect" type="file" accept=".jpg,.jpeg,.png" >
+                                            <button type="button" class="avatar__btn btn btn--primary">Chọn ảnh</button>
+                                            <div class="avatar__info">
+                                                <div class="avatar__text">Dụng lượng file tối đa 1 MB</div>
+                                                <div class="avatar__text">Định dạng:.JPEG, .PNG</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
