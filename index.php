@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
     <?php include("./public/layout/head.php");?>
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="../Pets-Care - Copy/public/csslayout/home.css">
 </head>
 <body>
     <div class="app">
