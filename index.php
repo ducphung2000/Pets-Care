@@ -179,6 +179,7 @@
         <?php include("./public/layout/footer.php");?>
     </div>
 
-
+    <?php include("./public/layout/register.php");?>
+    <?php include("./public/layout/login.php");?>
 </body>
 </html>
