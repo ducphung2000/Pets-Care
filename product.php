@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
     <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
-    <link rel="stylesheet" href="../accsets/css/base.css">
-    <link rel="stylesheet" href="../accsets/css/main.css">
-    <link rel="stylesheet" href="../accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../accsets/css/home.css">
+    <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
     <div class="app">
@@ -49,7 +49,7 @@
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="../accsets/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo </span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm balo chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -58,7 +58,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="../accsets/img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm lồng dành cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -67,7 +67,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="../accsets/img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm xúc xích cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -91,7 +91,7 @@
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register-btn">Đăng ký</li>
                         <li class="header__navbar-item header__navbar-item--strong js-login-btn">Đăng nhập</li>
                         <!-- <li class="header__navbar-item header__navbar-user">
-                            <img src="../accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
+                            <img src="./img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
                         
                             <ul class="header__navbar-user-menu">
@@ -116,7 +116,7 @@
                 <div class="header-with-search">
                     <div class="header__logo">
                         <a href="index.html" class="header__logo-link">
-                            <img src="../accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
+                            <img src="./img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
                     </div>
         
@@ -167,7 +167,7 @@
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list ">
                                 <!-- No cart: -->
-                                <img src="../accsets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <img src="./img/no_cart.png" alt="" class="header__cart-no-cart-img">
                                 <span class="header__cart-list-no-cart-msg">
                                     Chưa có sản phẩm
                                 </span>
@@ -176,7 +176,7 @@
                                 <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
                                 <ul class="header__cart-list-item">
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo dành cho chó mèo </h5>
@@ -197,7 +197,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -218,7 +218,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h5>
@@ -239,7 +239,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo cho chó mèo</h5>
@@ -260,7 +260,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -281,7 +281,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Xúc xích chó mèo</h5>
@@ -302,7 +302,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo cho chó mèo</h5>
@@ -323,7 +323,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -344,7 +344,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="../accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Xúc xích chó mèo</h5>
@@ -996,20 +996,20 @@
                         <ul class="footer-list">
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">
-                                    <img src="../accsets/img/bidv.jpg" alt="" class="footer-item__img">
-                                    <img src="../accsets/img/agribank.jpg" alt="" class="footer-item__img">
+                                    <img src="./img/bidv.jpg" alt="" class="footer-item__img">
+                                    <img src="./img/agribank.jpg" alt="" class="footer-item__img">
                                 </a>
                             </li>
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">
-                                    <img src="../accsets/img/vpbannk.jfif" alt="" class="footer-item__img">
-                                    <img src="../accsets/img/viettinbank.png" alt="" class="footer-item__img">
+                                    <img src="./img/vpbannk.jfif" alt="" class="footer-item__img">
+                                    <img src="./img/viettinbank.png" alt="" class="footer-item__img">
                                 </a>
                             </li>
                             <li class="footer-item">
                                 <a href="" class="footer-item__link">
-                                    <img src="../accsets/img/samcombank.jpg" alt="" class="footer-item__img">
-                                    <img src="../accsets/img/Techcombank.png" alt="" class="footer-item__img">
+                                    <img src="./img/samcombank.jpg" alt="" class="footer-item__img">
+                                    <img src="./img/Techcombank.png" alt="" class="footer-item__img">
                                 </a>
                             </li>
                         </ul>
@@ -1064,164 +1064,6 @@
         </footer>
 
     </div>
-     <!--Modal layout -->
-     <div class="modal modal-register js-modal-register">
-        <div class="modal__overlay js-modal-close">
-        </div>
-        <div class="modal__body"> 
-            <!-- Register Form -->
-            <div class="auth-form">
-                <div class="auth-form__container">
-
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading js">Đăng ký</h3>
-                        <span class="auth-form__switch-btn js-login-btn">Đăng nhập</span>
-                    </div>
-
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
-                        </div>
-                    </div>
-
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">
-                            Bằng việc đăng ký, bạn đã đồng ý với Pets Care về
-                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__text-link">Chính sách bảo mật.</a>
-                        </p>
-                    </div>
-
-                    <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
-
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">Kết nối với Google</span>
-
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> 
-
-    <div class="modal modal-login js-modal-login">
-        <div class="modal__overlay js-modal-close">
-        </div>
-        <div class="modal__body"> 
-            <!-- login Form -->
-            <div class="auth-form">
-                <div class="auth-form__container">
-        
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn js-register-btn">Đăng ký</span>
-                    </div>
-        
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
-                            <div id="eye">
-                                <i class="far fa-eye"></i>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="auth-form__aside">
-                        <div class="auth-form__help">
-                            <a href="" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
-                            <span class="auth-form__help-separate"></span>
-                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
-                        </div>
-                    </div>
-        
-                    <div class="auth-form__contrls">
-                        <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
-        
-                    </div>
-                </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__social-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">Kết nối với Google</span>
-        
-                    </a>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-    <script>
-        // Form register
-        const registerBtns = document.querySelectorAll('.js-register-btn')
-        const modalRegister = document.querySelector('.js-modal-register')
-        const modalCloses = document.querySelectorAll('.js-modal-close')
-
-        function showRegister() {
-            modalRegister.classList.add('open')
-            modalLogin.classList.remove('open')
-        }
-
-        function hideRegister() {
-            modalRegister.classList.remove('open')
-        }
-
-        for (const registerBtn of registerBtns) {
-            registerBtn.addEventListener('click',showRegister)
-        }
-
-        for (const modalClose of modalCloses) {
-            modalClose.addEventListener('click',hideRegister)
-        }
-
-        //Form Login
-        const loginBtns = document.querySelectorAll('.js-login-btn')
-        const modalLogin = document.querySelector('.js-modal-login')
-        const modalClose = document.querySelectorAll('.js-modal-close')
-
-        function showLogin() {
-            modalLogin.classList.add('open')
-            modalRegister.classList.remove('open')
-        }
-
-        function hideLogin() {
-            modalLogin.classList.remove('open')
-        }
-
-        for (const loginBtn of loginBtns) {
-            loginBtn.addEventListener('click',showLogin)
-        }
-
-        for (const modalClose of modalCloses) {
-            modalClose.addEventListener('click',hideLogin)
-        }
-
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
-    <script src="../accsets/js/logineye.js"></script>
-
    
 </body>
 </html>
