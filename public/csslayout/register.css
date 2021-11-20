@@ -1,6 +1,6 @@
 /* Authen modal */
 .modal {
-    display: flex;
+    display: none;
 }
 
 .modal.modal-register.open {

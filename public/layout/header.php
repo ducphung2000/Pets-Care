@@ -69,8 +69,8 @@
                     </a>
                     
                 </li>
-                <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate .js-register-btn">Đăng ký</li>
+                <li class="header__navbar-item header__navbar-item--strong .js-login-btn">Đăng nhập</li>
                 <!-- <li class="header__navbar-item header__navbar-user">
                     <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
                     <span class="header__navbar-user-name">Nguyen Duc Phung</span>
@@ -97,7 +97,7 @@
         <div class="header-with-search">
             <div class="header__logo">
                 <a href="index.php" class="header__logo-link">
-                    <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
+                    <img src="./public/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                 </a>
             </div>
 

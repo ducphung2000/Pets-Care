@@ -36,20 +36,20 @@
                 <ul class="footer-list">
                     <li class="footer-item">
                         <a href="" class="footer-item__link">
-                            <img src="./accsets/img/bidv.jpg" alt="" class="footer-item__img">
-                            <img src="./accsets/img/agribank.jpg" alt="" class="footer-item__img">
+                            <img src="./public/img/bidv.jpg" alt="" class="footer-item__img">
+                            <img src="./public/img/agribank.jpg" alt="" class="footer-item__img">
                         </a>
                     </li>
                     <li class="footer-item">
                         <a href="" class="footer-item__link">
-                            <img src="./accsets/img/vpbannk.jfif" alt="" class="footer-item__img">
-                            <img src="./accsets/img/viettinbank.png" alt="" class="footer-item__img">
+                            <img src="./public/img/vpbannk.jfif" alt="" class="footer-item__img">
+                            <img src="./public/img/viettinbank.png" alt="" class="footer-item__img">
                         </a>
                     </li>
                     <li class="footer-item">
                         <a href="" class="footer-item__link">
-                            <img src="./accsets/img/samcombank.jpg" alt="" class="footer-item__img">
-                            <img src="./accsets/img/Techcombank.png" alt="" class="footer-item__img">
+                            <img src="./public/img/samcombank.jpg" alt="" class="footer-item__img">
+                            <img src="./public/img/Techcombank.png" alt="" class="footer-item__img">
                         </a>
                     </li>
                 </ul>
