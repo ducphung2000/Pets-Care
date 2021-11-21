@@ -565,7 +565,7 @@
 
 
     <!-- login Form -->
-    <?php include("./public/layout/login.php");?>
+    <?php include("./public/layout/login.php");?> 
 
     <?php include("./public/layout/js_user.php");?>
 
