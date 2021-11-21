@@ -133,6 +133,10 @@
     justify-content: flex-end;
 }
 
+.auth-form__help-fogot {
+    color: var(--primary-color);
+}
+
 .auth-form__help-link {
     font-size: 1.4rem;
     text-decoration: none;

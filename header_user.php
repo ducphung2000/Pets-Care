@@ -1,0 +1,2 @@
+<li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register-btn">Đăng ký</li>
+<li class="header__navbar-item header__navbar-item--strong js-login-btn">Đăng nhập</li>

@@ -6,16 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
-    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
-    <link rel="stylesheet" href="./accsets/css/base.css">
-    <link rel="stylesheet" href="./accsets/css/main.css">
-    <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./accsets/css/home.css">
-    <link rel="stylesheet" href="./accsets/css/sanpham.css">
-    <link rel="stylesheet" href="./accsets/css/cart.css">
+    <?php include("./public/layout/head.php");?>
+    <link rel="stylesheet" href="./public/csslayout/home.css">
+    <link rel="stylesheet" href="./public/csslayout/sanpham.css">
+    <link rel="stylesheet" href="./public/csslayout/cart.css">
 </head>
 <body>
     <div class="app">
@@ -51,7 +45,7 @@
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo </span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm balo chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -60,7 +54,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm lồng dành cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -69,7 +63,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm xúc xích cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -92,7 +86,7 @@
                         </li>
                         
                          <li class="header__navbar-item header__navbar-user">
-                            <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
+                            <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
                         
                             <ul class="header__navbar-user-menu">
@@ -103,7 +97,7 @@
                                     <a href="">Địa chỉ của tôi</a>
                                 </li>
                                 <li class="header__navbar-user-item">
-                                    <a href="user.html">Đơn mua</a>
+                                    <a href="user.php">Đơn mua</a>
                                 </li>
                                 <li class="header__navbar-user-item header__navbar-user-item--separate">
                                     <a href="">Đăng xuất</a>
@@ -116,8 +110,8 @@
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <a href="index.html" class="header__logo-link">
-                            <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
+                        <a href="index.php" class="header__logo-link">
+                            <img src="./public/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
 
                         <div class="logo_text">Giỏ Hàng</div>
@@ -188,7 +182,7 @@
 
                                 <div class="main-product__item-product">
                                     <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
+                                        <img src="./public/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
                                     
                                         <div class="item-product__text">xúc xích ở đây ngon lắm  ^^</div>
                                     </a>
@@ -228,7 +222,7 @@
 
                                 <div class="main-product__item-product">
                                     <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
+                                        <img src="./public/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
                                     
                                         <div class="item-product__text">xúc xích ở đây ngon lắm ^^</div>
                                     </a>
@@ -268,7 +262,7 @@
 
                                 <div class="main-product__item-product">
                                     <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
+                                        <img src="./public/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
                                     
                                         <div class="item-product__text">xúc xích ở đây ngon lắm  ^^</div>
                                     </a>
@@ -308,7 +302,7 @@
 
                                 <div class="main-product__item-product">
                                     <a href="#" class="item-product__link">
-                                        <img src="./accsets/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
+                                        <img src="./public/img/xucxich.png" alt="Xúc xích chó mèo" class="item-product__img">
                                     
                                         <div class="item-product__text">xúc xích ở đây ngon lắm ^^</div>
                                     </a>
@@ -358,7 +352,7 @@
                         <div class="container-content__bot-right">
                             <div class="content__bot-text">Tổng Thanh Toán:</div>
                             <div class="content__bot-total">0đ</div>
-                            <a href="pay.html" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
+                            <a href="pay.php" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
                         </div>
 
                     </div>
@@ -366,110 +360,7 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Pets Care Mall</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Về Pets Care</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Giới thiệu về Pets Care</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Chính hãng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Điều khoản</a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Thanh toán</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/bidv.jpg" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/agribank.jpg" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/vpbannk.jfif" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/viettinbank.png" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/samcombank.jpg" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/Techcombank.png" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-facebook"></i>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-instagram-square"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-linkedin"></i>
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc thú cưng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Thức ăn cho thú cưng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Phụ kiện cho thú cưng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Tư vấn miễn phí</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-            </div>
-            <div class="footer__bottom">
-                <div class="grid__row">
-                    <p class="footer__text">© 2021 - Bản quyền thuộc về Đức Phụng</p>
-                </div>
-            </div>
-        </footer>
+        <?php include("./public/layout/footer.php");?>
 
     </div>
 

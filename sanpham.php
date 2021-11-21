@@ -6,15 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care</title>
-    <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"></Link>
-    <link rel="stylesheet" href="./accsets/css/base.css">
-    <link rel="stylesheet" href="./accsets/css/main.css">
-    <link rel="stylesheet" href="./accsets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./accsets/css/home.css">
-    <link rel="stylesheet" href="./accsets/css/sanpham.css">
+    <?php include("./public/layout/head.php");?>
+    <link rel="stylesheet" href="./public/csslayout/register.css">
+    <link rel="stylesheet" href="./public/csslayout/home.css">
+    <link rel="stylesheet" href="./public/csslayout/sanpham.css">
 </head>
 <body>
     <div class="app">
@@ -50,7 +45,7 @@
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo </span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm balo chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -59,7 +54,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/sanpham-1.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm lồng dành cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -68,7 +63,7 @@
                                     </li>
                                     <li class="header__notify-item">
                                         <a href="" class="header__notify-link">
-                                            <img src="./accsets/img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
+                                            <img src="./public/img/xucxich.png" alt="Mỹ phẩm" class="header__notify-img">
                                             <div class="header__notify-info">
                                                 <span class="header__notify-name">Pets Care đã gửi cho bạn một thông báo</span>
                                                 <span class="header__notify-decriotion">Mô tả sản phẩm xúc xích cho chó mèo: đây là 1 sản phần rất tuyệt vời.</span>
@@ -89,10 +84,10 @@
                             </a>
                             
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <?php include("./public/layout/header_user.php");?>
+
                         <!-- <li class="header__navbar-item header__navbar-user">
-                            <img src="./accsets/img/balo.jfif" alt="" class="header__navbar-user-img">
+                            <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
                         
                             <ul class="header__navbar-user-menu">
@@ -116,8 +111,8 @@
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <a href="index.html" class="header__logo-link">
-                            <img src="./accsets/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
+                        <a href="index.php" class="header__logo-link">
+                            <img src="./public/img/Pet-Care-Logo.png" alt="" class="header__logo-img">
                         </a>
                     </div>
         
@@ -161,14 +156,14 @@
         
                     <div class="header__cart">
                         <div class="header__cart-wrap">
-                            <a href="cart.html">
+                            <a href="cart.php">
                                 <i class="header__cart-icon fas fa-shopping-cart"></i>
                             </a>
-                            <span class="header__cart-notice">3</span>
+                            <!-- <span class="header__cart-notice">3</span> -->
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list ">
                                 <!-- No cart: -->
-                                <img src="./accsets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
                                 <span class="header__cart-list-no-cart-msg">
                                     Chưa có sản phẩm
                                 </span>
@@ -177,7 +172,7 @@
                                 <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
                                 <ul class="header__cart-list-item">
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo dành cho chó mèo </h5>
@@ -198,7 +193,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -219,7 +214,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h5>
@@ -240,7 +235,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo cho chó mèo</h5>
@@ -261,7 +256,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -282,7 +277,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Xúc xích chó mèo</h5>
@@ -303,7 +298,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/balo.jfif" alt="" class="header__cart-img">
+                                        <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Balo cho chó mèo</h5>
@@ -324,7 +319,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/sanpham-1.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/sanpham-1.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Lồng cho chó mèo</h5>
@@ -345,7 +340,7 @@
                                         </div>
                                     </li>
                                     <li class="header__cart-item">
-                                        <img src="./accsets/img/xucxich.png" alt="" class="header__cart-img">
+                                        <img src="./public/img/xucxich.png" alt="" class="header__cart-img">
                                         <div class="header__cart-item-info">
                                             <div class="header__cart-item-head">
                                                 <h5 class="header__cart-item-name">Xúc xích chó mèo</h5>
@@ -367,7 +362,7 @@
                                     </li>
                                 </ul>
         
-                                <a href="cart.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
                             </div>
                         </div>                        
                         
@@ -378,13 +373,13 @@
                 <div class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="index.html" class="header__menu-item-title">Trang chủ</a>
+                            <a href="index.php" class="header__menu-item-title">Trang chủ</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Giới Thiệu</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="product.html" class="header__menu-item-title header__menu-item-title--active">Sản Phẩm</a>
+                            <a href="product.php" class="header__menu-item-title header__menu-item-title--active">Sản Phẩm</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-item-title">Tin tức</a>
@@ -406,23 +401,23 @@
                         <div class="buy__product-description">
                             <div class="product-description__intro">
                                 <div class="product-description__intro-image">
-                                    <img src="./accsets/img/xucxich.png" alt="" class="intro-image__img">
+                                    <img src="./public/img/xucxich.png" alt="" class="intro-image__img">
                                 </div>
                                 <ul class="product-description__intro-list-img">
                                     <li class="intro-items__img ">
-                                        <img src="./accsets/img/xucxich.png" alt="" class="intro-item__img intro-item__img--active">
+                                        <img src="./public/img/xucxich.png" alt="" class="intro-item__img intro-item__img--active">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./accsets/img/xx1.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx1.jfif" alt="" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./accsets/img/xx2.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx2.jfif" alt="" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./accsets/img/xx3.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx3.jfif" alt="" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./accsets/img/xx2.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx2.jfif" alt="" class="intro-item__img">
                                     </li>
                                 </ul>
                             </div>
@@ -498,7 +493,7 @@
                                             <div class="choose-main__transport-label">Vận Chuyển</div>
                                             <div class="choose-main__transport-text">
                                                 <div class="transport-text__top">
-                                                    <img src="./accsets/img/shipcar.png" alt="Shipcar" class="transport-text__top-img">
+                                                    <img src="./public/img/shipcar.png" alt="Shipcar" class="transport-text__top-img">
                                                     <span class="transport-text__top-text">Miễn Phí Vận Chuyển</span> 
                                                 </div>
                                                 <div class="transport-text__bot">Miễn Phí Vận Chuyển khi đơn đạt giá trị tối thiểu</div>
@@ -536,7 +531,7 @@
                                         <i class="fas fa-cart-plus buy__add-cart-icon"></i>
                                         <span>Thêm Vào Giỏ Hàng</span>
                                     </button>
-                                    <a href="cart.html" class="buy_buying-btn btn btn--primary">Mua Ngay</a>
+                                    <a href="cart.php" class="buy_buying-btn btn btn--primary">Mua Ngay</a>
                                 </div>
 
                                 <div class="buying-content__more"></div>
@@ -609,111 +604,17 @@
             </div>
         </div>
 
-        <footer class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Pets Care Mall</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Về Pets Care</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Giới thiệu về Pets Care</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Chính hãng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Điều khoản</a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Thanh toán</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/bidv.jpg" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/agribank.jpg" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/vpbannk.jfif" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/viettinbank.png" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <img src="./accsets/img/samcombank.jpg" alt="" class="footer-item__img">
-                                    <img src="./accsets/img/Techcombank.png" alt="" class="footer-item__img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-facebook"></i>
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-instagram-square"></i>
-                                    Instagram
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="footer-item__icon fab fa-linkedin"></i>
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__heading">Chăm sóc thú cưng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Thức ăn cho thú cưng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Phụ kiện cho thú cưng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Tư vấn miễn phí</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-            </div>
-            <div class="footer__bottom">
-                <div class="grid__row">
-                    <p class="footer__text">© 2021 - Bản quyền thuộc về Đức Phụng</p>
-                </div>
-            </div>
-        </footer>
+        <?php include("./public/layout/footer.php");?>
     </div>
+
+    <!-- Register Form -->
+    <?php include("./public/layout/register.php");?>
+
+
+    <!-- login Form -->
+    <?php include("./public/layout/login.php");?>
+
+    <?php include("./public/layout/js_user.php");?>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <script type="text/javascript">

@@ -25,7 +25,7 @@
     
                 <div class="auth-form__aside">
                     <div class="auth-form__help">
-                        <a href="" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
+                        <a href="#" class="auth-form__help-fogot auth-form__help-link">Quên mật khẩu</a>
                         <span class="auth-form__help-separate"></span>
                         <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
                     </div>
