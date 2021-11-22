@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // Create database
-$sql = "CREATE DATABASE banhoa";
+$sql = "CREATE DATABASE petscare";
 
 $tao_db = mysqli_query($conn, $sql);
 

@@ -30,10 +30,10 @@ $conn = ConnectDB();
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Danh mục sản phẩm</label>
                     <select name="category_id" class="form-control" id="exampleFormControlSelect1">
-                        <option value="1">Hoa Nhập khẩu</option>
-                        <option value="2">Hoa Trong nước</option>
-                        <option value="3">Hoa tết</option>
-                        <option value="4">Hoa giỏ</option>
+                        <option value="1">Thức ăn cho chó</option>
+                        <option value="2">Thức ăn cho mèo</option>
+                        <option value="3">Phụ kiện thú cưng</option>
+                        <option value="4">Khác</option>
                     </select>
                 </div>
                 <div class="form-group">

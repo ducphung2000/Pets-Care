@@ -10,7 +10,7 @@ $password = "";
 // Delete all tables in database
 $conn = mysqli_connect($servername, $username, $password);
 
-$sql_drop = "DROP DATABASE if exists banhoa";
+$sql_drop = "DROP DATABASE if exists petscare";
 if (mysqli_query($conn, $sql_drop)) {
     echo "TDrop all table success";
 } else {
@@ -19,7 +19,7 @@ if (mysqli_query($conn, $sql_drop)) {
 //mysqli_close($connect);
 
 // Create database
-$sql_createDB = "CREATE DATABASE banhoa";
+$sql_createDB = "CREATE DATABASE petscare";
 if (mysqli_query($conn, $sql_createDB)) {
 //    echo "Database created successfully";
 } else {
@@ -27,7 +27,7 @@ if (mysqli_query($conn, $sql_createDB)) {
 }
 
 //mysqli_close($connect);
-$db = "banhoa";
+$db = "petscare";
 // Create connection
 $connect = mysqli_connect($servername, $username, $password, $db);
 

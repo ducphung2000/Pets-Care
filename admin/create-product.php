@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
         $sql = "INSERT INTO products (name, price, description, category_id, discount, image) VALUES ('$name_product','$price','$description', '$category_id', '$discount', '$name_img')";
 
         if (mysqli_query($conn, $sql)) {
-            header('Location: http://localhost/web-ban-hang/admin/product-list.php');
+            header('Location: http://localhost/pets-care/admin/product-list.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
