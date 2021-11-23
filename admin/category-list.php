@@ -37,7 +37,7 @@ $conn = ConnectDB();
               while($row = $result->fetch_assoc()) {
                   echo "<tr>
                           <td>".$row['id']."</td>
-                          <td>".$row['name']."</td>
+                          <td>".$row['category_name']."</td>
                           <td> <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Delete name=delete >

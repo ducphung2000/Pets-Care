@@ -23,6 +23,7 @@ $conn = ConnectDB();
               <th>price</th>
               <th>description</th>
               <th>discount</th>
+              <th>image</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -44,6 +45,7 @@ $conn = ConnectDB();
                           <td>".$row['price']."</td>
                           <td>".$row['description']."</td>
                           <td>".$row['discount']."</td>
+                          <td>".$row['image']."</td>
                           <td> <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Delete name=delete >

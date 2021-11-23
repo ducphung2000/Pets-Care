@@ -861,13 +861,17 @@
 }
 
 .home-product-item__img {
-    padding-top: 100%;
+    padding-top: 15px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+}
 
+.item-img {
+    width: 190px;
+    height: 190px;
 }
 
 .home-product-item__name {
