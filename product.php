@@ -402,7 +402,6 @@ $connect = ConnectDB();
                     <div class="grid__column-2">
                         <nav class="categogy">
                             <h3 class="category__heading">
-                            
                                 Danh mục
                             </h3>
             
@@ -410,21 +409,17 @@ $connect = ConnectDB();
                                 <li class="categogy-item categogy-item--active">
                                     <a href="" class="categogy-item__link"> Tất cả vật phẩm</a>
                                 </li>
-                                <li class="categogy-item">
-                                    <a href="" class="categogy-item__link">Phụ kiện cho thú cưng</a>
-                                </li>
-                                <li class="categogy-item">
-                                    <a href="" class="categogy-item__link">Thức ăn cho chó</a>
-                                </li>
-                                <li class="categogy-item">
-                                    <a href="" class="categogy-item__link">Thức ăn cho mèo</a>
-                                </li>
-                                <li class="categogy-item">
-                                    <a href="" class="categogy-item__link">Vệ sinh cho thú cưng</a>
-                                </li>
-                                <li class="categogy-item">
-                                    <a href="" class="categogy-item__link">Khác...</a>
-                                </li>
+                                <?php 
+                                    $sql = "select * from categories";
+                                    $result = $connect->query($sql);
+                                    
+                                    if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<li><a href="#">'.$row["category_name"].'</a></li>';
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </nav>
                     </div>

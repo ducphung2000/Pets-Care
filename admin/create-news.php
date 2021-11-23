@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
         $sql = "INSERT INTO news (title, body) VALUES ('$title','$body')";
 
         if (mysqli_query($conn, $sql)) {
-            header('Location: http://localhost/web-ban-hang/admin/new-list.php');
+            header('Location: http://localhost/Pets-Care/admin/new-list.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }

@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
         if (mysqli_query($conn, $sql)) {
 			echo "New record created successfully";
-            header('Location: http://localhost/web-ban-hang/admin/category-list.php');
+            header('Location: http://localhost/Pets-Care/admin/category-list.php');
             
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
