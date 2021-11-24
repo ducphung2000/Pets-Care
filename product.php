@@ -472,7 +472,7 @@ $connect = ConnectDB();
                                     <!-- product item -->
                                     <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img">
-                                            <img class="item__img" src="./public/img/xucxich.png" alt="Hình Ảnh" >
+                                            <img class="item-img" src="./public/img/xucxich.png" alt="Hình Ảnh" >
                                         </div>
 
                                         <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
@@ -524,7 +524,7 @@ $connect = ConnectDB();
                                     <!-- product item -->
                                     <a href="sanpham.php" class="home-product-item">
                                         <div class="home-product-item__img">
-                                            <img class="item__img" src="admin/upload/'.$row['image'].'">
+                                            <img class="item-img" src="admin/upload/'.$row['image'].'">
                                         </div>
 
                                         <h4 class="home-product-item__name">'.$row['name'].'</h4>
