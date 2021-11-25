@@ -559,7 +559,7 @@ $connect = ConnectDB();
                                         </div>
 
                                         <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">'.$row['discount'].'</span>
+                                            <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
                                             <span class="home-product-item__sale-off-label">GIẢM</span>
                                         </div>
                                     </a>
@@ -580,36 +580,36 @@ $connect = ConnectDB();
                                         <i class="pagination-item__icon">1</i>
                                     </a>
                                 </li>
-                                <!-- <li class="pagination-item"> -->
+                                <!-- <li class="pagination-item"> 
                                 <a href="" class="pagination-item__link">
                                     <i class="pagination-item__icon">2</i>
                                 </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">3</i>
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">4</i>
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">5</i>
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">...</i>
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">14</i>
-                                </a>
-                            </li> -->
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon">3</i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon">4</i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon">5</i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon">...</i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a href="" class="pagination-item__link">
+                                        <i class="pagination-item__icon">14</i>
+                                    </a>
+                                </li> -->
                                 <li class="pagination-item">
                                     <a href="" class="pagination-item__link">
                                         <i class="pagination-item__icon fas fa-chevron-right"></i>

@@ -43,7 +43,7 @@ $conn = ConnectDB();
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Giảm giá</label>
-                    <input name="discount" type="number" class="form-control"  placeholder="giảm Giá sản phẩm">
+                    <input name="discount" type="number" class="form-control"  placeholder="Giảm giá sản phẩm">
                 </div>
                 <div class="form-group">
                     <label>Ảnh sản phẩm</label>

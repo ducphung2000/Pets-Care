@@ -47,7 +47,7 @@ description VARCHAR(50),
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 category_id INT(6) NOT NULL,
 image varchar(100) not null,
-discount INT(3)
+discount NVARCHAR(3)
 )";
 
 if (mysqli_query($connect, $sql_product)) {
