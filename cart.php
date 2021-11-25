@@ -91,13 +91,13 @@
                         
                             <ul class="header__navbar-user-menu">
                                 <li class="header__navbar-user-item">
-                                    <a href="">Tài khoản của tôi</a>
+                                    <a href="user.php">Tài khoản của tôi</a>
                                 </li>
                                 <li class="header__navbar-user-item">
                                     <a href="">Địa chỉ của tôi</a>
                                 </li>
                                 <li class="header__navbar-user-item">
-                                    <a href="user.php">Đơn mua</a>
+                                    <a href="">Đơn mua</a>
                                 </li>
                                 <li class="header__navbar-user-item header__navbar-user-item--separate">
                                     <a href="">Đăng xuất</a>
