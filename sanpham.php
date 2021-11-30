@@ -401,25 +401,27 @@
                         <div class="buy__product-description">
                             <div class="product-description__intro">
                                 <div class="product-description__intro-image">
-                                    <img src="./public/img/xucxich.png" alt="" class="intro-image__img">
+                                    <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-image__img" id="main-img">
                                 </div>
                                 <ul class="product-description__intro-list-img">
                                     <li class="intro-items__img ">
-                                        <img src="./public/img/xucxich.png" alt="" class="intro-item__img intro-item__img--active">
+                                        <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./public/img/xx1.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx1.jfif" alt="Hình ảnh" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./public/img/xx2.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./public/img/xx3.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx3.jfif" alt="Hình ảnh" class="intro-item__img">
                                     </li>
                                     <li class="intro-items__img">
-                                        <img src="./public/img/xx2.jfif" alt="" class="intro-item__img">
+                                        <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
                                     </li>
                                 </ul>
+
+                                
                             </div>
                             <div class="product-description__more">
                                 <div class="description__more-share">
@@ -616,7 +618,24 @@
 
     <?php include("./public/layout/js_user.php");?>
 
+    <!-------------- JS ---------------->
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <!-- item img -->
+    <script>
+        $(() => {
+            $('.intro-item__img').click(function() {
+                let imgPath = $(this).attr('src');
+                $('#main-img').attr('src', imgPath);
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).on('click','.intro-item__img', function(){
+            $(this).addClass('intro-item__img--active').siblings().removeClass('intro-item__img--active')
+        })
+    </script>
+
+    <!-- item Variation -->
     <script type="text/javascript">
         $(document).on('click','.product__variation', function(){
             $(this).addClass('product__variation--active').siblings().removeClass('product__variation--active')
