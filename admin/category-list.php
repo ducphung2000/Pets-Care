@@ -13,7 +13,7 @@ $conn = ConnectDB();
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Product</h1>
       </div>
-        <a href="create-category-template.php" class="btn btn-danger">Category Category</a>
+        <a href="create-category-template.php" class="btn btn-danger">Create Category</a>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -38,10 +38,12 @@ $conn = ConnectDB();
                   echo "<tr>
                           <td>".$row['id']."</td>
                           <td>".$row['category_name']."</td>
-                          <td> <form method='POST'>
-                                <input type=hidden name=id value=".$row["id"]." >
-                                <input type=submit value=Delete name=delete >
-                                </form>
+                          <td> 
+                            <form method='POST'>
+                            <input type=hidden name=id value=".$row["id"]." >
+                            <input type=submit value=Delete name=delete >
+                            </form>
+                          </td>
                         </tr>";
               }
           } else {
