@@ -10,7 +10,7 @@ $connect = ConnectDB();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets Care</title>
+    <title>Pets Care - Danh mục sản phẩm</title>
     <?php include("./public/layout/head.php"); ?>
     <link rel="stylesheet" href="./public/csslayout/register.css">
     <link rel="stylesheet" href="./public/csslayout/home.css">
@@ -409,7 +409,7 @@ $connect = ConnectDB();
 
                             <ul class="categogy-list">
                                 <li class="categogy-item categogy-item--active">
-                                    <a href="" class="categogy-item__link"> Tất cả vật phẩm</a>
+                                    <a class="categogy-item__link"> Tất cả vật phẩm</a>
                                 </li>
                                 <?php
                                 $sql = "select * from categories";
@@ -418,7 +418,7 @@ $connect = ConnectDB();
                                 if ($result->num_rows > 0) {
                                     // output data of each row
                                     while ($row = $result->fetch_assoc()) {
-                                        echo '<li class="categogy-item"><a class="categogy-item__link" href="#">' . $row["category_name"] . '</a></li>';
+                                        echo '<li class="categogy-item"><a class="categogy-item__link" >' . $row["category_name"] . '</a></li>';
                                     }
                                 }
                                 ?>
@@ -634,7 +634,15 @@ $connect = ConnectDB();
         <?php include("./public/layout/login.php"); ?>
 
         <?php include("./public/layout/js_user.php"); ?>
+        
+        <!-- Active category -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
 
+        <script type="text/javascript">
+            $(document).on('click','.categogy-item', function(){
+                $(this).addClass('categogy-item--active').siblings().removeClass('categogy-item--active')
+            })
+        </script>
 </body>
 
 </html>

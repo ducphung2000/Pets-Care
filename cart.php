@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets Care</title>
+    <title>Pets Care - Giỏ hàng</title>
     <?php include("./public/layout/head.php");?>
     <link rel="stylesheet" href="./public/csslayout/home.css">
     <link rel="stylesheet" href="./public/csslayout/sanpham.css">

@@ -39,7 +39,11 @@
 }
 
 .intro-items__img {
-
+    width: 82px;
+    height: 82px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(243, 239, 239);
 }
 
 
@@ -52,11 +56,9 @@
     border: 1px solid rgb(243, 239, 239);
 }
 
-.intro-item__img.intro-item__img--active {
-    border: 2px solid var(--primary-color);
-}
 
-.intro-item__img:hover {
+.intro-item__img:hover ,
+.intro-item__img--active  {
     position: relative;
     transform: scaleY(1.05);
     border: 2px solid var(--primary-color);

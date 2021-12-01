@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets Care</title>
+    <title>Pets Care - Chi tiết sản phẩm</title>
     <?php include("./public/layout/head.php");?>
     <link rel="stylesheet" href="./public/csslayout/register.css">
     <link rel="stylesheet" href="./public/csslayout/home.css">
@@ -403,23 +403,13 @@
                                 <div class="product-description__intro-image">
                                     <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-image__img" id="main-img">
                                 </div>
-                                <ul class="product-description__intro-list-img">
-                                    <li class="intro-items__img ">
-                                        <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-item__img">
-                                    </li>
-                                    <li class="intro-items__img">
-                                        <img src="./public/img/xx1.jfif" alt="Hình ảnh" class="intro-item__img">
-                                    </li>
-                                    <li class="intro-items__img">
-                                        <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
-                                    </li>
-                                    <li class="intro-items__img">
-                                        <img src="./public/img/xx3.jfif" alt="Hình ảnh" class="intro-item__img">
-                                    </li>
-                                    <li class="intro-items__img">
-                                        <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
-                                    </li>
-                                </ul>
+                                <div class="product-description__intro-list-img">
+                                    <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-item__img intro-item__img--active">
+                                    <img src="./public/img/xx1.jfif" alt="Hình ảnh" class="intro-item__img">
+                                    <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
+                                    <img src="./public/img/xx3.jfif" alt="Hình ảnh" class="intro-item__img">
+                                    <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
+                                </div>
 
                                 
                             </div>
@@ -629,7 +619,7 @@
             })
         })
     </script>
-    <script type="text/javascript">
+    <script>
         $(document).on('click','.intro-item__img', function(){
             $(this).addClass('intro-item__img--active').siblings().removeClass('intro-item__img--active')
         })

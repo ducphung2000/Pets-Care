@@ -743,6 +743,7 @@
 
 .categogy-item--active .categogy-item__link {
     color: var(--primary-color); 
+    cursor: pointer;
 }
 
 .categogy-item__link {
@@ -754,6 +755,7 @@
     display: block;
     transition: right linear 0.1s;
     right: 0;
+    cursor: pointer;
 }
 
 .categogy-item__link:hover {
