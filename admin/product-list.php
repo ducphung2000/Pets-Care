@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'connect.php';
 include 'layout/header.php';
 $conn = ConnectDB();
@@ -25,16 +26,26 @@ $conn = ConnectDB();
               <th>description</th>
               <th>discount</th>
               <th>image</th>
-              <th>Action</th>
+              <th>Sửa</th>
+              <th>Xoá</th>
             </tr>
           </thead>
           <tbody>
           <?php
+          
+
+          if( isset( $_POST['edit'] ) ) {
+            header('Location: http://localhost/pets-care/admin/edit-product.php');
+            $id = $_POST['id'];
+            $query = "UPDATE FROM products WHERE id=".$id;
+            $conn->query($query);
+          }
           if( isset( $_POST['delete'] ) ) {
               $id = $_POST['id'];
               $query = "DELETE FROM products WHERE id=".$id;
               $conn->query($query);
           }
+          
           $sql = "SELECT * FROM products";
           $result = $conn->query($sql);
 
@@ -50,15 +61,21 @@ $conn = ConnectDB();
                           <td>".$row['image']."</td>
                           <td> <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
+                                <input type=submit value=Edit name=edit >
+                                </form>
+                          </td>
+                          <td> <form method='POST'>
+                                <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Delete name=delete >
                                 </form>
+                          </td>
                         </tr>";
               }
           } else {
               echo "0 results";
           }
           ?>
-
+                          
           </tbody>
         </table>
       </div>
