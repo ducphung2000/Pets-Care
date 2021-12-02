@@ -21,7 +21,7 @@ $conn = ConnectDB();
             <form action="create-category.php" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tên category</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên sản phẩm">
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên danh mục">
                 </div>
 
 

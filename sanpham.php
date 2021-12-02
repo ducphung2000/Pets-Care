@@ -1,3 +1,7 @@
+<?php
+require_once 'admin/connect.php';
+$connect = ConnectDB();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -395,13 +399,21 @@
 
         <div class="app__container">
             <div class="grid ">
+            <?php
+                $sql = "select * from products where id=1";
+                $result = $connect->query($sql);
+                
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                    echo '
                 <div class="container-content">
 
                     <div class="container-buy__product">
                         <div class="buy__product-description">
                             <div class="product-description__intro">
                                 <div class="product-description__intro-image">
-                                    <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-image__img" id="main-img">
+                                    <img src="admin/upload/'.$row['image'].'" alt="Hình ảnh" class="intro-image__img" id="main-img">
                                 </div>
                                 <div class="product-description__intro-list-img">
                                     <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-item__img intro-item__img--active">
@@ -431,7 +443,7 @@
                         <div class="buy__product-buying">
                             <div class="buying-content">
                                 <div class="buying-content__heading">
-                                    <span>[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</span>
+                                    <span>'.$row['name'].'</span>
                                 </div>
 
                                 <div class="buying-content__rate">
@@ -471,10 +483,10 @@
 
                                 <div class="buying-content__price">
                                     <div class="buying-content__price-main">
-                                        <div class="price-main__old-price">150.000đ</div>
+                                        <div class="price-main__old-price">'.$row['old_price'].'</div>
                                         <div class="price-main__sale-price">
-                                            <div class="price-main__sale-price-number">120.000đ</div>
-                                            <div class="price-main__sale-price-sticker">20% Giảm</div>
+                                            <div class="price-main__sale-price-number">'.$row['price'].'</div>
+                                            <div class="price-main__sale-price-sticker">'.$row['discount'].'% Giảm</div>
                                         </div>
                                     </div>
                                 </div>
@@ -592,7 +604,9 @@
                         </div>
                     </div>
                 </div>
-
+                ';}
+            }
+            ?>
             </div>
         </div>
 

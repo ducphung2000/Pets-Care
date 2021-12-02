@@ -1,4 +1,8 @@
 <!-- Danh mục sp -->
+<?php
+    $sql = "select * from products ";
+    $result = $connect->query($sql);
+?>
 <nav class="categogy">
     <h3 class="category__heading">
         Danh mục
@@ -9,7 +13,7 @@
             <a class="categogy-item__link"> Tất cả vật phẩm</a>
         </li>
         <?php
-        $sql = "select * from categories";
+        $sql = "SELECT * FROM categories";
         $result = $connect->query($sql);
 
         if ($result->num_rows > 0) {

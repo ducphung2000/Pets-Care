@@ -24,32 +24,32 @@ $conn = ConnectDB();
             </tr>
           </thead>
           <tbody>
-          <?php
-          if( isset( $_POST['delete'] ) ) {
-              $id = $_POST['id'];
-              $query = "DELETE FROM categories WHERE id=".$id;
-              $conn->query($query);
-          }
-          $sql = "SELECT * FROM categories";
-          $result = $conn->query($sql);
-
-          if ($result->num_rows > 0) {
-              while($row = $result->fetch_assoc()) {
-                  echo "<tr>
-                          <td>".$row['id']."</td>
-                          <td>".$row['category_name']."</td>
-                          <td> 
-                            <form method='POST'>
-                            <input type=hidden name=id value=".$row["id"]." >
-                            <input type=submit value=Delete name=delete >
-                            </form>
-                          </td>
-                        </tr>";
+            <?php
+              if( isset( $_POST['delete'] ) ) {
+                  $id = $_POST['id'];
+                  $query = "DELETE FROM categories WHERE id=".$id;
+                  $conn->query($query);
               }
-          } else {
-              echo "0 results";
-          }
-          ?>
+              $sql = "SELECT * FROM categories";
+              $result = $conn->query($sql);
+
+              if ($result->num_rows > 0) {
+                  while($row = $result->fetch_assoc()) {
+                      echo "<tr>
+                              <td>".$row['id']."</td>
+                              <td>".$row['category_name']."</td>
+                              <td> 
+                                <form method='POST'>
+                                <input type=hidden name=id value=".$row["id"]." >
+                                <input type=submit value=Delete name=delete >
+                                </form>
+                              </td>
+                            </tr>";
+                  }
+              } else {
+                  echo "0 results";
+              }
+            ?>
 
           </tbody>
         </table>

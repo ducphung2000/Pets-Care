@@ -24,15 +24,31 @@ $conn = ConnectDB();
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên sản phẩm">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Giá</label>
-                    <input name="price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Giá sản phẩm">
+                    <label for="exampleInputPassword1">Giá cũ</label>
+                    <input name="old_price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Giá cũ sản phẩm">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Giá Mới</label>
+                    <input name="price" type="text" class="form-control" id="exampleInputPassword12" placeholder="Giá mới sản phẩm">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Danh mục sản phẩm</label>
                     <select name="category_id" class="form-control" id="exampleFormControlSelect1">
-                        <option value="1">Thức ăn cho thú cưng</option>
-                        <option value="2">Phụ kiện cho thú cưng</option>
-                        <option value="4">Khác...</option>
+                        <option value="0">Tất cả vật phẩm</option>
+                        <!-- <option value="2">Phụ kiện cho thú cưng</option>
+                        <option value="3">Khác...</option> -->
+                        <?php
+                            $sql = "select * from categories";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                // output data of each row
+                                while ($row = $result->fetch_assoc()) {
+                                    echo '<option value="'.$row["id"].'">' . $row["category_name"] . '</option>';
+                                }
+                            }
+                        ?>
+                        
                     </select>
                     
                 </div>

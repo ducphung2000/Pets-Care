@@ -5,6 +5,7 @@ if(isset($_POST['submit'])){
     $conn = ConnectDB();
     // lấy thông tin từ form
     $name_product = $_POST['name'];
+    $old_price  = $_POST['old_price'];
     $price = $_POST['price'];
     $category_id = $_POST['category_id'];
     $description = $_POST['description'];
@@ -26,7 +27,8 @@ if(isset($_POST['submit'])){
     // Check extension
     if( in_array($imageFileType,$extensions_arr) ){
         // Insert record
-        $sql = "INSERT INTO products (name, price, description, category_id, discount, image) VALUES ('$name_product','$price','$description', '$category_id', '$discount', '$name_img')";
+        $sql = "INSERT INTO products (name, old_price, price, description, category_id, discount, image) 
+        VALUES ('$name_product','$old_price', '$price','$description', '$category_id', '$discount', '$name_img')";
 
         if (mysqli_query($conn, $sql)) {
             header('Location: http://localhost/pets-care/admin/product-list.php');

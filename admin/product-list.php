@@ -20,6 +20,7 @@ $conn = ConnectDB();
             <tr>
               <th>#</th>
               <th>name</th>
+              <th>old_price</th>
               <th>price</th>
               <th>description</th>
               <th>discount</th>
@@ -42,6 +43,7 @@ $conn = ConnectDB();
                   echo "<tr>
                           <td>".$row['id']."</td>
                           <td>".$row['name']."</td>
+                          <td>".$row['old_price']."</td>
                           <td>".$row['price']."</td>
                           <td>".$row['description']."</td>
                           <td>".$row['discount']."</td>
