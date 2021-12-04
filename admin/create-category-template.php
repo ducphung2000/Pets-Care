@@ -23,6 +23,7 @@ $conn = ConnectDB();
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tên category</label>
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên danh mục">
+				    <input type="text" class="form-control" name="id" value="<?=$id?>" hidden="true" >
                 </div>
 
 
