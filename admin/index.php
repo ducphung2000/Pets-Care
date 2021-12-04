@@ -1,7 +1,5 @@
 <?php
-require_once 'connect.php';
 include 'layout/header.php';
-$conn = ConnectDB();
 ?>
 <div class="container-fluid">
   <div class="row">

@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,15 +6,25 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Dashboard Template · Bootstrap</title>
+    <title>Admin -  Quản lý</title>
 
+    
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
-
+    
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="./public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+
+    <link rel="stylesheet" href="../public/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../admin/dashboard.css" rel="stylesheet">
+
 
     <style>
+      .fas {
+        width: 18px;
+        height: 18px;
+        text-align: right;
+        margin-right: 4px;
+      }
       .bd-placeholder-img {
       font-size: 1.125rem;
         text-anchor: middle;
@@ -38,7 +45,7 @@
   </head>
   <body>
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Pets Care</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

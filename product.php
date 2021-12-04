@@ -1,7 +1,3 @@
-<?php
-require_once 'admin/connect.php';
-$connect = ConnectDB();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -493,110 +489,143 @@ $connect = ConnectDB();
                                         </div>
                                     </a>
                                 </div>
-                                <?php
-                                $sql = "select * from products";
-                                $result = $connect->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                  // output data of each row
-                                  while($row = $result->fetch_assoc()) {
-                                    echo '
-                                        <div class="grid__column-2-4">
-                                            <!-- product item -->
-                                            <a href="sanpham.php" class="home-product-item">
-                                                <div class="home-product-item__img">
-                                                    <img class="item-img" src="admin/upload/'.$row['image'].'">
-                                                </div>
-
-                                                <h4 class="home-product-item__name">'.$row['name'].'</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">'.$row['old_price'].'</span>
-                                                    <span class="home-product-item__price-current">'.$row['price'].'</span>
-                                                </div>
-
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item__like home-product-item__like--liked">
-                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item__rating">
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
-                                                    </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
-
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__brand">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Việt Nam</span>
-                                                </div>
-
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fas fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
-
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
-                                                </div>
-                                            </a>
+                                <div class="grid__column-2-4">
+                                    <!-- product item -->
+                                    <a href="sanpham.php" class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <img class="item-img" src="./public/img/xucxich.png" alt="Hình Ảnh" >
                                         </div>
-                                    ';}
-                                }
-                                ?>
+
+                                        <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">250.000đ</span>
+                                            <span class="home-product-item__price-current">199.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- product item -->
+                                    <a href="sanpham.php" class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <img class="item-img" src="./public/img/xucxich.png" alt="Hình Ảnh" >
+                                        </div>
+
+                                        <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">250.000đ</span>
+                                            <span class="home-product-item__price-current">199.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <!-- product item -->
+                                    <a href="sanpham.php" class="home-product-item">
+                                        <div class="home-product-item__img">
+                                            <img class="item-img" src="./public/img/xucxich.png" alt="Hình Ảnh" >
+                                        </div>
+
+                                        <h4 class="home-product-item__name">[ 6 cây- QUÀ TẶNG]Xúc xích dành cho chó mèo, cung cấp chất dinh dưỡng cho thú cưng vị bò, gà</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">250.000đ</span>
+                                            <span class="home-product-item__price-current">199.000đ</span>
+                                        </div>
+
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="home-product-item__sold">88 đã bán</span>
+                                        </div>
+
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">Whoo</span>
+                                            <span class="home-product-item__origin-name">Việt Nam</span>
+                                        </div>
+
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">20%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                    
                             </div>
-                            <!-- Phân trang -->
-                            <ul class="pagination home-product__pagination">
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon fas fa-chevron-left"></i>
-                                    </a>
-                                </li>
-                                <li class="pagination-item pagination-item--active">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">1</i>
-                                    </a>
-                                </li>
-                                <!-- <li class="pagination-item"> 
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon">2</i>
-                                </a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">3</i>
-                                    </a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">4</i>
-                                    </a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">5</i>
-                                    </a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">...</i>
-                                    </a>
-                                </li>
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon">14</i>
-                                    </a>
-                                </li> -->
-                                <li class="pagination-item">
-                                    <a href="" class="pagination-item__link">
-                                        <i class="pagination-item__icon fas fa-chevron-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
+
+                            <?php include("./public/layout/page.php"); ?>
+                            
                         </div>
                     </div>
                 </div>

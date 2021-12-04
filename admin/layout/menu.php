@@ -3,26 +3,26 @@
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active" href="index.php">
-                    <span data-feather="home"></span>
+                    <i class="fas fa-home"></i>
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="product-list.php">
-                    <span data-feather="file"></span>
-                    Product
+                <a class="nav-link" href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    Quản lý Sản Phẩm
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="new-list.php">
-                    <span data-feather="shopping-cart"></span>
-                    New list
+                <a class="nav-link" href="#">
+                    <i class="fas fa-file-alt"></i>
+                    Quản lý Danh Mục sản phẩm
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="category-list.php">
-                    <span data-feather="shopping-cart"></span>
-                    Category list
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user"></i>
+                    Quản lý Tài khoản
                 </a>
             </li>
         </ul>
