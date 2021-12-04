@@ -1,3 +1,7 @@
+<?php
+require_once 'admin/connect.php';
+$connect = ConnectDB();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
