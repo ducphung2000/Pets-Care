@@ -25,6 +25,35 @@
         text-align: right;
         margin-right: 4px;
       }
+
+      .alert {
+        border: 1px dotted red;
+        padding: 5px 15px;
+        margin-top: 10px;
+      }
+
+      .error {
+        color: red;
+        font-size: 80%;
+        font-style: italic;
+      }
+      
+      .button {
+        font-weight: 500;
+        color: #000;
+        padding: 1px 6px;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        text-decoration: none;
+      }
+
+      .button:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #fdfdfd;
+      }
+
       .bd-placeholder-img {
       font-size: 1.125rem;
         text-anchor: middle;

@@ -8,19 +8,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="product-list.php">
                     <i class="fas fa-shopping-cart"></i>
                     Quản lý Sản Phẩm
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="category-list.php">
                     <i class="fas fa-file-alt"></i>
                     Quản lý Danh Mục sản phẩm
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="user-list.php">
                     <i class="fas fa-user"></i>
                     Quản lý Tài khoản
                 </a>
