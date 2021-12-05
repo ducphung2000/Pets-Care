@@ -1,9 +1,8 @@
 <?php
-session_start();
-require_once 'function.php';
-  // require_once 'connect.php';
+  session_start();
+  require_once 'connect.php';
   include 'layout/header.php';
-  // $conn = ConnectDB();
+  $conn = ConnectDB();
   
 ?>
 <div class="container-fluid">
@@ -17,19 +16,8 @@ require_once 'function.php';
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Product</h1>
       </div>
-        <a href="create-product-template.php" class="btn btn-danger">Thêm sản phẩm</a>
-        <?php 
-        echo '<pre>';
-        print_r($_SESSION['products']);
-        echo '</pre>';
-          $mess = get_flash_session("mess_flash");
-          if (!empty($mess)){
-            ?>
-            <div class="alert"><?php echo $mess ?></div>
-            <?php
-          }
-        ?>
-        <div class="table-responsive">
+        <a href="create-product-template.php" class="btn btn-danger">Create product</a>
+      <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -39,34 +27,56 @@ require_once 'function.php';
               <th>price</th>
               <th>description</th>
               <th>discount</th>
-              <!-- <th>image</th> -->
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>image</th>
+              <th>Sửa</th>
+              <th>Xoá</th>
             </tr>
           </thead>
           <tbody>
-            <?php
-              if(!empty($_SESSION['products'])):
-                $count = 0;
-                foreach ($_SESSION['products'] as $key=>$value);
-                  $count;
-            ?>
-            <tr>
-              <td><?php echo $count; ?></td>
-              <td><?php echo $value['name']; ?></td>
-              <td><?php echo $value['old_price']; ?></td>
-              <td><?php echo $value['price']; ?></td>
-              <td><?php echo $value['category_id']; ?></td>
-              <td><?php echo $value['desc']; ?></td>
-              <td> <a href="edit-product.php?id=<?php echo $key; ?>" class="button">Edit</a></td>
-              <td> <a href="delete-product.php?id=<?php echo $key; ?>" class="button">Del</a></td>
-            </tr>
-              <?php else: ?>
-                <tr>
-                  <td colspan="6" style="text-align: center;">Không có dữ liệu.</td>
-                </tr>
-              <?php endif; ?>
+          <?php
+          
 
+          if( isset( $_POST['edit'] ) ) {
+            header('Location: http://localhost/pets-care/admin/edit-product.php');
+            $id = $_POST['id'];
+            $query = "UPDATE FROM products WHERE id=".$id;
+            $conn->query($query);
+          }
+          if( isset( $_POST['delete'] ) ) {
+              $id = $_POST['id'];
+              $query = "DELETE FROM products WHERE id=".$id;
+              $conn->query($query);
+          }
+          
+          $sql = "SELECT * FROM products";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              while($row = $result->fetch_assoc()) {
+                  echo "<tr>
+                          <td>".$row['id']."</td>
+                          <td>".$row['name']."</td>
+                          <td>".$row['old_price']."</td>
+                          <td>".$row['price']."</td>
+                          <td>".$row['description']."</td>
+                          <td>".$row['discount']."</td>
+                          <td>".$row['image']."</td>
+                          <td> <form method='POST'>
+                                <input type=hidden name=id value=".$row["id"]." >
+                                <input type=submit value=Edit name=edit >
+                                </form>
+                          </td>
+                          <td> <form method='POST'>
+                                <input type=hidden name=id value=".$row["id"]." >
+                                <input type=submit value=Delete name=delete >
+                                </form>
+                          </td>
+                        </tr>";
+              }
+          } else {
+              echo "0 results";
+          }
+          ?>
                           
           </tbody>
         </table>
