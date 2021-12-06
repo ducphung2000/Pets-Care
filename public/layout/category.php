@@ -10,7 +10,7 @@
 
     <ul class="categogy-list">
         <li class="categogy-item categogy-item--active">
-            <a class="categogy-item__link"> Tất cả vật phẩm</a>
+            <a  class="categogy-item__link"> Tất cả vật phẩm</a>
         </li>
         <?php
         $sql = "SELECT * FROM categories";

@@ -1,6 +1,7 @@
 <?php
   session_start();
   require_once 'connect.php';
+  include 'function.php';
   include 'layout/header.php';
   $conn = ConnectDB();
   
@@ -11,12 +12,18 @@
     include 'layout/menu.php';
     ?>
 
-
+    
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Product</h1>
       </div>
-        <a href="create-product-template.php" class="btn btn-danger">Create product</a>
+      <a href="create-product-template.php" class="btn btn-danger">Create product</a>
+
+      <?php 
+      // echo '<pre>';
+      // print_r($_SESSION['products']);
+      // echo '</pre>';
+      ?>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -34,14 +41,12 @@
           </thead>
           <tbody>
           <?php
-          
-
-          if( isset( $_POST['edit'] ) ) {
-            header('Location: http://localhost/pets-care/admin/edit-product.php');
-            $id = $_POST['id'];
-            $query = "UPDATE FROM products WHERE id=".$id;
-            $conn->query($query);
+          if(!empty($_SESSION['products'])){
+            $count = 1;
+            foreach ($_SESSION['products'] as $key=>$value);
+            $count++;
           }
+
           if( isset( $_POST['delete'] ) ) {
               $id = $_POST['id'];
               $query = "DELETE FROM products WHERE id=".$id;
@@ -61,11 +66,10 @@
                           <td>".$row['description']."</td>
                           <td>".$row['discount']."</td>
                           <td>".$row['image']."</td>
-                          <td> <form method='POST'>
-                                <input type=hidden name=id value=".$row["id"]." >
-                                <input type=submit value=Edit name=edit >
-                                </form>
-                          </td>
+                          "?>
+                          <td> <a href="edit-product.php?id=<?php echo $row["id"] ?>" class="button">Edit</a></td>
+                          <?php 
+                          echo "
                           <td> <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Delete name=delete >
@@ -74,7 +78,7 @@
                         </tr>";
               }
           } else {
-              echo "0 results";
+              echo "Chưa có dữ liệu!!!";
           }
           ?>
                           

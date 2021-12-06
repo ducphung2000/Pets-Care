@@ -22,7 +22,7 @@ $conn = ConnectDB();
             <form action="create-product.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tên sản phẩm</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên sản phẩm">
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-descriptionribedby="emailHelp" placeholder="Nhập tên sản phẩm">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Giá cũ</label>
