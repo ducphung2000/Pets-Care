@@ -39,12 +39,13 @@
       }
       
       .button {
-        font-weight: 500;
+        line-height: 28px;
         color: #000;
-        padding: 1px 6px;
-        background-color: #ccc;
-        border: 1px solid #ccc;
+        padding: 1px 15px;
+        background-color: #efefef;
+        border: 1px solid #767676;
         text-decoration: none;
+        border-radius: 2px;
       }
 
       .button:hover {

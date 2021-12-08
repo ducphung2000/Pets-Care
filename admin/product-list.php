@@ -3,7 +3,6 @@
   require_once 'connect.php';
   include 'layout/header.php';
   $conn = ConnectDB();
-  
 ?>
 <div class="container-fluid">
   <div class="row">
@@ -11,7 +10,26 @@
     include 'layout/menu.php';
     ?>
 
-    
+    <?php
+    // $sql = "SELECT * FROM products";
+    // $result = $conn->query($sql);
+    //   if(isset($_GET['id'])){
+    //     $id = $_GET['id'] ;
+    //     switch($id){
+    //       case 'product-list':
+    //         if(isset($_POST['create-product'])&&($_POST['create-product'])){
+    //           $idsp = $_POST['idsp'];
+    //           $name = $_POST['name'];
+    //           $old_price = $_POST['old_price'];
+    //           $price = $_POST['price'];
+    //           $desctiption = $_POST['desctiption'];
+    //           $categrory_id = $_POST['category_id'];
+    //           $discount = $_POST['discount'];
+    //           $image = $_POST['image'];
+    //         }
+    //     }
+    //   }
+    ?>
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Product</h1>
@@ -30,8 +48,8 @@
               <th>description</th>
               <th>discount</th>
               <th>image</th>
-              <th>Sửa</th>
-              <th>Xoá</th>
+              <th style="text-align: center;">Sửa</th>
+              <th style="text-align: center;">Xoá</th>
             </tr>
           </thead>
           <tbody>
@@ -58,10 +76,10 @@
                           <td>".$row['discount']."</td>
                           <td>".$row['image']."</td>
                           "?>
-                          <td> <a href="edit-product.php?id=<?php echo $row["id"] ?>" class="button">Edit</a></td>
+                          <td style="text-align: center;"> <a href="edit-product.php?id=<?php echo $row["id"] ?>" class="button">Edit</a></td>
                           <?php 
                           echo "
-                          <td> <form method='POST'>
+                          <td "?> style="text-align: center;" <?php echo " > <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Delete name=delete >
                                 </form>

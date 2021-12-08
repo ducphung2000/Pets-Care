@@ -1,14 +1,17 @@
-<?php
-require_once '../../admin/connect.php';
-$connect = ConnectDB();
-?>
-
-<!-- Register Form -->
-
-<form action="../../../pets-care/admin/create-user.php" method="post" enctype="multipart/form-data  class="modal modal-register js-modal-register">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+</head>
+<body>
+    <!-- Register Form -->
+<form action="./public/layout/register_submit.php" class="modal modal-register js-modal-register">
     <div class="modal__overlay js-modal-close">
     </div>
-    <form  class="modal__body"> 
+    <div class="modal__body"> 
         <div class="auth-form">
             <div class="auth-form__container">
 
@@ -51,8 +54,11 @@ $connect = ConnectDB();
                 <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
                     <i class="auth-form__social-icon fab fa-google"></i>
                     <span class="auth-form__socials-title">Kết nối với Google</span>
+
                 </a>
             </div>
         </div>
     </div>
 </form> 
+</body>
+</html>

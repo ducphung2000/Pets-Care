@@ -1,6 +1,6 @@
 <?php
-//require_once 'connect.php';
-//$connect = ConnectDB();
+require_once 'connect.php';
+$connect = ConnectDB();
 
 
 $servername = "localhost";
@@ -70,19 +70,19 @@ if (mysqli_query($connect, $sql_category)) {
     echo "Error creating table: " . mysqli_error($connect);
 }
 
-// // sql to create table user
-// $sql_product = "CREATE TABLE user (
-// id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-// username VARCHAR(30) NOT NULL,
-// password VARCHAR(30) NOT NULL,
-// create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-// )";
+//create table user
+$sql_user = "CREATE TABLE users (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL,
+create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)";
 
-// if (mysqli_query($connect, $sql_user)) {
-//     echo "Table user created successfully";
-// } else {
-//     echo "Error creating table: " . mysqli_error($connect);
-// }
+if (mysqli_query($connect, $sql_user)) {
+    echo "Table user created successfully";
+} else {
+    echo "Error creating table: " . mysqli_error($connect);
+}
 
 // create table new
 $sql_new = "CREATE TABLE news (
