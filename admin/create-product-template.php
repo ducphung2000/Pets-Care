@@ -34,10 +34,7 @@ $conn = ConnectDB();
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Danh mục sản phẩm</label>
-                    <select name="category_id" class="form-control" id="exampleFormControlSelect1">
-                        <option value="0">Tất cả vật phẩm</option>
-                        <!-- <option value="2">Phụ kiện cho thú cưng</option>
-                        <option value="3">Khác...</option> -->
+                    <select name="category_id" class="form-control" id="exampleFormControlSelect1" >
                         <?php
                             $sql = "SELECT * FROM categories WHERE id";
                             $result = $conn->query($sql);

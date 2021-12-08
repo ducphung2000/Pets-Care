@@ -1,5 +1,9 @@
 <!-- Danh mục sp -->
 <?php
+require_once 'D:\Xamppp\htdocs\Pets-Care\admin\connect.php';
+$connect = ConnectDB();
+?>
+<?php
     $sql = "select * from products ";
     $result = $connect->query($sql);
 ?>
@@ -10,7 +14,7 @@
 
     <ul class="categogy-list">
         <li class="categogy-item categogy-item--active">
-            <a  class="categogy-item__link"> Tất cả vật phẩm</a>
+            <a href="#all_product" class="categogy-item__link"> Tất cả vật phẩm</a>
         </li>
         <?php
         $sql = "SELECT * FROM categories";
@@ -19,7 +23,7 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while ($row = $result->fetch_assoc()) {
-                echo '<li class="categogy-item"><a class="categogy-item__link" >' . $row["category_name"] . '</a></li>';
+                echo '<li class="categogy-item"><a href = "#'.$row["id"].'" class="categogy-item__link" >' . $row["category_name"] . '</a></li>';
             }
         }
         ?>

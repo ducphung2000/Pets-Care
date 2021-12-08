@@ -448,70 +448,229 @@ $connect = ConnectDB();
                             </div>
                         </div>
                         <!-- Danh mục sản phẩm -->
-                        <div class="home-product">
-                            <div class="grid__row">
-                                <?php
-                                $sql = "select * from products";
-                                $result = $connect->query($sql);
-                                
-                                if ($result->num_rows > 0) {
-                                  // output data of each row
-                                  while($row = $result->fetch_assoc()) {
-                                    echo '
-                                        <div class="grid__column-2-4">
-                                            <!-- product item -->
-                                            ' ?>
-                                            <a href="sanpham.php?id=<?php echo $row["id"] ?>" class="home-product-item">
-                                            <?php 
-                                            echo '
-                                                <div class="home-product-item__img">
-                                                    <img class="item-img" src="admin/upload/'.$row['image'].'">
-                                                </div>
-
-                                                <h4 class="home-product-item__name">'.$row['name'].'</h4>
-                                                <div class="home-product-item__price">
-                                                    <span class="home-product-item__price-old">'.$row['old_price'].'</span>
-                                                    <span class="home-product-item__price-current">'.$row['price'].'</span>
-                                                </div>
-
-                                                <div class="home-product-item__action">
-                                                    <span class="home-product-item__like home-product-item__like--liked">
-                                                        <i class="home-product-item__like-icon-empty far fa-heart"></i>
-                                                        <i class="home-product-item__like-icon-fill fas fa-heart"></i>
-                                                    </span>
-                                                    <div class="home-product-item__rating">
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="home-product-item__star--gold fas fa-star"></i>
-                                                        <i class="fas fa-star"></i>
+                        <div class="home-product_list">
+                            <div class="home-product">
+                                <div id="all_product" class="content-header-title">
+                                    <h3 class="tittle1">Tất cả vật phẩm</h3>
+                                </div>
+                                <div class="grid__row">
+                                    <?php
+                                    $sql = "SELECT * FROM products";
+                                    $result = $connect->query($sql);
+                                    
+                                    if ($result->num_rows > 0) {
+                                    // output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo '
+                                            <div class="grid__column-2-4">
+                                                <!-- product item -->
+                                                ' ?>
+                                                <a href="sanpham.php?id=<?php echo $row["id"] ?>" class="home-product-item">
+                                                <?php 
+                                                echo '
+                                                    <div class="home-product-item__img">
+                                                        <img class="item-img" src="admin/upload/'.$row['image'].'">
                                                     </div>
-                                                    <span class="home-product-item__sold">88 đã bán</span>
-                                                </div>
 
-                                                <div class="home-product-item__origin">
-                                                    <span class="home-product-item__brand">Whoo</span>
-                                                    <span class="home-product-item__origin-name">Việt Nam</span>
-                                                </div>
+                                                    <h4 class="home-product-item__name">'.$row['name'].'</h4>
+                                                    <div class="home-product-item__price">
+                                                        <span class="home-product-item__price-old">'.$row['old_price'].'</span>
+                                                        <span class="home-product-item__price-current">'.$row['price'].'</span>
+                                                    </div>
 
-                                                <div class="home-product-item__favourite">
-                                                    <i class="fas fa-check"></i>
-                                                    <span>Yêu thích</span>
-                                                </div>
+                                                    <div class="home-product-item__action">
+                                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                        </span>
+                                                        <div class="home-product-item__rating">
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span class="home-product-item__sold">88 đã bán</span>
+                                                    </div>
 
-                                                <div class="home-product-item__sale-off">
-                                                    <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
-                                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                    <div class="home-product-item__origin">
+                                                        <span class="home-product-item__brand">Whoo</span>
+                                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__favourite">
+                                                        <i class="fas fa-check"></i>
+                                                        <span>Yêu thích</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__sale-off">
+                                                        <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
+                                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        ';}
+                                    }
+                                    ?>
+                                </div>
+                                
+                            </div>
+
+                            <div class="home-product">
+                                <?php
+                                    $sql = "SELECT * FROM categories WHERE id = 1";
+                                    $result = $connect->query($sql);
+
+                                    if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '
+                                                <div id="1" class="content-header-title">
+                                                    <h3 class="tittle1">'.$row['category_name'].'</h3>
                                                 </div>
-                                            </a>
-                                        </div>
-                                    ';}
-                                }
-                                ?>
+                                    ';}}
+                                    ?>
+                                <div class="grid__row">
+                                    <?php
+                                    $sql = "SELECT * FROM products WHERE category_id = 1";
+                                    $result = $connect->query($sql);
+                                    
+                                    if ($result->num_rows > 0) {
+                                    // output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo '
+                                            <div class="grid__column-2-4">
+                                                <!-- product item -->
+                                                ' ?>
+                                                <a href="sanpham.php?id=<?php echo $row["id"] ?>" class="home-product-item">
+                                                <?php 
+                                                echo '
+                                                    <div class="home-product-item__img">
+                                                        <img class="item-img" src="admin/upload/'.$row['image'].'">
+                                                    </div>
+
+                                                    <h4 class="home-product-item__name">'.$row['name'].'</h4>
+                                                    <div class="home-product-item__price">
+                                                        <span class="home-product-item__price-old">'.$row['old_price'].'</span>
+                                                        <span class="home-product-item__price-current">'.$row['price'].'</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__action">
+                                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                        </span>
+                                                        <div class="home-product-item__rating">
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span class="home-product-item__sold">88 đã bán</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__origin">
+                                                        <span class="home-product-item__brand">Whoo</span>
+                                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__favourite">
+                                                        <i class="fas fa-check"></i>
+                                                        <span>Yêu thích</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__sale-off">
+                                                        <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
+                                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        ';}
+                                    }
+                                    ?>
+                                </div>
                             </div>
                             
-                            <?php include("./public/layout/page.php"); ?>
+                            <div class="home-product">
+                                <?php
+                                    $sql = "SELECT * FROM categories WHERE id = 2";
+                                    $result = $connect->query($sql);
 
+                                    if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '
+                                                <div id="2" class="content-header-title">
+                                                    <h3 class="tittle1">'.$row['category_name'].'</h3>
+                                                </div>
+                                    ';}}
+                                    ?>
+                                <div class="grid__row">
+
+                                    <?php
+                                    $sql = "SELECT * FROM products WHERE category_id = 2";
+                                    $result = $connect->query($sql);
+                                    
+                                    if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '
+                                            <div class="grid__column-2-4">
+                                                <!-- product item -->
+                                                ' ?>
+                                                <a href="sanpham.php?id=<?php echo $row["id"] ?>" class="home-product-item">
+                                                <?php 
+                                                echo '
+                                                    <div class="home-product-item__img">
+                                                        <img class="item-img" src="admin/upload/'.$row['image'].'">
+                                                    </div>
+
+                                                    <h4 class="home-product-item__name">'.$row['name'].'</h4>
+                                                    <div class="home-product-item__price">
+                                                        <span class="home-product-item__price-old">'.$row['old_price'].'</span>
+                                                        <span class="home-product-item__price-current">'.$row['price'].'</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__action">
+                                                        <span class="home-product-item__like home-product-item__like--liked">
+                                                            <i class="home-product-item__like-icon-empty far fa-heart"></i>
+                                                            <i class="home-product-item__like-icon-fill fas fa-heart"></i>
+                                                        </span>
+                                                        <div class="home-product-item__rating">
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span class="home-product-item__sold">88 đã bán</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__origin">
+                                                        <span class="home-product-item__brand">Whoo</span>
+                                                        <span class="home-product-item__origin-name">Việt Nam</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__favourite">
+                                                        <i class="fas fa-check"></i>
+                                                        <span>Yêu thích</span>
+                                                    </div>
+
+                                                    <div class="home-product-item__sale-off">
+                                                        <span class="home-product-item__sale-off-percent">'.$row['discount'].'%</span>
+                                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        ';}
+                                    }
+                                    ?>
+                                </div>
+                                
+                                <?php include("./public/layout/page.php"); ?>
+
+                            </div>
                         </div>
                     </div>
                 </div>

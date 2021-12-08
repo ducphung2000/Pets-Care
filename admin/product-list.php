@@ -1,7 +1,6 @@
 <?php
   session_start();
   require_once 'connect.php';
-  include 'function.php';
   include 'layout/header.php';
   $conn = ConnectDB();
   
@@ -19,11 +18,7 @@
       </div>
       <a href="create-product-template.php" class="btn btn-danger">Create product</a>
 
-      <?php 
-      // echo '<pre>';
-      // print_r($_SESSION['products']);
-      // echo '</pre>';
-      ?>
+      
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -41,11 +36,7 @@
           </thead>
           <tbody>
           <?php
-          if(!empty($_SESSION['products'])){
-            $count = 1;
-            foreach ($_SESSION['products'] as $key=>$value);
-            $count++;
-          }
+          
 
           if( isset( $_POST['delete'] ) ) {
               $id = $_POST['id'];

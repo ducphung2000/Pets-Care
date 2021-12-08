@@ -845,6 +845,16 @@
 .home-product {
     margin-bottom: 10px;
 }
+
+.home-product_list{
+    height: 72rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+.home-product_list::-webkit-scrollbar {
+    display: none;
+  }
+
 .home-product-item {
     position: relative;
     margin-top: 10px;
@@ -1039,8 +1049,17 @@ i.home-product-item__like-icon-fill {
 
 }
 
+
+
 .home-product__pagination {
     margin: 48px 0 32px 0 ;
+}
+
+.tittle1 {
+    font-size: 20px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 0px;
 }
 /* -------------------END APP CONTAINER------------------------------- */
 
