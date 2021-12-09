@@ -10,26 +10,7 @@
     include 'layout/menu.php';
     ?>
 
-    <?php
-    // $sql = "SELECT * FROM products";
-    // $result = $conn->query($sql);
-    //   if(isset($_GET['id'])){
-    //     $id = $_GET['id'] ;
-    //     switch($id){
-    //       case 'product-list':
-    //         if(isset($_POST['create-product'])&&($_POST['create-product'])){
-    //           $idsp = $_POST['idsp'];
-    //           $name = $_POST['name'];
-    //           $old_price = $_POST['old_price'];
-    //           $price = $_POST['price'];
-    //           $desctiption = $_POST['desctiption'];
-    //           $categrory_id = $_POST['category_id'];
-    //           $discount = $_POST['discount'];
-    //           $image = $_POST['image'];
-    //         }
-    //     }
-    //   }
-    ?>
+    
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Product</h1>
@@ -46,8 +27,12 @@
               <th>old_price</th>
               <th>price</th>
               <th>description</th>
+              <th>type1</th>
+              <th>type2</th>
+              <th>type3</th>
               <th>discount</th>
               <th>image</th>
+              
               <th style="text-align: center;">Sửa</th>
               <th style="text-align: center;">Xoá</th>
             </tr>
@@ -73,6 +58,9 @@
                           <td>".$row['old_price']."</td>
                           <td>".$row['price']."</td>
                           <td>".$row['description']."</td>
+                          <td>".$row['type1']."</td>
+                          <td>".$row['type2']."</td>
+                          <td>".$row['type3']."</td>
                           <td>".$row['discount']."</td>
                           <td>".$row['image']."</td>
                           "?>

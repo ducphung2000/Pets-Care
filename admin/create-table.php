@@ -44,10 +44,17 @@ id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
 old_price VARCHAR(30) NOT NULL,
 price VARCHAR(30) NOT NULL,
-description VARCHAR(50),
+description VARCHAR(10000),
+type1 VARCHAR(50),
+type2 VARCHAR(50),
+type3 VARCHAR(50),
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 category_id INT(6) NOT NULL,
 image varchar(100) not null,
+-- image1 varchar(100) not null,
+-- image2 varchar(100) not null,
+-- image3 varchar(100) not null,
+-- image4 varchar(100) not null,
 discount NVARCHAR(3)
 )";
 

@@ -697,6 +697,7 @@
 /*----------------APP CONTAINER-------------------*/
 .app__container {
     position: relative;
+    width: 100%;
     background-color: #f5f5f5;
     top: 172px;
 }

@@ -421,11 +421,11 @@
                                                 <img src="admin/upload/'.$row['image'].'" alt="Hình ảnh" class="intro-image__img" id="main-img">
                                             </div>
                                             <div class="product-description__intro-list-img">
-                                                <img src="./public/img/xucxich.png" alt="Hình ảnh" class="intro-item__img intro-item__img--active">
-                                                <img src="./public/img/xx1.jfif" alt="Hình ảnh" class="intro-item__img">
-                                                <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
-                                                <img src="./public/img/xx3.jfif" alt="Hình ảnh" class="intro-item__img">
-                                                <img src="./public/img/xx2.jfif" alt="Hình ảnh" class="intro-item__img">
+                                                <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img intro-item__img--active">
+                                                <img src="./public/img/'.$row['image1'].'" alt="Hình ảnh" class="intro-item__img">
+                                                <img src="./public/img/'.$row['image2'].'" alt="Hình ảnh" class="intro-item__img">
+                                                <img src="./public/img/'.$row['image3'].'" alt="Hình ảnh" class="intro-item__img">
+                                                <img src="./public/img/'.$row['image4'].'" alt="Hình ảnh" class="intro-item__img">
                                             </div>
 
                                             
@@ -488,9 +488,9 @@
 
                                             <div class="buying-content__price">
                                                 <div class="buying-content__price-main">
-                                                    <div class="price-main__old-price">'.$row['old_price'].'đ</div>
+                                                    <div class="price-main__old-price">'.$row['old_price'].'</div>
                                                     <div class="price-main__sale-price">
-                                                        <div class="price-main__sale-price-number">'.$row['price'].'đ</div>
+                                                        <div class="price-main__sale-price-number">'.$row['price'].'</div>
                                                         <div class="price-main__sale-price-sticker">'.$row['discount'].'% Giảm</div>
                                                     </div>
                                                 </div>
@@ -511,11 +511,11 @@
 
                                                     <div class="choose-main__select">
                                                         <div class="choose-main__type">
-                                                            <div class="choose-main__type-label">Vị</div>
+                                                            <div class="choose-main__type-label">Loại</div>
                                                             <div class="choose-main__type-product">
-                                                                <button class="product__variation">Bò (Rêu)</button>
-                                                                <button class="product__variation">Gà (Vàng)</button>
-                                                                <button class="product__variation">Vịt (Đỏ)</button>
+                                                                <button class="product__variation">'.$row['type1'].'</button>
+                                                                <button class="product__variation">'.$row['type2'].'</button>
+                                                                <button class="product__variation">'.$row['type3'].'</button>
                                                             </div>
                                                         </div>
                                                         <div class="choose-main__quantity">
@@ -596,9 +596,9 @@
                 ?>
                 
             </div>
+            <?php include("./public/layout/footer.php");?>
         </div>
         
-        <?php include("./public/layout/footer.php");?>
     </div>
 
     <!-- Register Form -->
