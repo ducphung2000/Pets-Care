@@ -577,25 +577,8 @@
                                                 <div class="details__descript-heading">Mô tả sản phẩm</div>
                                             </div>
                                             <div class="details__descript-body">
-                                                <p>Xúc Xích cho chó mèo</p>
-                                                <p>Sản phẩm được làm từ nguyên liệu tự nhiên đã qua tuyển lựa cẩn thận.</p>
-                                                <p>trọng lượng: 15g.</p>
-                                                <p>Giúp cung cấp các chất dinh dưỡng còn thiếu trong thức ăn hạt.</p>
-                                                <p>Là sản phẩm chứa ít chất béo, ít muối tốt cho hệ tiêu hóa, dễ dàng hấp thu.</p>
-                                                <p>Bên cạnh đó sản phẩm còn chứa ít chất béo, giàu protein goups thúc đẩy sự phát triển của thú cưng, cung cấp các chất dinh dưỡng hợp lý giúp duy trì ngoại hình cân đối, sức khỏe tốt và hình thành răng chắc khỏe.</p>
-                                                <p>Lượng khuyên dùng:</p>
-                                                <p>Tùy vào lứa tuổi, chủng loại cân nặng và lượng vận động. mùa nào mà bạn cần điều chỉnh lượng phù hợp.</p>
-                                                <p>Thành phần chính:</p>
-                                                <p>Chất đạm thô: Trên 70.30%</p>
-                                                <p>Chất béo : Trên 2.42%</p>
-                                                <p>Chất xơ: Dưới 0.35%</p>
-                                                <p>Chất tro: Duwois 6.06%</p>
-                                                <p>Canxi: Trên 0.04%</p>
-                                                <p>Photpho: Trên 0.7%</p>
-                                                <p>Cách bảo quản:</p>
-                                                <p>Bảo quản ở nơi khô ráo tránh ánh nắng mặt trời và nơi có nhiệt độ cao.<br>
-                                                    Sau khi mở túi bạn cần bảo quản trong tủ lạnh và nhanh chóng cho ăn hết.</p>
-                                                <p>#xucxichthucung #xucxichchocho #thucancho</p>
+                                                <p>'.$row['description'].'</p>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -610,7 +593,6 @@
                                 </div>
                             </div>
                     ';}}
-                                   
                 ?>
                 
             </div>
