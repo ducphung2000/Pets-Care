@@ -1,14 +1,8 @@
-<?php
-require_once '../../admin/connect.php';
-$connect = ConnectDB();
-?>
-
 <!-- Register Form -->
-
-<form action="../../../pets-care/admin/create-user.php" method="post" enctype="multipart/form-data  class="modal modal-register js-modal-register">
+<div class="modal modal-register js-modal-register">
     <div class="modal__overlay js-modal-close">
     </div>
-    <form  class="modal__body"> 
+    <div  class="modal__body"> 
         <div class="auth-form">
             <div class="auth-form__container">
 

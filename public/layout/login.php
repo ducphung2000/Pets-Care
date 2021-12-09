@@ -33,7 +33,7 @@
     
                 <div class="auth-form__contrls">
                     <button class="btn auth-form__contrl-back btn--normal js-modal-close">TRỞ LẠI</button>
-                    <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    <button type="submit" class="btn btn--primary">ĐĂNG NHẬP</button>
     
                 </div>
             </div>

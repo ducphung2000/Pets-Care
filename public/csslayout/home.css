@@ -1,9 +1,6 @@
-.header {
-    
-}
-
 .app__container {
-
+    position: fixed;
+    width: 100%;
 }
 .container-top {
    width: 100%;
@@ -298,6 +295,7 @@
 .news-content__item-btn:hover {
     background-color: var(--background-color-btn);
 }
+
 
 
 

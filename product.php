@@ -399,7 +399,7 @@ $connect = ConnectDB();
             </div>
         </header>
 
-        <div class="app__container">
+        <div class="app__container app__product">
             <div class="grid">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
