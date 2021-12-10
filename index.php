@@ -565,13 +565,19 @@ $connect = ConnectDB();
     </div>
 
     <!-- Register Form -->
-    <?php include("./public/layout/register.php");?>
+    <?php 
+    // include("./public/layout/register.php");
+    ?>
 
 
     <!-- login Form -->
-    <?php include("./public/layout/login.php");?> 
+    <?php
+    //  include("./public/layout/login.php");
+     ?> 
 
-    <?php include("./public/layout/js_user.php");?>
+    <?php
+    //  include("./public/layout/js_user.php");
+     ?>
 
 </body>
 </html>

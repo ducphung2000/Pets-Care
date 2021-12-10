@@ -686,6 +686,10 @@
 }
 
 .categogy {
+    position: sticky;
+    width: 100%;
+    top: 172px;
+    z-index: 2;
     border-radius: 2px;
     background-color: var(--white-color);
 }
@@ -748,11 +752,15 @@
 
 /* Home sort _ filter */
 .home-filter {
+    position: sticky;
+    width: 100%;
+    top: 172px;
+    z-index: 2;
     display: flex;
     align-items: center;
     padding: 12px 22px;
     border-radius: 2px;
-    background-color: rgba(0,0,0,0.15);
+    background-color: #d2cfd0;
 }
 
 .home-filter__label {
@@ -834,6 +842,8 @@
     overflow: scroll;
     scroll-behavior: smooth;
 }
+
+.app__container::-webkit-scrollbar,
 .home-product_list::-webkit-scrollbar {
     display: none;
   }

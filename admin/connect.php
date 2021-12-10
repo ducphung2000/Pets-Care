@@ -6,13 +6,14 @@ function  ConnectDB() {
     $db = "petscare";
 
 // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $db);
+    $connect = mysqli_connect($servername, $username, $password, $db);
+    mysqli_set_charset($connect,"utf-8");
 
 // Check connection
-    if (!$conn) {
+    if (!$connect) {
         die("Connection failed: " . mysqli_connect_error());
     }
 
-    return $conn;
+    return $connect;
 }
 ?>

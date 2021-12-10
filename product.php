@@ -12,7 +12,7 @@ $connect = ConnectDB();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Care - Danh mục sản phẩm</title>
-    <?php include("./public/layout/head.php"); ?>
+    <?php include("./public/layout/head.php");?>
     <link rel="stylesheet" href="./public/csslayout/register.css">
     <link rel="stylesheet" href="./public/csslayout/home.css">
 </head>
