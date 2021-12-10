@@ -128,10 +128,6 @@
     background-color: #fff;
 }
 
-.bot__content {
-
-}
-
 .bot__content-heading{
      font-size: 3rem;
      font-weight: 450;
@@ -146,10 +142,6 @@
     padding: 32px 0;
 }
 
-.bot__content-product{
-     
-}
-
 .content-product__list {
     display: flex;
     list-style: none;
@@ -162,18 +154,8 @@
     text-align: center;
 }
 
-.content-product__img {
-     
-     
-}
-
 .product__img {
     width: 90%;
-     
-}
-
-.content-product__purchase {
-     
      
 }
 
@@ -221,10 +203,6 @@
 /* container news */
 .container-news {
     background-color: #fff;
-}
-
-.news-content {
-
 }
 
 .news-content__list {
