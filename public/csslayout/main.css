@@ -338,6 +338,14 @@
     display: block;
 }
 
+.no-notify {
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
 /* ---------------------END HEADER NOTIFICATION--------------------- */
 
 /* -------------------HEADER SEARCH------------------------------- */
@@ -517,6 +525,15 @@
     font-weight: 400;
 }
 
+.header__no-cart-list-item{
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
@@ -646,12 +663,13 @@
 
 
 .header__cart-no-cart-img {
-    display: none;
+    display: block;
     width: 54%;
 }
 
 .header__cart-list-no-cart-msg {
-    display: none;
+    display: block;
+    margin: auto;
     font-size: 1.4rem;
     margin-top: 2px;
     color: var(--text-color);

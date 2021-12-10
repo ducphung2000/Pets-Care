@@ -1,10 +1,14 @@
 <?php
-require_once 'admin/connect.php';
-$connect = ConnectDB();
+    session_start();
+    require_once 'admin/connect.php';
+    $connect = ConnectDB();
 
-if(isset($_GET['action'])){
-    echo "action";exit;
-}
+    if(!isset($_SESSION["users"])){
+        header("location:./account/login/login.php");
+    }
+    if(isset($_GET['action'])){
+        echo "action";exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -269,6 +273,7 @@ if(isset($_GET['action'])){
                     </div>
                 </form>
             </div>
+
 
             <?php include("./public/layout/footer.php");?>
         </div>

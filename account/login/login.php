@@ -1,6 +1,8 @@
 <?php
-// require_once 'admin/connect.php';
-// $connect = ConnectDB();
+    session_start();
+    require_once '../../admin/connect.php';
+    $connect = ConnectDB();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +83,7 @@
 
                 </div>
 
-                <form action="login_submit.php" method="POST">
+                <form action="login_submit.php" method="POST" role="form">
                     <div class="auth-form">
                         <div class="auth-form__container">
                 
@@ -92,10 +94,10 @@
                 
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
-                                    <input type="text" class="auth-form__input" placeholder="Nhập tên tài khoản của bạn">
+                                    <input type="text" name="username" class="auth-form__input" placeholder="Nhập tên tài khoản của bạn">
                                 </div>
                                 <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                    <input type="password" name="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
                                     <div id="eye">
                                         <i class="far fa-eye"></i>
                                     </div>

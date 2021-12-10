@@ -48,7 +48,9 @@ $connect = ConnectDB();
                                 <header class="header__notify-header">
                                     <h3>Thông báo mới nhận</h3>
                                 </header>
-                                <ul class="header__notify-list">
+
+                                <span class="no-notify">Không có thông báo!</span>
+                                <!-- <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
                                             <img src="./public/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
@@ -76,7 +78,7 @@ $connect = ConnectDB();
                                             </div>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <footer class="header__notify-footer">
                                     <a href="" class="header__notify-footer-btn">Xem tất cả</a>
                                 </footer>
@@ -169,13 +171,15 @@ $connect = ConnectDB();
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list ">
                                 <!-- No cart: -->
-                                <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
-                                <span class="header__cart-list-no-cart-msg">
-                                    Chưa có sản phẩm
-                                </span>
-
-                                <!-- Has cart: -->
                                 <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <div class="header__no-cart-list-item">
+                                    <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+                                </div>
+                                <!-- Has cart: -->
+                                <!-- <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
                                 <ul class="header__cart-list-item">
                                     <li class="header__cart-item">
                                         <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
@@ -368,7 +372,7 @@ $connect = ConnectDB();
                                     </li>
                                 </ul>
 
-                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a> -->
                             </div>
                         </div>
 
@@ -758,15 +762,7 @@ $connect = ConnectDB();
 
         </div>
 
-        <!-- Register Form -->
-        <?php include("./public/layout/register.php"); ?>
-
-
-        <!-- login Form -->
-        <?php include("./public/layout/login.php"); ?>
-
-        <?php include("./public/layout/js_user.php"); ?>
-        
+       
         <!-- Active category -->
         <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
 

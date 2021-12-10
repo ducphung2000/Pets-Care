@@ -594,21 +594,12 @@
                             </div>
                     ';}}
                 ?>
-                
             </div>
             <?php include("./public/layout/footer.php");?>
         </div>
         
     </div>
 
-    <!-- Register Form -->
-    <?php include("./public/layout/register.php");?>
-
-
-    <!-- login Form -->
-    <?php include("./public/layout/login.php");?>
-
-    <?php include("./public/layout/js_user.php");?>
 
     <!-------------- JS ---------------->
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>

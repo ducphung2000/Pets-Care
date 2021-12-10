@@ -1,6 +1,7 @@
 <?php
-// require_once 'admin/connect.php';
-// $connect = ConnectDB();
+    session_start();
+    require_once '../../admin/connect.php';
+    $connect = ConnectDB();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +81,12 @@
                     <h1 class="h2">Đăng ký tài khoản.</h1>
 
                 </div>
-
+                <?php
+                    if(isset($_SESSION["thongbao"])) {
+                        echo $_SESSION["thongbao"];
+                        session_unset("thongbao");
+                    }
+                ?>
                 <form action="register_submit.php" method="POST">
                     <div class="auth-form">
                         <div class="auth-form__container">

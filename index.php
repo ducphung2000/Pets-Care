@@ -1,6 +1,11 @@
 <?php
-require_once 'admin/connect.php';
-$connect = ConnectDB();
+    session_start();
+    require_once 'admin/connect.php';
+    $connect = ConnectDB();
+
+    // if(!isset($_SESSION["users"])){
+    //     header("location:./account/login/login.php");
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +51,8 @@ $connect = ConnectDB();
                                 <header class="header__notify-header">
                                     <h3>Thông báo mới nhận</h3>
                                 </header>
-                                <ul class="header__notify-list">
+                                <p class="no-notify">Không có thông báo.</p>
+                                <!-- <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
                                         <a href="" class="header__notify-link">
                                             <img src="./public/img/balo.jfif" alt="Mỹ phẩm" class="header__notify-img">
@@ -74,7 +80,7 @@ $connect = ConnectDB();
                                             </div>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                                 <footer class="header__notify-footer">
                                     <a href="" class="header__notify-footer-btn">Xem tất cả</a>
                                 </footer>
@@ -168,13 +174,15 @@ $connect = ConnectDB();
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list ">
                                 <!-- No cart: -->
-                                <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
-                                <span class="header__cart-list-no-cart-msg">
-                                    Chưa có sản phẩm
-                                </span>
-        
-                                <!-- Has cart: -->
                                 <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <div class="header__no-cart-list-item">
+                                    <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+                                </div>
+                                <!-- Has cart: -->
+                                <!-- <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
                                 <ul class="header__cart-list-item">
                                     <li class="header__cart-item">
                                         <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
@@ -187,13 +195,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -208,13 +216,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -229,13 +237,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -250,13 +258,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -271,13 +279,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -292,13 +300,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -313,13 +321,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -334,13 +342,13 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -355,22 +363,22 @@ $connect = ConnectDB();
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
-        
-                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+
+                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a> -->
                             </div>
-                        </div>                        
-                        
+                        </div>
+
                     </div>
                 </div>
         
@@ -404,7 +412,8 @@ $connect = ConnectDB();
                     <img src="./public/img/banner.jpg" alt="banner" class="banner-img">
                 </div>
             
-
+                <!-- <a href="./account/login/logout.php" title="logout" class="btn btn--primary">logout</a> -->
+                
                 <div class="grid">
                     <div class=" container-main">
                         <div class=" main__content">
@@ -559,9 +568,9 @@ $connect = ConnectDB();
                 </div>
             </div>
 
+            <?php include("./public/layout/footer.php");?>
         </div>
 
-        <?php include("./public/layout/footer.php");?>
     </div>
 
     <!-- Register Form -->

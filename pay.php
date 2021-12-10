@@ -284,9 +284,9 @@ $connect = ConnectDB();
                     </div>
                 </div>
             </div>
+            <?php include("./public/layout/footer.php");?>
         </div>
 
-        <?php include("./public/layout/footer.php");?>
 
     </div>
 </body>
