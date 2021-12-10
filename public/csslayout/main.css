@@ -702,6 +702,11 @@
     top: 172px;
 }
 
+.app__containe.app__product {
+    position: fixed;
+    width: 100%;
+}
+
 .app__content {
     padding-top: 36px;
 }

@@ -55,6 +55,19 @@
         background-color: #fdfdfd;
       }
 
+      .hidden_text {
+      width: 300px;
+      font-weight: 400;
+      color: var(--text-color);
+      line-height: 1.4rem;
+      height: 3rem;
+      overflow: hidden;
+      display: block;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      }
+
       .bd-placeholder-img {
       font-size: 1.125rem;
         text-anchor: middle;
@@ -69,6 +82,8 @@
           font-size: 3.5rem;
         }
       }
+
+      
     </style>
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">

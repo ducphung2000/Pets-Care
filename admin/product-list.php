@@ -57,7 +57,7 @@
                           <td>".$row['name']."</td>
                           <td>".$row['old_price']."</td>
                           <td>".$row['price']."</td>
-                          <td>".$row['description']."</td>
+                          <td "?> class="hidden_text" <?php echo ">".$row['description']."</td>
                           <td>".$row['type1']."</td>
                           <td>".$row['type2']."</td>
                           <td>".$row['type3']."</td>
