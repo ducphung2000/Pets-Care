@@ -94,9 +94,9 @@
                                 <i class="header__navbar-icon far fa-question-circle"></i>
                                 Trợ giúp
                             </a>
-                            
                         </li>
                         
+                        <!-- Account -->
                          <li class="header__navbar-item header__navbar-user">
                             <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
                             <span class="header__navbar-user-name">Nguyen Duc Phung</span>
@@ -112,7 +112,7 @@
                                     <a href="">Đơn mua</a>
                                 </li>
                                 <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                    <a href="">Đăng xuất</a>
+                                    <a href="./account/login/logout.php">Đăng xuất</a>
                                 </li>
                             </ul>
                         </li> 
