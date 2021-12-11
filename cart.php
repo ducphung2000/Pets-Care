@@ -6,9 +6,9 @@
     if(!isset($_SESSION["users"])){
         header("location:./account/login/login.php");
     }
-    if(isset($_GET['action'])){
-        echo "action";exit;
-    }
+    // if(isset($_GET['action'])){
+    //     echo "action";exit;
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,7 +160,7 @@
                 <?php 
                 
                 ?>
-                <form class="container-content">
+                <div class="container-content">
                     <div class="container-content__top">
                         <label for="" class="content__input">
                             <input type="checkbox" class="input__check" >
@@ -296,7 +296,7 @@
                         </div>
 
                     </div>
-                </form>
+                </div>
             </div>
 
 

@@ -5,15 +5,15 @@ require_once 'connect.php';
 if(isset($_POST['submit'])){
     $connect = ConnectDB();
     // lấy thông tin từ form
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $fullname = $_POST['fullname'];
+    $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $bird = $_POST['bird'];
+    $address = $_POST['address'];
+    $note = $_POST['note'];
+    $price = $_POST['price'];
+    $total = $_POST['total'];
 
     //lấy tên file ảnh
-    $user_img = $_FILES['fileToUpload']['username'];
+    $user_img = $_FILES['fileToUpload']['name'];
     //thư mục upload ảnh
     $link_img = "upload/";
 
@@ -27,8 +27,8 @@ if(isset($_POST['submit'])){
     // Check extension
     if( in_array($imgFileType,$imgType_arr) ){
         // Insert record
-        $sql = "INSERT INTO products (username, password, fullname, phone, email, bird, user_img) 
-        VALUES ('$username','$password', '$fullname','$phone', '$email', '$bird', '$user_img')";
+        $sql = "INSERT INTO products (name, phone, address, note, price, total, user_img) 
+        VALUES ('$name','$phone', '$address', '$note', '$price', '$total', '$user_img')";
 
         if (mysqli_query($connect, $sql)) {
             header('Location: http://localhost/pets-care/admin/user-list.php');
@@ -44,5 +44,4 @@ if(isset($_POST['submit'])){
     else {
         print_r("file không đúng dịnh dạng. Vui lòng kiểm tra lại");
     }
-    
 }

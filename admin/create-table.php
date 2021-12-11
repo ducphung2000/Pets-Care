@@ -112,3 +112,22 @@ if (mysqli_query($connect, $sql_new)) {
 }
 
 mysqli_close($connect);
+
+//create table order
+$sql_order = "CREATE TABLE orders (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    note VARCHAR(255) NOT NULL,
+    price VARCHAR(255) NOT NULL,
+    total VARCHAR(255) NOT NULL,
+    order_img VARCHAR(255) NOT NULL
+    )";
+    
+    if (mysqli_query($connect, $sql_order)) {
+        echo "Table order created successfully";
+    } else {
+        echo "Error creating table: " . mysqli_error($connect);
+    }
