@@ -13,10 +13,8 @@
         $user = $connect->query($sql);
 
         if ($user->num_rows > 0) {
-            $_SESSION["users"] = $username;
-            $_SESSION["fullname"] = $fullname;
-            // $_SESSION["phone"] = $phone;
-            // $_SESSION["email"] = $email;
+            $_SESSION["users"] = $fullname;
+            
             // $_SESSION["bird"] = $bird;
             // $_SESSION["user_img"] = $user_img;
             $_SESSION["thongbao"] = "Đăng nhập thành công!";

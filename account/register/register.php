@@ -97,9 +97,6 @@
                             </div>
 
                             <div class="auth-form__form">
-                                <!-- <div class="auth-form__group">
-                                    <input type="text" name="fullname" class="auth-form__input" require placeholder="Nhập tên đăng nhập của bạn">
-                                </div> -->
                                 <div class="auth-form__group">
                                     <input type="text" name="username" class="auth-form__input" placeholder="Nhập tên đăng nhập của bạn">
                                 </div>
@@ -108,6 +105,19 @@
                                 </div>
                                 <div class="auth-form__group">
                                     <input type="password" name="repassword" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="text" name="fullname" class="auth-form__input" require placeholder="Nhập họ & tên của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="text" name="phone" class="auth-form__input" require placeholder="Nhập số điện thoại của bạn">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="text" name="email" class="auth-form__input" require placeholder="Nhập email của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Chọn avatar của bạn</label>
+                                    <input type="file" name="fileToUpload" id="fileToUpload" class="form-control-file" accept=".jpg,.jpeg,.png,.gif,.jfif">
                                 </div>
                             </div>
 
