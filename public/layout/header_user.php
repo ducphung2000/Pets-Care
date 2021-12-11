@@ -2,7 +2,7 @@
     if(isset($_SESSION['users'])){
         $users = $_SESSION['users'];
     }else{
-        $users = '';
+        $users = 'Xin chao bạn!';
     }
 
     if(isset($_SESSION['fullname'])){
@@ -11,7 +11,7 @@
         $fullname = 'Xin chào';
     }
 
-    if (isset($_SESSION['users']) && $_SESSION['users'] && $_SESSION['fullname']){
+    if (isset($_SESSION['users']) && $_SESSION['users']){
         echo '
             <li class="header__navbar-item header__navbar-user">
                 <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
