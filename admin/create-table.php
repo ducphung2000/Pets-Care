@@ -12,7 +12,7 @@ $conn = mysqli_connect($servername, $username, $password);
 
 $sql_drop = "DROP DATABASE if exists petscare";
 if (mysqli_query($conn, $sql_drop)) {
-    echo "TDrop all table success";
+    echo "TDrop all table success  ";
 } else {
     echo "Error creating table: " . mysqli_error($conn);
 }
@@ -111,11 +111,10 @@ if (mysqli_query($connect, $sql_new)) {
     echo "Error creating table: " . mysqli_error($connect);
 }
 
-mysqli_close($connect);
 
 //create table order
 $sql_order = "CREATE TABLE orders (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(255) NOT NULL,
 phone VARCHAR(255) NOT NULL,
 address VARCHAR(255) NOT NULL,
@@ -131,3 +130,4 @@ if (mysqli_query($connect, $sql_order)) {
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
+mysqli_close($connect);

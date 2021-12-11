@@ -14,11 +14,11 @@
 
         if ($user->num_rows > 0) {
             $_SESSION["users"] = $username;
-            $_SESSION["fullname"] = $fullname;
-            $_SESSION["phone"] = $phone;
-            $_SESSION["email"] = $email;
-            $_SESSION["bird"] = $bird;
-            $_SESSION["user_img"] = $user_img;
+            // $_SESSION["fullname"] = $fullname;
+            // $_SESSION["phone"] = $phone;
+            // $_SESSION["email"] = $email;
+            // $_SESSION["bird"] = $bird;
+            // $_SESSION["user_img"] = $user_img;
 
             header("location:../../index.php");
 
