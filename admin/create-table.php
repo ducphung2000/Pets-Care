@@ -66,8 +66,8 @@ if (mysqli_query($connect, $sql_product)) {
 
 // create table categories
 $sql_category = "CREATE TABLE categories (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMAphoneRY KEY,
-category_name VARCHAR(30) NOT NULL,
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+category_name VARCHAR(255) NOT NULL,
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
@@ -87,9 +87,7 @@ fullname VARCHAR(255) NOT NULL,
 phone VARCHAR(255) NOT NULL,
 email VARCHAR(255) NOT NULL,
 bird VARCHAR(255) NOT NULL,
-user_img VARCHAR(255) NOT NULL,
-
-
+user_img VARCHAR(255) NOT NULL
 )";
 
 if (mysqli_query($connect, $sql_user)) {
