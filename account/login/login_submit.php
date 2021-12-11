@@ -8,12 +8,12 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
         $password = md5($password);
-        
-        $sql = "SELECT * FROM users WHERE username='$username' AND password='$password' ";
+        // WHERE username='$username' AND password='$password' 
+        $sql = "SELECT * FROM users ";
         $user = $connect->query($sql);
 
         if ($user->num_rows > 0) {
-            $_SESSION["users"] = $username;
+            $_SESSION["users"] = $fullname;
             
             // $_SESSION["bird"] = $bird;
             // $_SESSION["user_img"] = $user_img;
