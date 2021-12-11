@@ -59,7 +59,7 @@ create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_product)) {
-    echo "Table products created successfully";
+    echo "Table products created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
@@ -72,7 +72,7 @@ create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_category)) {
-    echo "Table categories created successfully";
+    echo "Table categories created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
@@ -91,7 +91,7 @@ create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_user)) {
-    echo "Table user created successfully";
+    echo "Table user created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
@@ -106,7 +106,7 @@ create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_new)) {
-    echo "Table news created successfully";
+    echo "Table news created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
@@ -127,7 +127,7 @@ create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_order)) {
-    echo "Table order created successfully";
+    echo "Table news created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);
 }
