@@ -88,27 +88,9 @@ $connect = ConnectDB();
                                 Trợ giúp
                             </a>
                             
-                        </li>
-                        
-                         <li class="header__navbar-item header__navbar-user">
-                            <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
-                            <span class="header__navbar-user-name">Nguyen Duc Phung</span>
-                        
-                            <ul class="header__navbar-user-menu">
-                                <li class="header__navbar-user-item">
-                                    <a href="">Tài khoản của tôi</a>
-                                </li>
-                                <li class="header__navbar-user-item">
-                                    <a href="">Địa chỉ của tôi</a>
-                                </li>
-                                <li class="header__navbar-user-item">
-                                    <a href="">Đơn mua</a>
-                                </li>
-                                <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                    <a href="">Đăng xuất</a>
-                                </li>
-                            </ul>
-                        </li> 
+                        <?php
+                            include("./public/layout/header_user.php");
+                        ?>
                     </ul>
                 </nav>
         
