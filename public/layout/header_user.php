@@ -1,5 +1,10 @@
 <?php 
-    session_start();
+    if(isset($_SESSION['users'])){
+        $users = $_SESSION['users'];
+    }else{
+        $users = '';
+    }
+
     if(isset($_SESSION['fullname'])){
         $fullname = $_SESSION['fullname'];
     }else{
