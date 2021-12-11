@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $total = $_POST['total'];
 
     //lấy tên file ảnh
-    $user_img = $_FILES['fileToUpload']['name'];
+    $order_img = $_FILES['fileToUpload']['name'];
     //thư mục upload ảnh
     $link_img = "upload/";
 
@@ -27,8 +27,8 @@ if(isset($_POST['submit'])){
     // Check extension
     if( in_array($imgFileType,$imgType_arr) ){
         // Insert record
-        $sql = "INSERT INTO products (name, phone, address, note, price, total, user_img) 
-        VALUES ('$name','$phone', '$address', '$note', '$price', '$total', '$user_img')";
+        $sql = "INSERT INTO products (name, phone, address, note, price, total, order_img) 
+        VALUES ('$name','$phone', '$address', '$note', '$price', '$total', '$order_img')";
 
         if (mysqli_query($connect, $sql)) {
             header('Location: http://localhost/pets-care/admin/user-list.php');
@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
         mysqli_close($connect);
 
         // Upload file
-        move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$link_img.$user_img);
+        move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$link_img.$order_img);
 
     }
     else {
