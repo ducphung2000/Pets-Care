@@ -33,6 +33,9 @@
               <th>discount</th>
               <th>image</th>
               <th>image1</th>
+              <th>image2</th>
+              <th>image3</th>
+              <th>image4</th>
               
               <th style="text-align: center;">Sửa</th>
               <th style="text-align: center;">Xoá</th>
@@ -65,6 +68,9 @@
                           <td>".$row['discount']."</td>
                           <td>".$row['image']."</td>
                           <td>".$row['image1']."</td>
+                          <td>".$row['image2']."</td>
+                          <td>".$row['image3']."</td>
+                          <td>".$row['image4']."</td>
                           "?>
                           <td style="text-align: center;"> <a href="edit-product.php?id=<?php echo $row["id"] ?>" class="button">Edit</a></td>
                           <?php 

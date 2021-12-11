@@ -51,9 +51,9 @@ type3 VARCHAR(50),
 category_id INT(6) NOT NULL,
 image varchar(100) not null,
 image1 varchar(100) not null,
--- image2 varchar(100) not null,
--- image3 varchar(100) not null,
--- image4 varchar(100) not null,
+image2 varchar(100) not null,
+image3 varchar(100) not null,
+image4 varchar(100) not null,
 discount NVARCHAR(3),
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";

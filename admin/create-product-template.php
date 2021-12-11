@@ -82,18 +82,18 @@ $conn = ConnectDB();
                     <label>Ảnh sản phẩm thay đổi 1</label>
                     <input type="file" name="fileToUpload1" id="fileToUpload1" class="form-control-file" accept=".jpg,.jpeg,.png,.gif,.jfif">
                 </div>
-                <!--<div class="form-group">
+                <div class="form-group">
                     <label>Ảnh sản phẩm thay đổi 2</label>
-                    <input type="file" name="fileToUpload2" id="fileToUpload2" class="form-control-file">
+                    <input type="file" name="fileToUpload2" id="fileToUpload2" class="form-control-file" accept=".jpg,.jpeg,.png,.gif,.jfif">
                 </div>
                 <div class="form-group">
                     <label>Ảnh sản phẩm thay đổi 3</label>
-                    <input type="file" name="fileToUpload3" id="fileToUpload3" class="form-control-file">
+                    <input type="file" name="fileToUpload3" id="fileToUpload3" class="form-control-file" accept=".jpg,.jpeg,.png,.gif,.jfif" >
                 </div>
                 <div class="form-group">
                     <label>Ảnh sản phẩm thay đổi 4</label>
-                    <input type="file" name="fileToUpload4" id="fileToUpload4" class="form-control-file">
-                </div> -->
+                    <input type="file" name="fileToUpload4" id="fileToUpload4" class="form-control-file" accept=".jpg,.jpeg,.png,.gif,.jfif">
+                </div>
                 
                 <input type='submit' value='submit' name='submit'>
             </form>
