@@ -1,5 +1,5 @@
 <!-- login Form -->
-<div class="modal modal-login js-modal-login">
+<!-- <div class="modal modal-login js-modal-login">
     <div class="modal__overlay js-modal-close">
     </div>
     <div class="modal__body"> 
@@ -50,4 +50,4 @@
             </div>
         </div> 
     </div>
-</div> 
+</div>  -->

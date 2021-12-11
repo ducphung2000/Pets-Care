@@ -1,5 +1,5 @@
 <!-- Register Form -->
-<div class="modal modal-register js-modal-register">
+<!-- <div class="modal modal-register js-modal-register">
     <div class="modal__overlay js-modal-close">
     </div>
     <div  class="modal__body"> 
@@ -49,4 +49,4 @@
             </div>
         </div>
     </div>
-</form> 
+</form>  -->
