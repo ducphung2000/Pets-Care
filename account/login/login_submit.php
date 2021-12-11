@@ -13,7 +13,7 @@
         $user = $connect->query($sql);
 
         if ($user->num_rows > 0) {
-            $_SESSION["users"] = $fullname;
+            $_SESSION["users"] = $username;
             
             // $_SESSION["bird"] = $bird;
             // $_SESSION["user_img"] = $user_img;
