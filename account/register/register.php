@@ -98,6 +98,9 @@
 
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
+                                    <input type="text" name="fullname" class="auth-form__input" require placeholder="Nhập tên đăng nhập của bạn">
+                                </div>
+                                <div class="auth-form__group">
                                     <input type="text" name="username" class="auth-form__input" placeholder="Nhập tên đăng nhập của bạn">
                                 </div>
                                 <div class="auth-form__group">

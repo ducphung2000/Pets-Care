@@ -14,7 +14,7 @@
 
         if ($user->num_rows > 0) {
             $_SESSION["users"] = $username;
-            // $_SESSION["fullname"] = $fullname;
+            $_SESSION["fullname"] = $fullname;
             // $_SESSION["phone"] = $phone;
             // $_SESSION["email"] = $email;
             // $_SESSION["bird"] = $bird;

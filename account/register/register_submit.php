@@ -8,6 +8,7 @@
         $connect = ConnectDB();
         $username = $_POST["username"];
         $password = $_POST["password"];
+        $fullname = 'Chua co gi';
         $repassword = $_POST["repassword"];
 
         if($password != $repassword){
@@ -24,7 +25,7 @@
             die();
         }
 
-        $sql = "INSERT INTO users (username, password) VALUES ('$username','$password')";
+        $sql = "INSERT INTO users (username, password, fullname) VALUES ('$username','$password','$fullname')";
         mysqli_query($connect,$sql);
         $_SESSION["thongbao"] = "Đã đăng ký thành công. CHuyển đến trang đăng nhập.";
         header("location:../login/login.php");

@@ -1,6 +1,7 @@
 <?php 
 
     if (isset($_SESSION['users']) && $_SESSION['users']){
+        
         echo '
             <li class="header__navbar-item header__navbar-user">
                 <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
