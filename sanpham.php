@@ -538,7 +538,7 @@
                                             <div class="buying-content__buy">
                                                 <button class="buy__add-cart">
                                                     <i class="fas fa-cart-plus buy__add-cart-icon"></i>
-                                                    <span>Thêm Vào Giỏ Hàng</span>
+                                                    <input type="submit" name="order_click"  value="Thêm vào giỏ hàng">
                                                 </button>
                                                 <a href="cart.php" class="buy_buying-btn btn btn--primary">Mua Ngay</a>
                                             </div>
