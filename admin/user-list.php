@@ -20,8 +20,13 @@ $connect = ConnectDB();
           <thead>
             <tr>
               <th>#</th>
-              <th>username/email</th>
+              <th>username</th>
               <th>password</th>
+              <th>fullname</th>
+              <th>phone</th>
+              <th>email</th>
+              <th>bird</th>
+              <th>user_img</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -42,6 +47,11 @@ $connect = ConnectDB();
                               <td>".$row['id']."</td>
                               <td>".$row['username']."</td>
                               <td>".$row['password']."</td>
+                              <td>".$row['fullname']."</td>
+                              <td>".$row['phone']."</td>
+                              <td>".$row['email']."</td>
+                              <td>".$row['bird']."</td>
+                              <td>".$row['user_img']."</td>
                               <td> 
                                 <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
