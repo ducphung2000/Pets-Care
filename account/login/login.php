@@ -82,7 +82,12 @@
                     <h1 class="h2">Đăng Nhập tài khoản của bạn.</h1>
 
                 </div>
-
+                <?php
+                    if(isset($_SESSION["thongbao"])) {
+                        echo $_SESSION["thongbao"];
+                        session_unset();
+                    }
+                ?>
                 <form action="login_submit.php" method="POST" role="form">
                     <div class="auth-form">
                         <div class="auth-form__container">

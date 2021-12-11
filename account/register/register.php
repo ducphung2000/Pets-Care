@@ -84,7 +84,7 @@
                 <?php
                     if(isset($_SESSION["thongbao"])) {
                         echo $_SESSION["thongbao"];
-                        session_unset("thongbao");
+                        session_unset();
                     }
                 ?>
                 <form action="register_submit.php" method="POST">
@@ -97,9 +97,9 @@
                             </div>
 
                             <div class="auth-form__form">
-                                <div class="auth-form__group">
+                                <!-- <div class="auth-form__group">
                                     <input type="text" name="fullname" class="auth-form__input" require placeholder="Nhập tên đăng nhập của bạn">
-                                </div>
+                                </div> -->
                                 <div class="auth-form__group">
                                     <input type="text" name="username" class="auth-form__input" placeholder="Nhập tên đăng nhập của bạn">
                                 </div>

@@ -8,7 +8,7 @@
         $connect = ConnectDB();
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $fullname = 'Chua co gi';
+        // $fullname = 'Chua co gi';
         $repassword = $_POST["repassword"];
 
         if($password != $repassword){
@@ -30,5 +30,6 @@
         $_SESSION["thongbao"] = "Đã đăng ký thành công. CHuyển đến trang đăng nhập.";
         header("location:../login/login.php");
     }else {
+        $_SESSION["thongbao"] = "Đăng ký thất bại. Vui lòng nhập đầy đủ thông tin!";
         header("location:register.php");
     }

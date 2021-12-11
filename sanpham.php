@@ -422,9 +422,9 @@
                                             </div>
                                             <div class="product-description__intro-list-img">
                                                 <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img intro-item__img--active">
+                                                <img src="./public/img/'.$row['image1'].'" alt="Hình ảnh" class="intro-item__img">
                                                 <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img">
-                                                <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img">
-                                                <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img">
+                                                <img src="./public/img/'.$row['image1'].'" alt="Hình ảnh" class="intro-item__img">
                                                 <img src="./public/img/'.$row['image'].'" alt="Hình ảnh" class="intro-item__img">
                                             </div>
 

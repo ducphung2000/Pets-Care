@@ -32,6 +32,7 @@
               <th>type3</th>
               <th>discount</th>
               <th>image</th>
+              <th>image1</th>
               
               <th style="text-align: center;">Sửa</th>
               <th style="text-align: center;">Xoá</th>
@@ -63,6 +64,7 @@
                           <td>".$row['type3']."</td>
                           <td>".$row['discount']."</td>
                           <td>".$row['image']."</td>
+                          <td>".$row['image1']."</td>
                           "?>
                           <td style="text-align: center;"> <a href="edit-product.php?id=<?php echo $row["id"] ?>" class="button">Edit</a></td>
                           <?php 

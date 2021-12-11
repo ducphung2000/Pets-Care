@@ -19,12 +19,15 @@
             // $_SESSION["email"] = $email;
             // $_SESSION["bird"] = $bird;
             // $_SESSION["user_img"] = $user_img;
+            $_SESSION["thongbao"] = "Đăng nhập thành công!";
 
             header("location:../../index.php");
 
         }else {
-            echo "Bạn đã đăng nhập sai username hoặc password. Vui lòng kiểm tra lại!!";
+            $_SESSION["thongbao"] = "Bạn đã đăng nhập sai username hoặc password. Vui lòng kiểm tra lại!";
+            header("location:login.php");
         }
     }else {
+        $_SESSION["thongbao"] = "Đăng nhập thất bại. Vui lòng nhập đầy đủ thông tin!";
         header("location:login.php");
     }
