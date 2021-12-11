@@ -48,14 +48,14 @@ description VARCHAR(10000),
 type1 VARCHAR(50),
 type2 VARCHAR(50),
 type3 VARCHAR(50),
-create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 category_id INT(6) NOT NULL,
 image varchar(100) not null,
 -- image1 varchar(100) not null,
 -- image2 varchar(100) not null,
 -- image3 varchar(100) not null,
 -- image4 varchar(100) not null,
-discount NVARCHAR(3)
+discount NVARCHAR(3),
+create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_product)) {
@@ -82,12 +82,12 @@ $sql_user = "CREATE TABLE users (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(255) NOT NULL,
 password VARCHAR(255) NOT NULL,
-create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 fullname VARCHAR(255) NOT NULL,
 phone VARCHAR(255) NOT NULL,
 email VARCHAR(255) NOT NULL,
 bird VARCHAR(255) NOT NULL,
-user_img VARCHAR(255) NOT NULL
+user_img VARCHAR(255) NOT NULL,
+create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_user)) {
@@ -119,11 +119,11 @@ $sql_order = "CREATE TABLE orders (
     name VARCHAR(255) NOT NULL,
     phone VARCHAR(255) NOT NULL,
     address VARCHAR(255) NOT NULL,
-    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     note VARCHAR(255) NOT NULL,
     price VARCHAR(255) NOT NULL,
     total VARCHAR(255) NOT NULL,
-    order_img VARCHAR(255) NOT NULL
+    order_img VARCHAR(255) NOT NULL,
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
     )";
     
     if (mysqli_query($connect, $sql_order)) {
