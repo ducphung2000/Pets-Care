@@ -15,17 +15,17 @@ if(isset($_POST['submit'])){
     //lấy tên file ảnh
     $user_img = $_FILES['fileToUpload']['username'];
     //thư mục upload ảnh
-    $target_dir = "upload/";
+    $link_img = "upload/";
 
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+    $link_file = $link_img . basename($_FILES["fileToUpload"]["name"]);
 
     // Select file type
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $imgFileType = strtolower(pathinfo($link_file,PATHINFO_EXTENSION));
 
     // Valid file extensions
-    $extensions_arr = array("jpg","jpeg","png","gif","jfif");
+    $imgType_arr = array("jpg","jpeg","png","gif","jfif");
     // Check extension
-    if( in_array($imageFileType,$extensions_arr) ){
+    if( in_array($imgFileType,$imgType_arr) ){
         // Insert record
         $sql = "INSERT INTO products (username, password, fullname, phone, email, bird, user_img) 
         VALUES ('$username','$password', '$fullname','$phone', '$email', '$bird', '$user_img')";
@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
         mysqli_close($connect);
 
         // Upload file
-        move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$target_dir.$user_img);
+        move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$link_img.$user_img);
 
     }
     else {
