@@ -1,5 +1,5 @@
 <?php
-    session_status();
+    session_start();
     require_once '../../admin/connect.php';
     
     
