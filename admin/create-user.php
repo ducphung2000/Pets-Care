@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $bird = $_POST['bird'];
 
     //lấy tên file ảnh
-    $user_img = $_FILES['fileToUpload']['name'];
+    $user_img = $_FILES['fileToUpload']['username'];
     //thư mục upload ảnh
     $link_img = "upload/";
 
