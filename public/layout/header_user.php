@@ -1,25 +1,26 @@
 <?php 
+
     if (isset($_SESSION['users']) && $_SESSION['users']){
         echo '
-        <li class="header__navbar-item header__navbar-user">
-            <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
-            <span class="header__navbar-user-name">'.$_SESSION['users'].'</span>
+            <li class="header__navbar-item header__navbar-user">
+                <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
+                <span class="header__navbar-user-name">'.$_SESSION['users'].'</span>
 
-            <ul class="header__navbar-user-menu">
-                <li class="header__navbar-user-item">
-                    <a href="user.php">Tài khoản của tôi</a>
-                </li>
-                <li class="header__navbar-user-item">
-                    <a href="">Địa chỉ của tôi</a>
-                </li>
-                <li class="header__navbar-user-item">
-                    <a href="">Đơn mua</a>
-                </li>
-                <li class="header__navbar-user-item header__navbar-user-item--separate">
-                    <a href="./account/login/logout.php">Đăng xuất</a>
-                </li>
-            </ul>
-        </li>
+                <ul class="header__navbar-user-menu">
+                    <li class="header__navbar-user-item">
+                        <a href="user.php">Tài khoản của tôi</a>
+                    </li>
+                    <li class="header__navbar-user-item">
+                        <a href="">Địa chỉ của tôi</a>
+                    </li>
+                    <li class="header__navbar-user-item">
+                        <a href="">Đơn mua</a>
+                    </li>
+                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                        <a href="./account/login/logout.php">Đăng xuất</a>
+                    </li>
+                </ul>
+            </li>
         ';
     }else{
         echo '
