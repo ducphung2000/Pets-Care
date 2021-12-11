@@ -1,21 +1,10 @@
 <?php 
-    if(isset($_SESSION['users'])){
-        $users = $_SESSION['users'];
-    }else{
-        $users = 'Xin chao bạn!';
-    }
-
-    if(isset($_SESSION['fullname'])){
-        $fullname = $_SESSION['fullname'];
-    }else{
-        $fullname = 'Xin chào';
-    }
 
     if (isset($_SESSION['users']) && $_SESSION['users']){
         echo '
             <li class="header__navbar-item header__navbar-user">
                 <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
-                <span class="header__navbar-user-name">'.$_SESSION['fullname'].'</span>
+                <span class="header__navbar-user-name">'.$_SESSION['users'].'</span>
 
                 <ul class="header__navbar-user-menu">
                     <li class="header__navbar-user-item">
