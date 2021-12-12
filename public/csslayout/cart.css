@@ -163,8 +163,12 @@
     color: #ff0202;
     margin-left: 50px;
     cursor: pointer;
+    text-decoration: none;
 }
-
+.item-product__delete a {
+    color: #ff0202;
+    text-decoration: none;
+}
 /* container-content__bot  */
 
 .container-content__bot {

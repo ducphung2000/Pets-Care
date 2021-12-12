@@ -28,13 +28,41 @@
             $_SESSION['cart'] = array();
         }
         if(isset($_GET['action'])){
+            function update_cart($add = false){
+                foreach($_POST['quantity'] as $id => $quantity) {
+                    if($quantity == 0){
+                        unset($_SESSION['cart'][$id]);
+
+                    }else{
+                        if($add){
+                            $_SESSION['cart'][$id] += $quantity;
+                        }else{
+                            $_SESSION['cart'][$id] = $quantity;
+                        }
+                    }
+                }
+            }
             switch($_GET['action']){
                 case "add":
                     // var_dump($_POST);exit;
-                    foreach($_POST['quantity'] as $id => $quantity) {
-                        $_SESSION['cart'][$id] = $quantity;
+                    update_cart(true);
+                    header("location:./cart.php");
+                    break;
+
+                case "delete":
+                    if(isset($_GET['id'])){
+                        unset($_SESSION['cart'][$_GET['id']]);
                     }
+                    header("location:./cart.php");
                     // var_dump($_SESSION['cart']);exit;
+                    break;
+                case "submit":
+                    if(isset($_POST['update_click'])){ // Cập nhật giỏ hàng
+                        update_cart();
+                        header("location:./cart.php");
+                    }elseif($_POST['order_click']){ // đặt hàng
+
+                    }
                     break;
             }
         }
@@ -224,7 +252,10 @@
 
                                         <div class="item-product__money">'.$row['price'].'</div>
 
-                                        <div class="item-product__delete">Xoá</div>
+                                        <div class="item-product__delete">
+                                            <a href="cart.php?action=delete&id='.$row['id'].'">Xoá</a>
+                                        
+                                        </div>
                                     </div>
 
                                     '; } 
