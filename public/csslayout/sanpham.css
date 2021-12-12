@@ -350,13 +350,19 @@
     
 }
 
+.choose-main__type-product {
+    display: flex;
+}
+
 .product__variation { 
+    max-width: 80px;
     font-size: 1.4rem;
     color: var(--text-color);
     border: 1px solid var(--border-color);
     background-color: var(--white-color);
     padding: 10px 14px;
     margin-right: 10px;
+    text-align: center;
     cursor: pointer;
 }
 

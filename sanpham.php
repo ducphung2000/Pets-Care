@@ -513,9 +513,9 @@
                                                         <div class="choose-main__type">
                                                             <div class="choose-main__type-label">Loại</div>
                                                             <div class="choose-main__type-product">
-                                                                <button class="product__variation">'.$row['type1'].'</button>
-                                                                <button class="product__variation">'.$row['type2'].'</button>
-                                                                <button class="product__variation">'.$row['type3'].'</button>
+                                                                <input type="text" value="'.$row['type1'].'" class="product__variation">
+                                                                <input type="text" value="'.$row['type2'].'" class="product__variation">
+                                                                <input type="text" value="'.$row['type3'].'" class="product__variation">
                                                             </div>
                                                         </div>
                                                         <div class="choose-main__quantity">
@@ -543,7 +543,9 @@
                                                     <i class="fas fa-cart-plus buy__add-cart-icon"></i>
                                                     <span type="submit">Thêm Vào Giỏ Hàng</span>
                                                 </button>
-                                                <a href="cart.php" class="buy_buying-btn btn btn--primary">Mua Ngay</a>
+                                                '?>
+                                                <!-- <a href="cart.php" class="buy_buying-btn btn btn--primary">Mua Ngay</a>  -->
+                                                <?php echo '
                                             </div>
 
                                             <div class="buying-content__more"></div>
