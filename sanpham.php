@@ -519,19 +519,12 @@
                                                             </div>
                                                         </div>
                                                         <div class="choose-main__quantity">
-                                                            <div class="choose-main__quantity-label">Số Lượng</div>'?>
-                                                            <!-- <div class="choose-main__quantity-number"> -->
-                                                                <!-- <button class="quantity-number__icon-minus disabled">
-                                                                    <i class="fas fa-minus"></i>
-                                                                </button> -->
-                                                            <?php echo '
-                                                            <input type="text"  class="quantity-number__num" value="1">
-                                                            '?>
-                                                                <!-- <button class="quantity-number__icon-plus">
-                                                                    <i class="fas fa-plus"></i>
-                                                                </button> -->
-                                                                <!-- </div> -->
-                                                            <?php echo '
+                                                            <div class="choose-main__quantity-label">Số Lượng</div>
+                                                                <div class="choose-main__quantity-number">
+                                                                    
+                                                                    <input type="text" name="quantity['.$row['id'].']"  class="quantity-number__num" value="1">
+                                                                
+                                                                </div>
                                                             <div class="choose-main__quantity-text">160 sản phẩm có sẵn</div>
                                                         </div>
                                                     </div>
@@ -543,9 +536,7 @@
                                                     <i class="fas fa-cart-plus buy__add-cart-icon"></i>
                                                     <span type="submit">Thêm Vào Giỏ Hàng</span>
                                                 </button>
-                                                '?>
-                                                <!-- <a href="cart.php" class="buy_buying-btn btn btn--primary">Mua Ngay</a>  -->
-                                                <?php echo '
+                                                <input type="submit" name="add-cart" class="buy_buying-btn btn btn--primary" value="Mua Ngay">
                                             </div>
 
                                             <div class="buying-content__more"></div>

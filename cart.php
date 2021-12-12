@@ -6,9 +6,10 @@
     if(!isset($_SESSION["users"])){
         header("location:./account/login/login.php");
     }
-    // if(isset($_GET['action'])){
-    //     echo "action";exit;
-    // }
+    if(isset($_GET['action'])){
+        var_dump($_POST);exit;
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -160,7 +161,7 @@
                 <?php 
                 
                 ?>
-                <div  class="container-content">
+                <form action="cart.php?action=submit" method="POST" class="container-content">
                     <div class="container-content__top">
                         <div class="text__left">Sản Phẩm</div>
                         <div class="text-right__item">Đơn Giá</div>
@@ -196,13 +197,9 @@
                                 </div>
 
                                 <div class="choose-main__quantity-number">
-                                    <button class="quantity-number__icon-minus">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <input type="text" class="quantity-number__num" value="1">
-                                    <button class="quantity-number__icon-plus">
-                                        <i class="fas fa-plus"></i>
-                                    </button>
+                                    
+                                    <input type="text" name="quantity[]" class="quantity-number__num" value="">
+                                    
                                 </div>
 
                                 <div class="item-product__money">199.000đ</div>
@@ -221,13 +218,93 @@
                         
                         <div class="container-content__bot-right">
                             <div class="content__bot-total">0đ</div>
-                            <!-- <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng"> -->
+                            <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng">
 
-                            <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
+                            <!-- <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a> -->
                         </div>
 
                     </div>
-                </div>
+                </form>
+
+                <?php
+                    // if(isset($_GET['id'])){
+                    //     $id = $_GET['id'];
+                    // }else{
+                    //     $id = '';
+                    // }
+                    // $sql = "SELECT * FROM products WHERE id = '$id'";
+                    // $result = $connect->query($sql);
+
+                    // if ($result->num_rows > 0) {
+                        // output data of each row
+                        // while($row = $result->fetch_assoc()) {
+                            // echo '
+                            //     <div  class="container-content">
+                            //         <div class="container-content__top">
+                            //             <div class="text__left">Sản Phẩm</div>
+                            //             <div class="text-right__item">Đơn Giá</div>
+                            //             <div class="text-right__item">Số Lượng</div>
+                            //             <div class="text-right__item">Số tiền</div>
+                            //             <div class="text-right__item">Thao Tác</div>
+                            //         </div>
+                
+                            //         <div class="container-content__main">
+                                        
+                            //             <div class="main-product__list">
+                            //                 <div class="main-product__item">
+                
+                            //                     <div class="main-product__item-product">
+                            //                         <a href="#" class="item-product__link">
+                            //                             <img src="./public/img/xucxich.png" alt="Ảnh của Xúc xích chó mèo" class="item-product__img">
+                                                    
+                            //                             <div class="item-product__text">Xúc xích chó mèo</div>
+                            //                         </a>
+                            //                     </div>
+                
+                            //                     <div class="item-product__sectors">
+                            //                         <div class="item-product__sectors-text">
+                            //                             <span>Phân loại hàng:</span> 
+                            //                             <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                            //                         </div>
+                            //                         <div class="item-product__sectors-about">Gà(Đỏ)</div>
+                            //                     </div>
+                
+                            //                     <div class="item-product__price">
+                            //                         <div class="item-product__price-old">250.000đ</div> 
+                            //                         <div class="item-product__price-sale">199.000đ</div> 
+                            //                     </div>
+                
+                            //                     <div class="choose-main__quantity-number">
+                                                    
+                            //                         <input type="text" class="quantity-number__num" value="1">
+                                                    
+                            //                     </div>
+                
+                            //                     <div class="item-product__money">199.000đ</div>
+                
+                            //                     <div class="item-product__delete">Xoá</div>
+                            //                 </div>
+                                            
+                            //             </div>
+                
+                            //         </div>
+                
+                            //         <div class="container-content__bot">
+                            //             <div class="container-content__bot-left">
+                            //                 <div class="content__bot-text">Tổng Thanh Toán:</div>
+                            //             </div>
+                                        
+                            //             <div class="container-content__bot-right">
+                            //                 <div class="content__bot-total">0đ</div>
+                            //                 <!-- <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng"> -->
+                
+                            //                 <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
+                            //             </div>
+                
+                            //         </div>
+                            //     </div>
+                            // ';}}
+                ?>
             </div>
 
 
