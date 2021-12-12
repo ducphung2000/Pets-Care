@@ -221,9 +221,9 @@
                         
                         <div class="container-content__bot-right">
                             <div class="content__bot-total">0đ</div>
-                            <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng">
+                            <!-- <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng"> -->
 
-                            <!-- <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a> -->
+                            <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a>
                         </div>
 
                     </div>

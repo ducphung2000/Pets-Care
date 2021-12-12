@@ -414,7 +414,7 @@
                           
                             <div class="container-content">
 
-                                <div class="container-buy__product">
+                                <form action="cart.php?id='.$row['id'].'" method="POST" class="container-buy__product">
                                     <div class="buy__product-description">
                                         <div class="product-description__intro">
                                             <div class="product-description__intro-image">
@@ -519,16 +519,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="choose-main__quantity">
-                                                            <div class="choose-main__quantity-label">Số Lượng</div>
-                                                            <div class="choose-main__quantity-number">
-                                                                <button class="quantity-number__icon-minus disabled">
+                                                            <div class="choose-main__quantity-label">Số Lượng</div>'?>
+                                                            <!-- <div class="choose-main__quantity-number"> -->
+                                                                <!-- <button class="quantity-number__icon-minus disabled">
                                                                     <i class="fas fa-minus"></i>
-                                                                </button>
-                                                                <input type="text" class="quantity-number__num" value="1">
-                                                                <button class="quantity-number__icon-plus">
+                                                                </button> -->
+                                                            <?php echo '
+                                                            <input type="text"  class="quantity-number__num" value="1">
+                                                            '?>
+                                                                <!-- <button class="quantity-number__icon-plus">
                                                                     <i class="fas fa-plus"></i>
-                                                                </button>
-                                                            </div>
+                                                                </button> -->
+                                                                <!-- </div> -->
+                                                            <?php echo '
                                                             <div class="choose-main__quantity-text">160 sản phẩm có sẵn</div>
                                                         </div>
                                                     </div>
@@ -546,7 +549,7 @@
                                             <div class="buying-content__more"></div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
 
                                 <div class="container-buy__details">
                                     <div class="product-content">
