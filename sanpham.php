@@ -414,7 +414,7 @@
                           
                             <div class="container-content">
 
-                                <form action="cart.php?id='.$row['id'].'" method="POST" class="container-buy__product">
+                                <form action="cart.php?action=add" method="POST" class="container-buy__product">
                                     <div class="buy__product-description">
                                         <div class="product-description__intro">
                                             <div class="product-description__intro-image">

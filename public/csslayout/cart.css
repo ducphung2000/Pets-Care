@@ -81,6 +81,8 @@
     border-bottom: 1px solid var(--border-color);
 }
 
+
+
 .main-product__item + .main-product__item {
     padding: 20px 0;
 }
@@ -121,8 +123,16 @@
     width: 124px;
 }
 
+
 .item-product__sectors-icon {
     cursor: pointer;
+}
+
+.item-product__sectors-about {
+    width: 70px;
+    text-align: center;
+    border: none;
+    outline: none;
 }
 
 .item-product__price {

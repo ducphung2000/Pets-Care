@@ -1,6 +1,7 @@
 <?php
-require_once 'admin/connect.php';
-$connect = ConnectDB();
+ session_start();
+ require_once 'admin/connect.php';
+ $connect = ConnectDB();
 ?>
 <!DOCTYPE html>
 <html lang="en">
