@@ -8,10 +8,9 @@
         $connect = ConnectDB();
         $username = $_POST["username"];
         $password = $_POST["password"];
-        $fullname = $_POST["fullname"];
-        $phone = $_POST["phone"];
-        $email = $_POST["email"];
-        // $fullname = 'Chua co gi';
+        // $fullname = $_POST["fullname"];
+        // $phone = $_POST["phone"];
+        // $email = $_POST["email"];
         $repassword = $_POST["repassword"];
 
         if($password != $repassword){

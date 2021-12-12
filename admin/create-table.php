@@ -114,18 +114,34 @@ if (mysqli_query($connect, $sql_new)) {
 
 //create table order
 $sql_order = "CREATE TABLE orders (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(255) NOT NULL,
 phone VARCHAR(255) NOT NULL,
 address VARCHAR(255) NOT NULL,
 note VARCHAR(255) NOT NULL,
-price VARCHAR(255) NOT NULL,
 total VARCHAR(255) NOT NULL,
 order_img VARCHAR(255) NOT NULL,
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
 if (mysqli_query($connect, $sql_order)) {
+    echo "Table news created successfully ";
+} else {
+    echo "Error creating table: " . mysqli_error($connect);
+}
+
+
+//create table order_detail
+$sql_order_detail = "CREATE TABLE order_detail (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+order_id int(6) NOT NULL,
+product_id int(6) NOT NULL,
+quantity int(20) NOT NULL,
+price VARCHAR(255) NOT NULL,
+create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)";
+
+if (mysqli_query($connect, $sql_order_detail)) {
     echo "Table news created successfully ";
 } else {
     echo "Error creating table: " . mysqli_error($connect);

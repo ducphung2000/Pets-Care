@@ -9,7 +9,6 @@ if(isset($_POST['submit'])){
     $phone = $_POST['phone'];
     $address = $_POST['address'];
     $note = $_POST['note'];
-    $price = $_POST['price'];
     $total = $_POST['total'];
 
     //lấy tên file ảnh
@@ -27,11 +26,11 @@ if(isset($_POST['submit'])){
     // Check extension
     if( in_array($imgFileType,$imgType_arr) ){
         // Insert record
-        $sql = "INSERT INTO products (name, phone, address, note, price, total, order_img) 
-        VALUES ('$name','$phone', '$address', '$note', '$price', '$total', '$order_img')";
+        $sql = "INSERT INTO products (name, phone, address, note, total, order_img) 
+        VALUES ('$name','$phone', '$address', '$note', '$total', '$order_img')";
 
         if (mysqli_query($connect, $sql)) {
-            header('Location: http://localhost/pets-care/admin/user-list.php');
+            echo "New record created successfully";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($connect);
         }

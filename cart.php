@@ -6,9 +6,9 @@
     if(!isset($_SESSION["users"])){
         header("location:./account/login/login.php");
     }
-    // if(isset($_GET['action'])){
-    //     echo "action";exit;
-    // }
+    if(isset($_GET['action'])){
+        echo "action";exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -158,13 +158,10 @@
         <div class="app__container">
             <div class="grid">
                 <?php 
-                
+                    
                 ?>
-                <div class="container-content">
+                <form action="cart.php?action=submit" method="POST" class="container-content">
                     <div class="container-content__top">
-                        <label for="" class="content__input">
-                            <input type="checkbox" class="input__check" >
-                        </label>
                         <div class="text__left">Sản Phẩm</div>
                         <div class="text-right__item">Đơn Giá</div>
                         <div class="text-right__item">Số Lượng</div>
@@ -176,9 +173,6 @@
                         
                         <div class="main-product__list">
                             <div class="main-product__item">
-                                <label for="" class="content__input">
-                                    <input type="checkbox" class="input__check" >
-                                </label>
 
                                 <div class="main-product__item-product">
                                     <a href="#" class="item-product__link">
@@ -215,6 +209,7 @@
 
                                 <div class="item-product__delete">Xoá</div>
                             </div>
+
                         <?php
                             // if(isset($_GET['id'])){
                             //     $id = $_GET['id'];
@@ -280,15 +275,10 @@
 
                     <div class="container-content__bot">
                         <div class="container-content__bot-left">
-                            <label for="" class="content__input">
-                                <input type="checkbox" class="input__check" >
-                            </label>
-                            <button class="content__bot-select-all">Chọn Tất Cả</button>
-                            <div class="content__bot-delete">Xoá</div>
+                            <div class="content__bot-text">Tổng Thanh Toán:</div>
                         </div>
                         
                         <div class="container-content__bot-right">
-                            <div class="content__bot-text">Tổng Thanh Toán:</div>
                             <div class="content__bot-total">0đ</div>
                             <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng">
 
@@ -296,7 +286,7 @@
                         </div>
 
                     </div>
-                </div>
+                </form>
             </div>
 
 
