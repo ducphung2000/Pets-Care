@@ -416,6 +416,7 @@
 
 .quantity-number__num { 
     width: 50px;
+    height: 40px;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--text-color);
