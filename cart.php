@@ -195,7 +195,7 @@
                                 echo '
                                     <div class="main-product__item">
 
-                                        <div class="main-product__item-product">
+                                        <div class="main-product__item-product ">
                                             <a href="#" class="item-product__link">
                                                 <img src="./public/img/'.$row['image'].'" alt="Ảnh của sản phẩm" class="item-product__img">
                                             

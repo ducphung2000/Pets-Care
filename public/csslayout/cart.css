@@ -82,14 +82,14 @@
 }
 
 
+.main-product__item-product {
+    width: 350px;
+}
 
 .main-product__item + .main-product__item {
     padding: 20px 0;
 }
 
-.main-product__item-product {
-    width: 350px;
-}
 
 .item-product__link {
     display: flex;
