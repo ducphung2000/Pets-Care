@@ -6,9 +6,9 @@
     if(!isset($_SESSION["users"])){
         header("location:./account/login/login.php");
     }
-    if(isset($_GET['action'])){
-        echo "action";exit;
-    }
+    // if(isset($_GET['action'])){
+    //     echo "action";exit;
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -158,9 +158,9 @@
         <div class="app__container">
             <div class="grid">
                 <?php 
-                    
+                
                 ?>
-                <form action="cart.php?action=submit" method="POST" class="container-content">
+                <div  class="container-content">
                     <div class="container-content__top">
                         <div class="text__left">Sản Phẩm</div>
                         <div class="text-right__item">Đơn Giá</div>
@@ -209,65 +209,6 @@
 
                                 <div class="item-product__delete">Xoá</div>
                             </div>
-
-                        <?php
-                            // if(isset($_GET['id'])){
-                            //     $id = $_GET['id'];
-                            // }else{
-                            //     $id = '';
-                            // }
-                            // $sql = "SELECT * FROM products WHERE id = '$id'";
-                            // $result = $connect->query($sql);
-
-                            // if ($result->num_rows > 0) {
-                            //     // output data of each row
-                            //     while($row = $result->fetch_assoc()) {
-                            //         echo '
-                            //             <div class="main-product__item">
-                            //                 <label for="" class="content__input">
-                            //                     <input type="checkbox" class="input__check" >
-                            //                 </label>
-
-                            //                 <div class="main-product__item-product">
-                            //                     <a href="#" class="item-product__link">
-                            //                         <img src="./public/img/'.$row['image'].'" alt="Ảnh của Xúc xích chó mèo" class="item-product__img">
-                                                
-                            //                         <div class="item-product__text">'.$row['name'].'</div>
-                            //                     </a>
-                            //                 </div>
-
-                            //                 <div class="item-product__sectors">
-                            //                     <div class="item-product__sectors-text">
-                            //                         <span>Phân loại hàng:</span> 
-                            //                         <i class="fas fa-sort-down item-product__sectors-icon"></i>
-                            //                     </div>
-                            //                     <div class="item-product__sectors-about">'.$row['type1'].'</div>
-                            //                 </div>
-
-                            //                 <div class="item-product__price">
-                            //                     <div class="item-product__price-old">'.$row['old_price'].'</div> 
-                            //                     <div class="item-product__price-sale">'.$row['price'].'</div> 
-                            //                 </div>
-
-                            //                 <div class="choose-main__quantity-number">
-                            //                     <button class="quantity-number__icon-minus">
-                            //                         <i class="fas fa-minus"></i>
-                            //                     </button>
-                            //                     <input type="text" class="quantity-number__num" value="1">
-                            //                     <button class="quantity-number__icon-plus">
-                            //                         <i class="fas fa-plus"></i>
-                            //                     </button>
-                            //                 </div>
-
-                            //                 <div class="item-product__money">'.$row['price'].'</div>
-
-                            //                 <div class="item-product__delete">Xoá</div>
-                            //             </div>
-                            //         ';
-                            //     }
-                            // }
-                            ?>
-                            
                             
                         </div>
 
@@ -286,7 +227,7 @@
                         </div>
 
                     </div>
-                </form>
+                </div>
             </div>
 
 
