@@ -177,7 +177,7 @@
 
         <div class="app__container">
             <div class="grid">
-                <form action="pay.php?action=add" method="POST" class="container-content">
+                <form action="cart.php?action=submit" method="POST" class="container-content">
                     <div class="container-content__top">
                         <div class="text__left">Sản Phẩm</div>
                         <div class="text-right__item">Đơn Giá</div>
