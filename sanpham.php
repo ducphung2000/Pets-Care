@@ -427,7 +427,6 @@
                                                 <img src="./public/img/'.$row['image3'].'" alt="Hình ảnh" class="intro-item__img">
                                                 <img src="./public/img/'.$row['image4'].'" alt="Hình ảnh" class="intro-item__img">
                                             </div>
-
                                             
                                         </div>
                                         <div class="product-description__more">
@@ -445,6 +444,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="buy__product-buying">
                                         <div class="buying-content">
                                             <div class="buying-content__heading">

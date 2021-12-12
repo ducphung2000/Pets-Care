@@ -1,3 +1,10 @@
+.app__container {
+    position: relative;
+    width: 100%;
+    background-color: #f5f5f5;
+    top: 132px;
+}
+
 .container-content__top {
     display: block;
     height: auto;

@@ -177,7 +177,7 @@
 
         <div class="app__container">
             <div class="grid">
-                <form action="pay.php?action=submit" method="POST" class="container-content">
+                <form action="pay.php?action=add" method="POST" class="container-content">
                     <div class="container-content__top">
                         <div class="text__left">Sản Phẩm</div>
                         <div class="text-right__item">Đơn Giá</div>
@@ -218,7 +218,7 @@
 
                                         <div class="choose-main__quantity-number">
                                             
-                                            <input type="text" name="quantity['.$row['id'].']" class="quantity-number__num" value="'?> <?=$_SESSION['cart'][$row['id']]?> <?php echo '">
+                                            <input type="text" name="quantity['.$row['id'].']" class="quantity-number__num" value="'?><?=$_SESSION['cart'][$row['id']]?><?php echo '">
                                             
                                         </div>
 
@@ -226,26 +226,103 @@
 
                                         <div class="item-product__delete">Xoá</div>
                                     </div>
-                                '; } 
+
+                                    '; } 
+                                    
+                                ?>
+                            <div class="conteainer-content_total">
+                                <div class="container-content__bot-left">
+                                    <div class="content__bot-text">Tổng Tiền:</div>
+                                </div>
                                 
-                            ?>
+                                <div class="container-content__bot-right">
+                                    <div class="content__bot-total">0đ</div>
+                                    <input type="submit" name="update_click" class="container-content__bot-btn btn btn--primary" value="Cập nhật">
+                                </div>
+                            </div>
                             
                         </div>
 
                     </div>
 
-                    <div class="container-content__bot">
-                        <div class="container-content__bot-left">
-                            <div class="content__bot-text">Tổng Thanh Toán:</div>
+                    
+                    <div class="content__top-main">
+                        <div class="top-main__address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Địa Chỉ Nhận Hàng
                         </div>
+                        <div class="top-main__address-text">
+                            <div class="address-text__info">
+                                <div class="address-text__info-individual"> Nguyễn Đức Phụng (+84) 919873827</div>
+                                <div class="address-text__info-address">18 Phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</div>
+                            </div>
+                            <div class="address-text__change">Thay đổi</div>
+                        </div>
+                    </div>
+
                         
-                        <div class="container-content__bot-right">
-                            <div class="content__bot-total">0đ</div>
-                            <input type="submit" name="order_click" class="container-content__bot-btn btn btn--primary" value="Mua hàng">
 
-                            <!-- <a href="pay.php" type="submit" class="container-content__bot-btn btn btn--primary">Mua Hàng</a> -->
+                    <div class="container-content__main-about">
+                        <div class="main-about__mess">
+                            <div class="main-about__mess-content">
+                                <span>Lời nhắn:</span>
+                                <div class="main-about__input-mess">
+                                    <input class="mess-input" type="text" placeholder="Lưu ý cho Người bán..." value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-about__trans">
+                            <div class="main-about__trans-top">
+                                <div class="trans-top__label">Đơn vị vận chuyển:</div>
+                                <div class="trans-top__unit">
+                                    <div>Nhanh</div>
+                                    <div class="trans-top__unit-appoint">Nhận hàng vào 25 Th10 - 3 Th11</div>
+                                </div>
+                                <div class="trans-top__change">Thay đổi</div>
+                                <div class="trans-top__price-ship">₫20.100</div>
+                            </div>
+                            <div class="main-about__trans-bot">(Do ảnh hưởng của Covid-19,thời gian giao hàng có thể dài hơn dự kiến từ 1-5 ngày)</div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-content__bottom ">
+                        <div class="container-content__bot-payment grid__full-width">
+                            <div class="bot-payment__text">Phương thức thanh toán</div>
+    
+                            <div class="bot-payment__method">
+                                <div class="bot-payment__method-live">
+                                    <div class="method__btn btn method__btn-onl--active">Thanh toán khi nhận hàng</div>
+                                </div>
+
+                                <div class="bot-payment__method-onl">
+                                    <!-- <div class="btn method__btn ">Thanh toán trực tuyến</div> -->
+                                </div>
+                                
+                            </div>
                         </div>
 
+
+                        <div class="container-content__bot-pay">
+                            <div class="container-content__bot-pay-top">
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__text">Tổng tiền hàng</div>
+                                    <div class="bot-pay-top__number">120.000đ</div>
+                                </div>
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__text">Phí vận chuyển</div>
+                                    <div class="bot-pay-top__number">20.100đ</div>
+                                </div>
+                                <div class="bot-pay-top__item">
+                                    <div class="bot-pay-top__all-pay-text">Tổng thanh toán:</div>
+                                    <div class="bot-pay-top__all-pay-number">140.100đ</div>
+                                </div>
+                            </div>
+                            <div class="container-content__bot-pay-bot">
+                                <div class="bot-pay-bot__text">Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="#">Điều khoản của shop</a></div>
+                                <button class="bot-pay-bot__btn btn btn--primary">Đặt hàng</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
