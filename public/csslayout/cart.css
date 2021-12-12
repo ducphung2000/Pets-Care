@@ -237,9 +237,6 @@
     height: 40px;
 }
 
-.quantity-number__num:focus {
-    outline: none;
-}
 
 .conteainer-content_total {
     display: flex;
@@ -247,6 +244,55 @@
     margin-top: 20px;
 }
 
+
+.choose-main__quantity { 
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+
+}
+
+.choose-main__quantity-label { 
+    width: 110px;
+    color: #757575;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.choose-main__quantity-number { 
+    display: flex;
+    width: 122px;
+    height: 36px;
+    justify-content: center;
+}
+
+.quantity-number__num { 
+    width: 50px;
+    height: 36px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-align: center;
+    border: 1px solid var(--border-color);
+
+}
+
+.quantity-number__num:focus {
+    outline: none;
+}
+
+.choose-main__quantity-text { 
+    margin-left: 10px;
+    font-size: 1.4rem;
+    color: #929292;
+}
 
 /* Đơn vị vận chuyển */
 .container-content__main-about {
@@ -540,14 +586,33 @@
     display: flex;
     font-size: 1.7rem;
     color: var(--text-color);
+    flex-direction: column;
+    flex: 0.75;
+    margin-left: 20px;
+}
+
+.address-text__info span {
+    margin: 5px 0 10px 0;
 }
 
 .address-text__info-individual {
+    padding: 4px 12px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
     font-weight: 700;
 }
 
 .address-text__info-address {
-    margin-left: 30px;
+    height: 40px;
+    padding: 4px 12px;
+    margin-left: 20px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+
 }
 
 .address-text__change {

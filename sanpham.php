@@ -521,9 +521,9 @@
                                                         <div class="choose-main__quantity">
                                                             <div class="choose-main__quantity-label">Số Lượng</div>
                                                                 <div class="choose-main__quantity-number">
+                                            
+                                                                    <input type="text" name="quantity['.$row['id'].']" class="quantity-number__num" value="1">
                                                                     
-                                                                    <input type="text" name="quantity['.$row['id'].']"  class="quantity-number__num" value="1">
-                                                                
                                                                 </div>
                                                             <div class="choose-main__quantity-text">160 sản phẩm có sẵn</div>
                                                         </div>

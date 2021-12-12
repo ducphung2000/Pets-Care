@@ -253,10 +253,11 @@
                         </div>
                         <div class="top-main__address-text">
                             <div class="address-text__info">
-                                <div class="address-text__info-individual"> Nguyễn Đức Phụng (+84) 919873827</div>
-                                <div class="address-text__info-address">18 Phố Viên, Phường Đức Thắng, Quận Bắc Từ Liêm, Hà Nội</div>
+                                <span>Họ & Tên và Số điện thoại:</span>
+                                <input class="address-text__info-individual" type="text" placeholder="Nhập tên và số điện thoại của bạn..." value="">
+                                <span>Địa chỉ nhận hàng:</span>
+                                <input class="address-text__info-address" type="text" placeholder="Nhập  địa chỉ nhận hàng của bạn..." value="">
                             </div>
-                            <div class="address-text__change">Thay đổi</div>
                         </div>
                     </div>
 
