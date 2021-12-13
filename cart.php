@@ -219,7 +219,7 @@
 
         <div class="app__container">
             <div class="grid">
-                <?php if(!empty($error)) {?>
+                <?php if(!empty($error)) { ?>
                     <div id="notify-msg" 
                         style="font-size: 1.4rem;
                                 font-weight: 600;
@@ -301,16 +301,26 @@
 
                                             
                                             <?php echo '
-                                            <div class="conteainer-content_total">
-                                                <div class="container-content__bot-left">
-                                                    <div class="content__bot-text">Tổng Tiền:</div>
-                                                </div>
-                                                
-                                                <div class="container-content__bot-right">
-                                                    <div class="content__bot-total">'?><?=$total?> <?php echo '</div>
-                                                    <input type="submit" name="update_click" class="container-content__bot-btn btn btn--primary" value="Cập nhật">
-                                                </div>
-                                            </div>
+                                                        <div class="container-content__bot-pay">
+                                                            <div class="container-content__bot-pay-top">
+                                                                <div class="bot-pay-top__item">
+                                                                    <div class="bot-pay-top__text"></div>
+                                                                    <div class="bot-pay-top__number"></div>
+                                                                </div>
+                                                                <div class="bot-pay-top__item">
+                                                                    <!-- <div class="bot-pay-top__text">Phí vận chuyển</div>
+                                                                    <div class="bot-pay-top__number">20.100đ</div> -->
+                                                                </div>
+                                                                <div class="bot-pay-top__item">
+                                                                    <div class="bot-pay-top__all-pay-text">Tổng thanh toán:</div>
+                                                                    <div class="bot-pay-top__all-pay-number">'?><?=$total?> <?php echo '</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="container-content__bot-pay-bot">
+                                                                <div class="bot-pay-bot__text">Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="#">Điều khoản của shop</a></div>
+                                                                <input type="submit" name="order_click" class="bot-pay-bot__btn btn btn--primary" value="Đặt hàng">
+                                                            </div>
+                                                        </div>
                                         ';}
                                     }
                                 
@@ -318,53 +328,8 @@
                                 ?>
                             </div>
 
-                        </div>
 
-                        
-                        <div class="content__top-main">
-                            <div class="top-main__address">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Địa Chỉ Nhận Hàng
-                            </div>
-                            <div class="top-main__address-text">
-                                <div class="address-text__info">
-                                    <span>Họ & Tên:</span>
-                                    <input name="name" class="address-text__info-individual" type="text" placeholder="Nhập tên của bạn..." value="">
-                                    <span> Số điện thoại:</span>
-                                    <input name="phone" class="address-text__info-individual" type="text" placeholder="Nhập số điện thoại của bạn..." value="">
-                                    <span>Địa chỉ nhận hàng:</span>
-                                    <input name="address" class="address-text__info-address" type="text" placeholder="Nhập  địa chỉ nhận hàng của bạn..." value="">
-                                </div>
-                            </div>
-                        </div>
-
-                            
-
-                        <div class="container-content__main-about">
-                            <div class="main-about__mess">
-                                <div class="main-about__mess-content">
-                                    <span>Lời nhắn:</span>
-                                    <div class="main-about__input-mess">
-                                        <input class="mess-input" type="text" placeholder="Lưu ý cho Người bán..." value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-about__trans">
-                                <div class="main-about__trans-top">
-                                    <div class="trans-top__label">Đơn vị vận chuyển:</div>
-                                    <div class="trans-top__unit">
-                                        <div>Nhanh</div>
-                                        <div class="trans-top__unit-appoint">Nhận hàng vào 25 Th10 - 3 Th11</div>
-                                    </div>
-                                    <div class="trans-top__change"> </div>
-                                    <div class="trans-top__price-ship">₫20.100</div>
-                                </div>
-                                <div class="main-about__trans-bot">(Do ảnh hưởng của Covid-19,thời gian giao hàng có thể dài hơn dự kiến từ 1-5 ngày)</div>
-                            </div>
-                        </div>
-
-
-                        <div class="container-content__bottom ">
+                            <!-- Phương thức thanh toán -->
                             <div class="container-content__bot-payment grid__full-width">
                                 <div class="bot-payment__text">Phương thức thanh toán</div>
         
@@ -379,29 +344,53 @@
                                     
                                 </div>
                             </div>
-
-
-                            <div class="container-content__bot-pay">
-                                <div class="container-content__bot-pay-top">
-                                    <div class="bot-pay-top__item">
-                                        <div class="bot-pay-top__text">Tổng tiền hàng</div>
-                                        <div class="bot-pay-top__number">120.000đ</div>
-                                    </div>
-                                    <div class="bot-pay-top__item">
-                                        <div class="bot-pay-top__text">Phí vận chuyển</div>
-                                        <div class="bot-pay-top__number">20.100đ</div>
-                                    </div>
-                                    <div class="bot-pay-top__item">
-                                        <div class="bot-pay-top__all-pay-text">Tổng thanh toán:</div>
-                                        <div class="bot-pay-top__all-pay-number">140.100đ</div>
-                                    </div>
+                            
+                            <!-- Địa chỉ nhận hàng -->
+                            <div class="content__top-main">
+                                <div class="top-main__address">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Địa Chỉ Nhận Hàng
                                 </div>
-                                <div class="container-content__bot-pay-bot">
-                                    <div class="bot-pay-bot__text">Nhấn "Đặt hàng" đồng nghĩa với việc bạn đồng ý tuân theo <a href="#">Điều khoản của shop</a></div>
-                                    <input type="submit" name="order_click" class="bot-pay-bot__btn btn btn--primary" value="Đặt hàng">
+                                <div class="top-main__address-text">
+                                    <div class="address-text__info">
+                                        <span>Họ & Tên:</span>
+                                        <input name="name" class="address-text__info-individual" type="text" placeholder="Nhập tên của bạn..." value="">
+                                        <span> Số điện thoại:</span>
+                                        <input name="phone" class="address-text__info-individual" type="text" placeholder="Nhập số điện thoại của bạn..." value="">
+                                        <span>Địa chỉ nhận hàng:</span>
+                                        <input name="address" class="address-text__info-address" type="text" placeholder="Nhập  địa chỉ nhận hàng của bạn..." value="">
+                                    </div>
                                 </div>
                             </div>
+
+                            <!--    Ghi chú + ship -->
+                            <div class="container-content__main-about">
+                                <div class="main-about__mess">
+                                    <div class="main-about__mess-content">
+                                        <span>Lời nhắn:</span>
+                                        <div class="main-about__input-mess">
+                                            <input class="mess-input" type="text" placeholder="Lưu ý cho Người bán..." value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-about__trans">
+                                    <div class="main-about__trans-top">
+                                        <div class="trans-top__label">Đơn vị vận chuyển:</div>
+                                        <div class="trans-top__unit">
+                                            <div>Nhanh</div>
+                                            <div class="trans-top__unit-appoint">Nhận hàng sau 2-7 ngày</div>
+                                        </div>
+                                        <div class="trans-top__change"> </div>
+                                        <div class="trans-top__price-ship"> </div>
+                                    </div>
+                                    <div class="main-about__trans-bot">(Do ảnh hưởng của Covid-19,thời gian giao hàng có thể dài hơn dự kiến từ 1-5 ngày)</div>
+                                </div>
+                            </div>
+
+                            
                         </div>
+
+                        
                     </form>
                 <?php } ?>
 

@@ -23,7 +23,8 @@
 
 /* main */
 .app__container{
-    height: 132px;
+    position: relative;
+    top: 132px;
 }
 .container-content__top {
     display: flex;
@@ -506,10 +507,15 @@
 }
 
 .container-content__bot-pay {
-    display: flex;
+    display: none;
     flex-direction: column;
     
 }
+
+.container-content__bot-pay:last-child {
+    display: flex;
+}
+
 
 .container-content__bot-pay-top {
     align-items: center;
