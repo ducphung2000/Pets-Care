@@ -58,7 +58,7 @@
               while($row = $result->fetch_assoc()) {
                   echo "<tr>
                           <td>".$row['id']."</td>
-                          <td>".$row['name']."</td>
+                          <td "?> class="hidden_text" <?php echo ">".$row['name']."</td>
                           <td>".$row['old_price']."</td>
                           <td>".$row['price']."</td>
                           <td "?> class="hidden_text" <?php echo ">".$row['description']."</td>
@@ -66,7 +66,7 @@
                           <td>".$row['type2']."</td>
                           <td>".$row['type3']."</td>
                           <td>".$row['discount']."</td>
-                          <td>".$row['image']."</td>
+                          <td"?> class="hidden_text width-70" <?php echo ">".$row['image']."</td>
                           <td>".$row['image1']."</td>
                           <td>".$row['image2']."</td>
                           <td>".$row['image3']."</td>

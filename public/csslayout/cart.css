@@ -22,6 +22,9 @@
 }
 
 /* main */
+.app__container{
+    height: 132px;
+}
 .container-content__top {
     display: flex;
     height: 55px;
@@ -580,6 +583,19 @@
     font-size: 1.9rem;
     color: var(--primary-color);
     font-weight: 500;
+}
+
+#notify-msg{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #fb3030;
+    border: 1px dashed #fb3030;
+    width: 30%;
+    line-height: 30px;
+    height: 30px;
+    margin: 5px 0 10px;
+    text-align: center;
 }
 
 .top-main__address-text {
