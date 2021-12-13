@@ -246,9 +246,13 @@
 
 
 .conteainer-content_total {
-    display: flex;
+    display: none;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.conteainer-content_total:last-child{
+    display: flex;
 }
 
 

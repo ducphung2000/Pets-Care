@@ -68,11 +68,13 @@
                             $error = "Bạn chưa nhập số điện thoại người nhận😡.";
                         }elseif(empty($_POST["address"])){
                             $error = "Bạn chưa nhập địa chỉ nhận hàng😡.";
+                        }elseif(empty($_POST["quantity"])){
+                            $error = "Giỏ hàng rỗng.";
                         }
-                        var_dump($_POST);
-                        exit;
-                        if($error== false && !empty($_POST['quantity'])) {
-
+                        // var_dump($_POST);
+                        // exit;
+                        if($error== false && !empty($_POST['quantity'])) { //Xử lý giỏ hàng lưu vào db
+                            echo "Lưu database";exit;
                         }
                     }
                     break;
@@ -225,6 +227,7 @@
                                 color: #fb3030;
                                 border: 1px dashed #fb3030;
                                 line-height: 450px;
+                                width:100%;
                                 height: 450px;
                                 margin: 5px 0 10px;
                                 text-align: center;
@@ -251,60 +254,68 @@
 
                                     if(!empty($products)) {
 
-                                    $num =1;
-                                    while($row = mysqli_fetch_array($products)) {
-                                    echo '
-                                        <div class="main-product__item">
 
-                                            <div class="main-product__item-product ">
-                                                <a href="#" class="item-product__link">
-                                                    <img src="./public/img/'.$row['image'].'" alt="Ảnh của sản phẩm" class="item-product__img">
-                                                
-                                                    <div class="item-product__text">'.$row['name'].'</div>
-                                                </a>
-                                            </div>
+                                        $num =1;
+                                        $total=0;
+                                        while($row = mysqli_fetch_array($products)) {
+                                        echo '
+                                            <div class="main-product__item">
 
-                                            <div class="item-product__sectors">
-                                                <div class="item-product__sectors-text">
-                                                    <span>Phân loại hàng:</span> 
-                                                    <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                                                <div class="main-product__item-product ">
+                                                    <a href="#" class="item-product__link">
+                                                        <img src="./public/img/'.$row['image'].'" alt="Ảnh của sản phẩm" class="item-product__img">
+                                                    
+                                                        <div class="item-product__text">'.$row['name'].'</div>
+                                                    </a>
                                                 </div>
-                                                <input type="text" value="'.$row['type1'].'" class="item-product__sectors-about">
-                                            </div>
 
-                                            <div class="item-product__price">
-                                                <div class="item-product__price-old">'.$row['old_price'].'</div> 
-                                                <div class="item-product__price-sale">'.$row['price'].'</div> 
-                                            </div>
+                                                <div class="item-product__sectors">
+                                                    <div class="item-product__sectors-text">
+                                                        <span>Phân loại hàng:</span> 
+                                                        <i class="fas fa-sort-down item-product__sectors-icon"></i>
+                                                    </div>
+                                                    <input type="text" value="'.$row['type1'].'" class="item-product__sectors-about">
+                                                </div>
 
-                                            <div class="choose-main__quantity-number">
+                                                <div class="item-product__price">
+                                                    <div class="item-product__price-old">'.$row['old_price'].'</div> 
+                                                    <div class="item-product__price-sale">'.$row['price'].'</div> 
+                                                </div>
+
+                                                <div class="choose-main__quantity-number">
+                                                    
+                                                    <input type="text" name="quantity['.$row['id'].']" class="quantity-number__num" value="'?><?=$_SESSION['cart'][$row['id']]?><?php echo '">
+                                                    
+                                                </div>
+
+                                                <div class="item-product__money">'?><?=$_SESSION['cart'][$row['id']] * $row['price']?><?php echo ' </div>
+
+                                                <div class="item-product__delete">
+                                                    <a href="cart.php?action=delete&id='.$row['id'].'">Xoá</a>
                                                 
-                                                <input type="text" name="quantity['.$row['id'].']" class="quantity-number__num" value="'?><?=$_SESSION['cart'][$row['id']]?><?php echo '">
-                                                
-                                            </div>
+                                                </div>
+                                            </div>';
 
-                                            <div class="item-product__money">'.$row['price'].'</div>
+                                            $total += $_SESSION['cart'][$row['id']] * $row['price'];
+                                            ?>
 
-                                            <div class="item-product__delete">
-                                                <a href="cart.php?action=delete&id='.$row['id'].'">Xoá</a>
                                             
+                                            <?php echo '
+                                            <div class="conteainer-content_total">
+                                                <div class="container-content__bot-left">
+                                                    <div class="content__bot-text">Tổng Tiền:</div>
+                                                </div>
+                                                
+                                                <div class="container-content__bot-right">
+                                                    <div class="content__bot-total">'?><?=$total?> <?php echo '</div>
+                                                    <input type="submit" name="update_click" class="container-content__bot-btn btn btn--primary" value="Cập nhật">
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        ';}}
-                                        
-                                    ?>
-                                <div class="conteainer-content_total">
-                                    <div class="container-content__bot-left">
-                                        <div class="content__bot-text">Tổng Tiền:</div>
-                                    </div>
-                                    
-                                    <div class="container-content__bot-right">
-                                        <div class="content__bot-total">0đ</div>
-                                        <input type="submit" name="update_click" class="container-content__bot-btn btn btn--primary" value="Cập nhật">
-                                    </div>
-                                </div>
+                                        ';}
+                                    }
                                 
+                                
+                                ?>
                             </div>
 
                         </div>
