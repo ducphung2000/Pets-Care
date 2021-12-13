@@ -278,8 +278,8 @@
                                                 </div>
 
                                                 <div class="item-product__price">
-                                                    <div class="item-product__price-old">'.$row['old_price'].'</div> 
-                                                    <div class="item-product__price-sale">'.$row['price'].'</div> 
+                                                    <div class="item-product__price-old">'?><?= number_format($row['old_price'],0,",",".")?> <?php echo'đ</div> 
+                                                    <div class="item-product__price-sale">'?><?= number_format($row['price'],0,",",".")?> <?php echo'đ</div> 
                                                 </div>
 
                                                 <div class="choose-main__quantity-number">
@@ -288,7 +288,7 @@
                                                     
                                                 </div>
 
-                                                <div class="item-product__money">'?><?=$_SESSION['cart'][$row['id']] * $row['price']?><?php echo ' </div>
+                                                <div class="item-product__money">'?><?= number_format($_SESSION['cart'][$row['id']] * $row['price'],0,",",".")?><?php echo'đ</div>
 
                                                 <div class="item-product__delete">
                                                     <a href="cart.php?action=delete&id='.$row['id'].'">Xoá</a>
@@ -304,16 +304,13 @@
                                                         <div class="container-content__bot-pay">
                                                             <div class="container-content__bot-pay-top">
                                                                 <div class="bot-pay-top__item">
-                                                                    <div class="bot-pay-top__text"></div>
-                                                                    <div class="bot-pay-top__number"></div>
+                                                                <input type="submit" name="update_click" class="bot-pay-bot__btn btn btn--primary" value="Cập nhật">
+                                                                <div class="bot-pay-top__text"></div>
                                                                 </div>
-                                                                <div class="bot-pay-top__item">
-                                                                    <!-- <div class="bot-pay-top__text">Phí vận chuyển</div>
-                                                                    <div class="bot-pay-top__number">20.100đ</div> -->
-                                                                </div>
+                                                                
                                                                 <div class="bot-pay-top__item">
                                                                     <div class="bot-pay-top__all-pay-text">Tổng thanh toán:</div>
-                                                                    <div class="bot-pay-top__all-pay-number">'?><?=$total?> <?php echo '</div>
+                                                                    <div class="bot-pay-top__all-pay-number">'?><?= number_format($total,0,",",".")?> <?php echo 'đ</div>
                                                                 </div>
                                                             </div>
                                                             <div class="container-content__bot-pay-bot">
@@ -328,6 +325,7 @@
                                 ?>
                             </div>
 
+                        </div>
 
                             <!-- Phương thức thanh toán -->
                             <div class="container-content__bot-payment grid__full-width">
@@ -344,7 +342,7 @@
                                     
                                 </div>
                             </div>
-                            
+
                             <!-- Địa chỉ nhận hàng -->
                             <div class="content__top-main">
                                 <div class="top-main__address">
@@ -388,7 +386,6 @@
                             </div>
 
                             
-                        </div>
 
                         
                     </form>

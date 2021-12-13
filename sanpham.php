@@ -488,9 +488,9 @@
 
                                             <div class="buying-content__price">
                                                 <div class="buying-content__price-main">
-                                                    <div class="price-main__old-price">'.$row['old_price'].'</div>
+                                                    <div class="price-main__old-price">'?><?= number_format($row['old_price'],0,",",".")?> <?php echo'đ</div>
                                                     <div class="price-main__sale-price">
-                                                        <div class="price-main__sale-price-number">'.$row['price'].'</div>
+                                                        <div class="price-main__sale-price-number">'?><?= number_format($row['price'],0,",",".")?> <?php echo'đ</div>
                                                         <div class="price-main__sale-price-sticker">'.$row['discount'].'% Giảm</div>
                                                     </div>
                                                 </div>
