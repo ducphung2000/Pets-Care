@@ -63,12 +63,14 @@
                         header("location:./cart.php");
                     }elseif($_POST['order_click']){ // đặt hàng
                         if(empty($_POST["name"])){
-                            $error = "Bạn chưa nhập họ & tên người nhận 😡.";
+                            $error = "Bạn chưa nhập họ & tên người nhận😡.";
                         }elseif(empty($_POST["phone"])){
-                            $error = "Bạn chưa nhập số điện thoại người nhận 😡.";
+                            $error = "Bạn chưa nhập số điện thoại người nhận😡.";
                         }elseif(empty($_POST["address"])){
-                            $error = "Bạn chưa nhập địa chỉ nhận hàng 😡.";
+                            $error = "Bạn chưa nhập địa chỉ nhận hàng😡.";
                         }
+                        var_dump($_POST);
+                        exit;
                         if($error== false && !empty($_POST['quantity'])) {
 
                         }
