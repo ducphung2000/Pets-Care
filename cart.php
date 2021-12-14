@@ -74,7 +74,7 @@
                         // var_dump($_POST);
                         // exit;
                         if($error== false && !empty($_POST['quantity'])) { //Xử lý giỏ hàng lưu vào db
-                            echo "Lưu database";exit;
+
                         }
                     }
                     break;
