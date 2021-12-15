@@ -74,7 +74,26 @@
                         // var_dump($_POST);
                         // exit;
                         if($error== false && !empty($_POST['quantity'])) { //Xử lý giỏ hàng lưu vào db
+                            $products = mysqli_query($connect,"SELECT *FROM products WHERE id IN (".implode(",", array_keys($_POST['quantity'])).")");
+                            $total =0;
+                            $orderProducts = array();
+                            while($row = mysqli_fetch_array($products)){
+                                $orderProducts[] = $row ;
+                                    $total += $_POST['quantity'][$row['id']] * $row['price'];
+                            }
+                            $insertOrder = mysqli_query($connect,"INSERT INTO orders (name, phone, address, total) 
+                                VALUES ('".$_POST["name"]."','".$_POST["phone"]."', '".$_POST["address"]."','.$total.')");
+                            $orderID = $connect->insert_id;
 
+                            $insertString = "";
+                            foreach($orderProducts as $key => $products){
+                                $insertString .= "('".$orderID."', '".$products['id']."', '".$_POST['quantity'][$products['id']]."', '".$products['price']."', '".time()."')";
+                                if($key != count($orderProducts) - 1){
+                                    $insertString .=",";
+                                }
+                            }
+                            $insertOrder = mysqli_query($connect, "INSERT INTO order_detail (order_id, product_id, quantity, price, create_at) VALUES ('$insertString')");
+                            var_dump($insertString);exit;
                         }
                     }
                     break;
@@ -367,7 +386,7 @@
                                     <div class="main-about__mess-content">
                                         <span>Lời nhắn:</span>
                                         <div class="main-about__input-mess">
-                                            <input class="mess-input" type="text" placeholder="Lưu ý cho Người bán..." value="">
+                                            <input class="mess-input"  type="text" placeholder="Lưu ý cho Người bán..." value="">
                                         </div>
                                     </div>
                                 </div>
