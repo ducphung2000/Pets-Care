@@ -25,6 +25,12 @@
                     Quản lý Tài khoản
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order-list.php">
+                    <i class="fas fa-truck"></i>
+                    Quản lý Đơn hàng
+                </a>
+            </li>
         </ul>
     </div>
 </nav>

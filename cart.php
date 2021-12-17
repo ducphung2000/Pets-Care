@@ -28,6 +28,7 @@
             $_SESSION['cart'] = array();
         }
         $error = false;
+        $success = false;
         if(isset($_GET['action'])){
             function update_cart($add = false){
                 foreach($_POST['quantity'] as $id => $quantity) {
@@ -93,7 +94,7 @@
                                 }
                             }
                             $insertOrder = mysqli_query($connect, "INSERT INTO order_detail (order_id, product_id, quantity, price, create_at) VALUES ('$insertString')");
-                            var_dump($insertString);exit;
+                            $success = "Đặt hàng thành công!";
                         }
                     }
                     break;
@@ -255,7 +256,24 @@
                     >
                         <?=$error?>.<a href="javascript:history.back()">Quay lại</a>
                     </div>
-                <?php } else { ?>
+                <?php } elseif($success) { ?>
+                    <div id="notify-msg" 
+                        style="font-size: 1.4rem;
+                                font-weight: 600;
+                                font-style: italic;
+                                color: #fb3030;
+                                border: 1px dashed #fb3030;
+                                line-height: 450px;
+                                width:100%;
+                                height: 450px;
+                                margin: 5px 0 10px;
+                                text-align: center;
+                                background-color: #fff;
+                                "
+                    >
+                        <?=$success?>.<a href="index.php">Tiếp tục mua hàng</a>
+                    </div>
+                <?php }else { ?>
                 
                     <form action="cart.php?action=submit" method="POST" class="container-content">
                         <div class="container-content__top">

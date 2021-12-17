@@ -86,6 +86,7 @@ fullname VARCHAR(255) NOT NULL,
 phone VARCHAR(255) NOT NULL,
 email VARCHAR(255) NOT NULL,
 bird VARCHAR(255) NOT NULL,
+user_type int(5) not null,
 user_img VARCHAR(255) NOT NULL,
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
@@ -133,8 +134,8 @@ if (mysqli_query($connect, $sql_order)) {
 //create table order_detail
 $sql_order_detail = "CREATE TABLE order_detail (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-order_id int(6) NOT NULL,
-product_id int(6) NOT NULL,
+order_id INT(6) NOT NULL,
+product_id INT(6) NOT NULL,
 quantity int(20) NOT NULL,
 price INT(50) NOT NULL,
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

@@ -7,28 +7,12 @@ if(isset($_POST['submit'])){
     // lấy thông tin từ form
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $fullname = $_POST['fullname'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $bird = $_POST['bird'];
+    $user_type = md5($_POST['user_type']);
 
-    //lấy tên file ảnh
-    $user_img = $_FILES['fileToUpload']['username'];
-    //thư mục upload ảnh
-    $link_img = "upload/";
-
-    $link_file = $link_img . basename($_FILES["fileToUpload"]["name"]);
-
-    // Select file type
-    $imgFileType = strtolower(pathinfo($link_file,PATHINFO_EXTENSION));
-
-    // Valid file extensions
-    $imgType_arr = array("jpg","jpeg","png","gif","jfif");
-    // Check extension
-    if( in_array($imgFileType,$imgType_arr) ){
+   
         // Insert record
-        $sql = "INSERT INTO products (username, password, fullname, phone, email, bird, user_img) 
-        VALUES ('$username','$password', '$fullname','$phone', '$email', '$bird', '$user_img')";
+        $sql = "INSERT INTO users (username, password, fullname, phone, email, bird, user_img,user_type) 
+        VALUES ('$username','$password', '$fullname','$phone', '$email', '$bird', '$user_img','$user_type')";
 
         if (mysqli_query($connect, $sql)) {
             header('Location: http://localhost/pets-care/admin/user-list.php');
@@ -37,12 +21,5 @@ if(isset($_POST['submit'])){
         }
         mysqli_close($connect);
 
-        // Upload file
-        move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$link_img.$user_img);
-
-    }
-    else {
-        print_r("file không đúng dịnh dạng. Vui lòng kiểm tra lại");
-    }
     
 }

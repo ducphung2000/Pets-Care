@@ -2,6 +2,11 @@
 session_start();
 require_once 'admin/connect.php';
 $connect = ConnectDB();
+
+$search = isset($_GET['name']) ? $_GET['name'] : "";
+if($search){
+    $where = "WHERE name LIKE '%.$search.%'";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -124,43 +129,8 @@ $connect = ConnectDB();
                         </a>
                     </div>
 
-                    <div class="header__search">
-                        <div class="header__search-input-wrap">
-                            <input type="search" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm...">
+                    <?php include("./public/layout/search.php"); ?>
 
-                            <!-- search hístory -->
-                            <div class="header__search-history">
-                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="">Balo chó mèo</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="">Xúc xích cho chó con</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="header__search-select">
-                            <span class="header__search-select-lable">Trong shop</span>
-                            <i class="header__search-select-icon fas fa-chevron-down"></i>
-                            
-                            <ul class="header__search-option">
-                                <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-        
-                                <li class="header__search-option-item ">
-                                    <span>Ngoài shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <button class="header__search-btn">
-                            <i class="header__search-btn-icon fas fa-search"></i>
-                        </button>
-                    </div>
 
                     <div class="header__cart">
                         <div class="header__cart-wrap">
@@ -453,13 +423,20 @@ $connect = ConnectDB();
                         </div>
                         <!-- Danh mục sản phẩm -->
                         <div class="home-product_list">
+                            
                             <div class="home-product">
                                 <div id="all_product" class="content-header-title">
                                     <h3 class="tittle1">Tất cả vật phẩm</h3>
                                 </div>
                                 <div class="grid__row">
                                     <?php
-                                    $sql = "SELECT * FROM products";
+                                    if(isset($_GET['search'])){
+                                        $search = $_GET['search'];
+                                    }
+                                    else{
+                                        $search = "";
+                                    }
+                                    $sql = "SELECT * FROM products WHERE `name` LIKE '%$search%'";
                                     $result = $connect->query($sql);
                                     
                                     if ($result->num_rows > 0) {
@@ -478,8 +455,8 @@ $connect = ConnectDB();
 
                                                     <h4 class="home-product-item__name">'.$row['name'].'</h4>
                                                     <div class="home-product-item__price">
-                                                        <span class="home-product-item__price-old">'?><?= number_format($row['old_price'],0,",",".")?> <?php echo'đ</span>
-                                                        <span class="home-product-item__price-current">'?><?= number_format($row['price'],0,",",".")?> <?php echo'đ</span>
+                                                        <span class="home-product-item__price-old">'?><?= number_format($row['old_price'],0,",",".")?><?php echo'đ</span>
+                                                        <span class="home-product-item__price-current">'?><?= number_format($row['price'],0,",",".")?><?php echo'đ</span>
                                                     </div>
 
                                                     <div class="home-product-item__action">
@@ -536,7 +513,7 @@ $connect = ConnectDB();
                                     ?>
                                 <div class="grid__row">
                                     <?php
-                                    $sql = "SELECT * FROM products WHERE category_id = 1";
+                                    $sql = "SELECT * FROM products WHERE category_id = 1 AND `name` LIKE '%$search%'" ;
                                     $result = $connect->query($sql);
                                     
                                     if ($result->num_rows > 0) {
@@ -613,7 +590,7 @@ $connect = ConnectDB();
                                 <div class="grid__row">
 
                                     <?php
-                                    $sql = "SELECT * FROM products WHERE category_id = 2";
+                                    $sql = "SELECT * FROM products WHERE category_id = 2 AND `name` LIKE '%$search%'";
                                     $result = $connect->query($sql);
                                     
                                     if ($result->num_rows > 0) {
@@ -690,7 +667,7 @@ $connect = ConnectDB();
                                 <div class="grid__row">
 
                                     <?php
-                                    $sql = "SELECT * FROM products WHERE category_id = 3";
+                                    $sql = "SELECT * FROM products WHERE category_id = 3 AND `name` LIKE '%$search%'";
                                     $result = $connect->query($sql);
                                     
                                     if ($result->num_rows > 0) {

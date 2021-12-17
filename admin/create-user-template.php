@@ -33,6 +33,13 @@ $conn = ConnectDB();
                     <label for="exampleInputPassword1">Repassword</label>
                     <input type="text" name="repassword" class="form-control" placeholder="Nhập lại mật khẩu của bạn">
                 </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Loại tài khoản</label>
+                    <select name="user_type" class="form-control" id="exampleFormControlSelect1">
+                        <option value="0">Admin</option>
+                        <option value="1">User</option>
+                    </select>
+                </div>
                 <input type='submit' value='Đăng ký' name='submit'>
             </form>
         </main>

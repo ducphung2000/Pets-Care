@@ -1,5 +1,6 @@
 <?php
 include 'layout/header.php';
+
 ?>
 <div class="container-fluid">
   <div class="row">
