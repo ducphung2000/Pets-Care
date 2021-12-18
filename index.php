@@ -448,46 +448,24 @@
                         </div>
                         <div class="grid__row bot__content-product">
                             <ul class="content-product__list">
+                            <?php 
+                                            $sql = "select * from products order by create_at DESC";
+                                            $result = $connect->query($sql);
+                                
+                                            if ($result->num_rows > 0) {
+                                            // output data of each row
+                                                while($row = $result->fetch_assoc()) {
+                                                    echo '
                                 <li class="grid__column-2-5 content-product__item">
                                     <div class="content-product__img">
-                                        <img src="./public/img/xucxich.png" alt="xúc xích" class="product__img">
+                                        <img src="admin/upload/'.$row["image"].'" alt="Ảnh sản phẩm" class="product__img">
                                     </div>
                                     <div class="content-product__purchase">
-                                        <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
-                                        <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                        <p class="content-product__purchase-text">'.$row["name"].'</p>
+                                        <p class="content-product__purchase-price">'.$row["price"].'đ</p>
+                                        <a href="sanpham.php?id='.$row["id"].'" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                     </div>
-                                </li>
-                                <li class="grid__column-2-5 content-product__item">
-                                    <div class="content-product__img">
-                                        <img src="./public/img/xucxich.png" alt="xúc xích" class="product__img">
-                                    </div>
-                                    <div class="content-product__purchase">
-                                        <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
-                                        <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
-                                    </div>
-                                </li>
-                                <li class="grid__column-2-5 content-product__item">
-                                    <div class="content-product__img">
-                                        <img src="./public/img/xucxich.png" alt="xúc xích" class="product__img">
-                                    </div>
-                                    <div class="content-product__purchase">
-                                        <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
-                                        <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
-                                    </div>
-                                </li>
-                                <li class="grid__column-2-5 content-product__item">
-                                    <div class="content-product__img">
-                                        <img src="./public/img/xucxich.png" alt="xúc xích" class="product__img">
-                                    </div>
-                                    <div class="content-product__purchase">
-                                        <p class="content-product__purchase-text">Xúc xích ở đây ngon lắm ^^</p>
-                                        <p class="content-product__purchase-price">155.000đ</p>
-                                        <a href="sanpham.php" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
-                                    </div>
-                                </li>
+                                </li>';}}?>
                             </ul>
                         </div>
                     </div>
