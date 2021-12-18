@@ -90,10 +90,9 @@
                             foreach($orderProducts as $key => $products){
                                 $insertString .= "('".$orderID."', '".$products['id']."', '".$_POST['quantity'][$products['id']]."', '".$products['price']."', '".time()."')";
                                 if($key != count($orderProducts) - 1){
-                                    $insertString .=",";
                                 }
                             }
-                            $insertOrder = mysqli_query($connect, "INSERT INTO order_detail (order_id, product_id, quantity, price, create_at) VALUES ('$insertString')");
+                            $insertOrder = mysqli_query($connect, "INSERT INTO `order_detail` (order_id, product_id, quantity, price, create_at) VALUES $insertString");
                             $success = "Đặt hàng thành công!";
                         }
                     }

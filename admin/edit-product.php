@@ -25,59 +25,49 @@ $connect = ConnectDB();
                 <h1>Admin</h1>
             </div>
             <?php
-            // if(isset($_POST['submit'])){
-                //     $id = $_POST['id'];
-                //     $name = $_POST['name'];
-                //     $old_price = $_POST['old_price'];
-                //     $price = $_POST['price'];
-                //     $description = $_POST['description'];
-                //     $discount = $_POST['discount'];
-                //     $image = $_POST['image'];
-                // }
-                
-                
-                // if( isset( $_POST['update'] ) ) {
-                //   $id = $_POST['id'];
-                //   $query = "UPDATE FROM products WHERE id=".$id;
-                //   $conn->query($query);
-                    $sql = "SELECT * FROM products WHERE id = 1";
-                    // $query = "UPDATE News SET name = new_name WHERE id = 1";
+            if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                }
+                else{
+                    $id = "";
+                }
+               
+                    $sql = "SELECT * FROM products WHERE id =$id ";
                     $result = $connect->query($sql);
-                    // if ($connect->query($query) === TRUE) {
-                    //     echo "update thành công";
                     // } 
                     
                         if ($result->num_rows > 0) {
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
                             echo '
-                                <form action="create-product.php" method="post" enctype="multipart/form-data">
+                                <form action="edit-product-submit.php" method="post" enctype="multipart/form-data">
+                                <input name="id" type="hidden" value="'.$row["id"].'">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Tên sản phẩm</label>
-                                        <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-descriptionribedby="emailHelp" placeholder="Nhập tên sản phẩm"'?> value="<?php echo $row['name'] ?>" <?php echo '>
+                                        <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-descriptionribedby="emailHelp" placeholder="Nhập tên sản phẩm" value="'.$row["name"].'">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Giá cũ</label>
-                                        <input name="old_price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Giá cũ sản phẩm" '?> value="<?php echo $row['old_price'] ?>" <?php echo '>
+                                        <input name="old_price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Giá cũ sản phẩm" value=" '.$row["old_price"].'" >
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Giá Mới</label>
-                                        <input name="price" type="text" class="form-control" id="exampleInputPassword12" placeholder="Giá mới sản phẩm" '?> value="<?php echo $row['price'] ?>" <?php echo '>
+                                        <input name="price" type="text" class="form-control" id="exampleInputPassword12" placeholder="Giá mới sản phẩm" value=" '.$row["price"].'">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleFormControlSelect1">Danh mục sản phẩm</label>
                                         <select name="category_id" class="form-control" id="exampleFormControlSelect1"  '?> value="<?php echo $row['category_name'] ?>" <?php echo '>
-                                            <option value="0">Tất cả vật phẩm</option>'?>
+                                            '?>
                                             <?php
-                                                // $sql = "SELECT * FROM categories WHERE id";
-                                                // $result = $conn->query($sql);
+                                                $sql1 = "SELECT * FROM categories";
+                                                $result1 = $connect->query($sql1);
 
-                                                // if ($result->num_rows > 0) {
-                                                //     // output data of each row
-                                                //     while ($row = $result->fetch_assoc()) {
-                                                //         echo '<option value="'.$row["id"].'"> '.$row["category_name"].'</option>';
-                                                //     }
-                                                // }
+                                                if ($result1->num_rows > 0) {
+                                                    // output data of each row
+                                                    while ($row1 = $result1->fetch_assoc()) {
+                                                        echo '<option value="'.$row1["id"].'"> '.$row1["category_name"].'</option>';
+                                                    }
+                                                }
                                             ?>
                                         <?php 
                                             echo '
@@ -97,7 +87,7 @@ $connect = ConnectDB();
                                         <label>Ảnh sản phẩm</label>
                                         <input type="file" name="fileToUpload" id="fileToUpload" class="form-control-file" >
                                     </div>'?>
-                                    <input type='submit' value='submit' name='submit'>
+                                    <input type='submit' value='submit' name='save'>
                                     <?php echo '
                                 </form>
                             ';}
