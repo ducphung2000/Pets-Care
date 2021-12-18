@@ -25,7 +25,7 @@ $connect = ConnectDB();
                 <h1>Admin</h1>
             </div>
             <?php
-            if(isset($_GET['id'])){
+                if(isset($_GET['id'])){
                 $id = $_GET['id'];
                 }
                 else{
@@ -41,7 +41,7 @@ $connect = ConnectDB();
                         while($row = $result->fetch_assoc()) {
                             echo '
                                 <form action="edit-product-submit.php" method="post" enctype="multipart/form-data">
-                                <input name="id" type="hidden" value="'.$row["id"].'">
+                                    <input name="id" type="hidden" value="'.$row["id"].'">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Tên sản phẩm</label>
                                         <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-descriptionribedby="emailHelp" placeholder="Nhập tên sản phẩm" value="'.$row["name"].'">

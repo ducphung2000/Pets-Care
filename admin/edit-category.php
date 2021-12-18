@@ -2,7 +2,7 @@
 session_start();
 require_once 'connect.php';
 include 'layout/header.php';
-$conn = ConnectDB();
+$connect = ConnectDB();
 $sql = "SELECT*FROM categories"
 
 ?>
@@ -20,16 +20,37 @@ $sql = "SELECT*FROM categories"
             <div class="table-responsive">
                 <h1>Admin</h1>
             </div>
+            <?php
+                if(isset($_GET['id'])){
+                $id = $_GET['id'];
+                }
+                else{
+                    $id = "";
+                }
+               
+                    $sql = "SELECT * FROM categories WHERE id =$id ";
+                    $result = $connect->query($sql);
+                    // } 
+                    
+                        if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                            echo '
+                                <form action="edit-category-submit.php" method="post">
+                                    <input name="id" type="hidden" value="'.$row["id"].'">
 
-            <form action="create-category.php" method="post">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Tên category</label>
-                    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên danh mục" >
-                </div>
-
-
-                <input type='submit' value='submit' name='submit'>
-            </form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên category</label>
+                                        <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập tên danh mục" value="'.$row["category_name"].'">
+                                        
+                                    </div>'?>
+                                    <input type='submit' value='submit' name='save'>
+                                    <?php echo '
+                                </form>
+                            ';}
+                        }
+                // }
+            ?>
         </main>
     </div>
 </div>
