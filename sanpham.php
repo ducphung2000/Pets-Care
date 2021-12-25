@@ -488,9 +488,9 @@
 
                                             <div class="buying-content__price">
                                                 <div class="buying-content__price-main">
-                                                    <div class="price-main__old-price">'?><?= number_format($row['old_price'],0,",",".")?> <?php echo'đ</div>
+                                                    <div class="price-main__old-price">'?><?= number_format($row['old_price'],0,",",".")?><?php echo'đ</div>
                                                     <div class="price-main__sale-price">
-                                                        <div class="price-main__sale-price-number">'?><?= number_format($row['price'],0,",",".")?> <?php echo'đ</div>
+                                                        <div class="price-main__sale-price-number">'?><?= number_format($row['price'],0,",",".")?><?php echo'đ</div>
                                                         <div class="price-main__sale-price-sticker">'.$row['discount'].'% Giảm</div>
                                                     </div>
                                                 </div>
@@ -552,13 +552,13 @@
                                             </div>
                                             <div class="product-details__body">
                                                 <div class="details__body-shape">
-                                                    <div class="details__body-shape-left">Dạng thức ăn thú cưng</div>
-                                                    <div class="details__body-shape-right">Thức ăn ướt</div>
+                                                    <div class="details__body-shape-left">Tên sản phẩm</div>
+                                                    <div class="details__body-shape-right">'.$row['name'].'</div>
                                                 </div>
 
                                                 <div class="details__body-shop">
-                                                    <div class="details__body-shop-left">Kho hàng</div>
-                                                    <div class="details__body-shop-right">1512</div>
+                                                    <div class="details__body-shop-left">Địa chỉ</div>
+                                                    <div class="details__body-shop-right">Pets Care</div>
                                                 </div>
 
                                                 <div class="details__body-from">

@@ -355,7 +355,7 @@
 }
 
 .product__variation { 
-    max-width: 80px;
+    max-width: 90px;
     font-size: 1.4rem;
     color: var(--text-color);
     border: 1px solid var(--border-color);
