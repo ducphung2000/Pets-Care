@@ -136,6 +136,7 @@ $sql_order_detail = "CREATE TABLE order_detail (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 order_id INT(6) NOT NULL,
 product_id INT(6) NOT NULL,
+product_name INT(6) NOT NULL,
 quantity int(20) NOT NULL,
 price INT(50) NOT NULL,
 create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP

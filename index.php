@@ -110,43 +110,7 @@
                         </a>
                     </div>
         
-                    <div class="header__search">
-                        <div class="header__search-input-wrap">
-                            <input type="search" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm...">
-                            
-                            <!-- search hístory -->
-                            <div class="header__search-history">
-                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="">Balo chó mèo</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="">Xúc xích cho chó con</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="header__search-select">
-                            <span class="header__search-select-lable">Trong shop</span>
-                            <i class="header__search-select-icon fas fa-chevron-down"></i>
-                            
-                            <ul class="header__search-option">
-                                <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-        
-                                <li class="header__search-option-item ">
-                                    <span>Ngoài shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <button class="header__search-btn">
-                        <i class="header__search-btn-icon fas fa-search"></i>
-                        </button>
-                    </div>
+                    <?php include("./public/layout/search.php"); ?>
         
                     <div class="header__cart">
                         <div class="header__cart-wrap">
@@ -449,23 +413,24 @@
                         <div class="grid__row bot__content-product">
                             <ul class="content-product__list">
                             <?php 
-                                            $sql = "select * from products order by create_at DESC";
+                                            $sql = "select * from products where id < 5 order by create_at DESC";
                                             $result = $connect->query($sql);
                                 
                                             if ($result->num_rows > 0) {
                                             // output data of each row
                                                 while($row = $result->fetch_assoc()) {
                                                     echo '
-                                <li class="grid__column-2-5 content-product__item">
-                                    <div class="content-product__img">
-                                        <img src="admin/upload/'.$row["image"].'" alt="Ảnh sản phẩm" class="product__img">
-                                    </div>
-                                    <div class="content-product__purchase">
-                                        <p class="content-product__purchase-text">'.$row["name"].'</p>
-                                        <p class="content-product__purchase-price">'.$row["price"].'đ</p>
-                                        <a href="sanpham.php?id='.$row["id"].'" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
-                                    </div>
-                                </li>';}}?>
+                                            <li class="grid__column-2-5 content-product__item">
+                                                <div class="content-product__img">
+                                                    <img src="admin/upload/'.$row["image"].'" alt="Ảnh sản phẩm" class="product__img">
+                                                </div>
+                                                <div class="content-product__purchase">
+                                                    <p class="content-product__purchase-text">'.$row["name"].'</p>
+                                                    <p class="content-product__purchase-price">'.$row["price"].'đ</p>
+                                                    <a href="sanpham.php?id='.$row["id"].'" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
+                                                </div>
+                                            </li>'
+                                ;}}?>
                             </ul>
                         </div>
                     </div>

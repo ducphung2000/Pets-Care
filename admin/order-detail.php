@@ -23,13 +23,11 @@
           <thead>
             <tr>
               <th>#</th>
-              <th>name</th>
-              <th>phone</th>
-              <th>address</th>
-              <th>note</th>
-              <th>total</th>
+              <th>order_id</th>
+              <th>product_id</th>
+              <th>số lượng</th>
+              <th>giá 1 sp</th>
               <th>create_at</th>
-              <th style="text-align: center;">Chi tiết đơn hàng</th>
               <th style="text-align: center;">Xoá</th>
             </tr>
           </thead>
@@ -39,27 +37,22 @@
 
           if( isset( $_POST['delete'] ) ) {
               $id = $_POST['id'];
-              $query = "DELETE FROM orders WHERE id=".$id;
+              $query = "DELETE FROM order_detail WHERE id=".$id;
               $conn->query($query);
           }
           
-          $sql = "SELECT * FROM orders";
+          $sql = "SELECT * FROM order_detail";
           $result = $conn->query($sql);
 
           if ($result->num_rows > 0) {
               while($row = $result->fetch_assoc()) {
                   echo "<tr>
                           <td>".$row['id']."</td>
-                          <td >".$row['name']."</td>
-                          <td>".$row['phone']."</td>
-                          <td>".$row['address']."</td>
-                          <td "?> class="hidden_text" <?php echo ">".$row['note']."</td>
-                          <td>".$row['total']."đ</td>
+                          <td >".$row['order_id']."</td>
+                          <td>".$row['product_id']."</td>
+                          <td>".$row['quantity']."</td>
+                          <td>".$row['price']."đ</td>
                           <td>".$row['create_at']."</td>
-                          "?>
-                          <td style="text-align: center;"> <a href="order-detail.php?id=<?php echo $row["id"] ?>" class="button">Chi tiết</a></td>
-                          <?php 
-                          echo "
                           <td "?> style="text-align: center;" <?php echo " > <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
                                 <input type=submit value=Xoá name=delete >

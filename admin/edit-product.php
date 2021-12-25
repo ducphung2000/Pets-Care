@@ -50,6 +50,7 @@ $connect = ConnectDB();
                                         <label for="exampleInputPassword1">Giá cũ</label>
                                         <input name="old_price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Giá cũ sản phẩm" value=" '.$row["old_price"].'" >
                                     </div>
+                                    
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Giá Mới</label>
                                         <input name="price" type="text" class="form-control" id="exampleInputPassword12" placeholder="Giá mới sản phẩm" value=" '.$row["price"].'">
@@ -76,7 +77,7 @@ $connect = ConnectDB();
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputPassword1">Mô tả sản phẩm</label>
-                                        <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"  '?> value="<?php echo $row['description'] ?>" <?php echo '></textarea>
+                                        <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3">'?><?php echo $row['description'] ?>" <?php echo '</textarea>
                                     </div>
 
                                     <div class="form-group">

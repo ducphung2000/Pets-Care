@@ -122,43 +122,7 @@ $connect = ConnectDB();
                         <div class="logo_text">Tài Khoản</div>
                     </div>
         
-                    <div class="header__search">
-                        <div class="header__search-input-wrap">
-                            <input type="search" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm...">
-                            
-                            <!-- search hístory -->
-                            <div class="header__search-history">
-                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="">Balo chó mèo</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="">Xúc xích cho chó con</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="header__search-select">
-                            <span class="header__search-select-lable">Trong shop</span>
-                            <i class="header__search-select-icon fas fa-chevron-down"></i>
-                            
-                            <ul class="header__search-option">
-                                <li class="header__search-option-item header__search-option-item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-        
-                                <li class="header__search-option-item ">
-                                    <span>Ngoài shop</span>
-                                    <i class="fas fa-check"></i>
-                                </li>
-                            </ul>
-                        </div> -->
-                        <button class="header__search-btn">
-                        <i class="header__search-btn-icon fas fa-search"></i>
-                        </button>
-                    </div>
+                    <?php include("./public/layout/search.php"); ?>
                 </div>
             </div>
         </header>
