@@ -6,8 +6,8 @@ if(isset($_POST['submit'])){
     $connect = ConnectDB();
     // lấy thông tin từ form
     $username = $_POST['username'];
-    $password = $_POST['password'];
-    $user_type = md5($_POST['user_type']);
+    $password = md5($_POST['password']);
+    $user_type = $_POST['user_type'];
 
    
         // Insert record
