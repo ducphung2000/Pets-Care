@@ -278,8 +278,8 @@
                                                 </div>
 
                                                 <div class="item-product__price">
-                                                    <div class="item-product__price-old">'?><?= number_format($row['old_price'],0,",",".")?> <?php echo'đ</div> 
-                                                    <div class="item-product__price-sale">'?><?= number_format($row['price'],0,",",".")?> <?php echo'đ</div> 
+                                                    <div class="item-product__price-old">'?><?= number_format($row['old_price'],0,",",".")?><?php echo'đ</div> 
+                                                    <div class="item-product__price-sale">'?><?= number_format($row['price'],0,",",".")?><?php echo'đ</div> 
                                                 </div>
 
                                                 <div class="choose-main__quantity-number">

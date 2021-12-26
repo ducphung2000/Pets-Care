@@ -131,13 +131,15 @@
                             <!-- No cart: header__cart-list--no-cart -->
                             <div class="header__cart-list ">
                                 <!-- No cart: -->
-                                <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
-                                <span class="header__cart-list-no-cart-msg">
-                                    Chưa có sản phẩm
-                                </span>
-        
-                                <!-- Has cart: -->
                                 <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
+                                <div class="header__no-cart-list-item">
+                                    <img src="./public/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+                                </div>
+                                <!-- Has cart: -->
+                                <!-- <h3 class="header__cart-heading">Sản phẩm đã thêm</h3>
                                 <ul class="header__cart-list-item">
                                     <li class="header__cart-item">
                                         <img src="./public/img/balo.jfif" alt="" class="header__cart-img">
@@ -150,13 +152,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -171,13 +173,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -192,13 +194,13 @@
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -213,13 +215,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -234,13 +236,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -255,13 +257,13 @@
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -276,13 +278,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -297,13 +299,13 @@
                                                     <span class="header__cart-item-qnt">2</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
                                                     Phân loại: to
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
@@ -318,22 +320,22 @@
                                                     <span class="header__cart-item-qnt">10</span>
                                                 </div>
                                             </div>
-        
+
                                             <div class="header__cart-item-body">
                                                 <span class="header__cart-item-description">
-                                                    Phân loại: Xúc xích vị bò 
+                                                    Phân loại: Xúc xích vị bò
                                                 </span>
                                                 <Span class="header__cart-item-remove">Xoá</Span>
-        
+
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
-        
-                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+
+                                <a href="cart.php" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a> -->
                             </div>
-                        </div>                        
-                        
+                        </div>
+
                     </div>
                 </div>
         

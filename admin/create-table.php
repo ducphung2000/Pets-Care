@@ -41,7 +41,7 @@ if (!$connect) {
 // sql to create table products
 $sql_product = "CREATE TABLE products (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(30) NOT NULL,
+name VARCHAR(255) NOT NULL,
 old_price INT(30) NOT NULL,
 price INT(50) NOT NULL,
 description VARCHAR(10000),

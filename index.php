@@ -426,7 +426,7 @@
                                                 </div>
                                                 <div class="content-product__purchase">
                                                     <p class="content-product__purchase-text">'.$row["name"].'</p>
-                                                    <p class="content-product__purchase-price">'.$row["price"].'đ</p>
+                                                    <p class="content-product__purchase-price">'?><?= number_format($row['price'],0,",",".")?><?php echo'đ</p>
                                                     <a href="sanpham.php?id='.$row["id"].'" class="content-product__purchase-btn btn btn--primary">Mua hàng</a>
                                                 </div>
                                             </li>'
