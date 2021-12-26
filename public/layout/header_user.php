@@ -4,7 +4,7 @@
         
         echo '
             <li class="header__navbar-item header__navbar-user">
-                <img src="./public/img/balo.jfif" alt="" class="header__navbar-user-img">
+                <img src="./public/img/avt.jpg" alt="" class="header__navbar-user-img">
                 <span class="header__navbar-user-name">'.$_SESSION['users'].'</span>
 
                 <ul class="header__navbar-user-menu">

@@ -25,6 +25,7 @@ $connect = ConnectDB();
               <th>fullname</th>
               <th>phone</th>
               <th>email</th>
+              <th>user_type</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -48,6 +49,7 @@ $connect = ConnectDB();
                               <td>".$row['fullname']."</td>
                               <td>".$row['phone']."</td>
                               <td>".$row['email']."</td>
+                              <td>".$row['user_type']."</td>
                               <td> 
                                 <form method='POST'>
                                 <input type=hidden name=id value=".$row["id"]." >
